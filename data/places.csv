@@ -1,0 +1,3800 @@
+﻿name,name_en,lat,lon,place
+الخبر,Al Khobar,26.3039999,50.1960237,city
+الجبيل,Al Jubayl,27.0006968,49.6532161,city
+الهفوف,Al-Hofuf,25.3696585,49.5865224,city
+الدمام,Dammam,26.4367824,50.1039991,city
+جيزان,Jizan,16.894719,42.5579758,city
+الباحة,Al Bahah,20.0137941,41.4656378,city
+أبها,Abha,18.2164282,42.5043596,city
+الرياض,Riyadh,24.638916,46.7160104,city
+الرس,Ar Rass,25.8685205,43.5038978,city
+حائل,Ha'il,27.5208716,41.6985992,city
+عفيف,Afif,23.9023697,42.9150847,city
+الظهران,Dhahran,26.2966528,50.1202146,city
+رابغ,Rabigh,22.7989669,39.0335547,city
+نجران,Najran,17.5439809,44.2246817,city
+بيشة,Bishah,20.0,42.6,city
+عنيزة,Unaizah,26.0908582,43.9864354,city
+حفر الباطن,Hafar Al-Batin,28.4328084,45.9627527,city
+خميس مشيط,Khamis Mushayt,18.3,42.733333,city
+الخفجي,Al Khafji,28.4225409,48.4927814,city
+القنفذة,Al Qunfudhah,19.1264288,41.0788747,city
+حوطة بني تميم,Hotat Bani Tamim,23.4874984,46.8787064,city
+رفحاء,Rafha,29.6324189,43.5178685,city
+شرورة,Sharurah,17.491225,47.1126055,city
+بريدة,Buraydah,26.331667,43.971667,city
+المذنب,Al Mithnab,25.8596075,44.2209063,city
+المجمعة,Al Majma'ah,25.903889,45.345556,city
+القويعية,Al Quway`iyah,24.065056,45.284381,city
+الطائف,At Ta'if,21.2702801,40.4158308,city
+النماص,An Nimas,19.116667,42.133333,city
+محايل عسير,Muhayil,18.546389,42.048889,city
+سبت العلاية,Sabt Al 'Alayah,19.563336,41.9579697,city
+الدوادمي,Ad Dawadimi,24.494167,44.383333,city
+شقراء,Shaqra',25.248333,45.252778,city
+ليلى,Layla,22.2929472,46.7171558,city
+دومة الجندل,Dawmat al Jandal,29.8059219,39.866726,city
+سكاكا,Sakaka,29.9784008,40.2047701,city
+القريات,Al Qurayyat,31.333333,37.341944,city
+طبرجل,Tubarjal,30.5006757,38.2165051,city
+طريف,Turayf,31.6725877,38.6615532,city
+عرعر,`Ar`ar,30.9815531,41.0164788,city
+ضبا,Duba,27.352083,35.6920727,city
+الوجه,Al Wajh,26.2444191,36.4532774,city
+الليث,Al Lith,20.1451486,40.2701391,city
+جدة,Jeddah,21.5504432,39.1742363,city
+وادي الدواسر,Wadi Ad Dawasir,20.4602516,44.799553,city
+ينبع,Yanbu`,24.089019,38.0687076,city
+مكة,Mecca,21.420847,39.826869,city
+المدينة المنورة,Medina,24.471153,39.6111216,city
+تبوك,Tabuk,28.4012536,36.567049,city
+بيش,Baysh,17.3756272,42.5372249,city
+السيح,Al-Saih,24.151651,47.3101974,city
+نيوم,Neom,28.0058861,35.2027014,city
+الأحساء,Al Ahsa,25.3877578,49.5626628,city
+أبو عريش,Abu Arish,16.9661387,42.8380784,city
+العيون,Al Oyun,25.6076446,49.5649495,city
+النقيرة,,27.8675909,48.2593478,city
+ميسان,Missan,20.7371829,40.8386833,town
+القريع,,20.4654105,41.0697867,town
+سراة عبيدة,Sarat `Abidah,18.0873982,43.1326414,town
+الحوية,Al Hawiyah,21.4448658,40.5029502,town
+مرات,Marat,25.071667,45.457222,town
+مدينة الملك خالد العسكرية,King Khālid Military City,27.982169,45.5450502,town
+قرية العليا,Qaryah al `Ulya,27.5592149,47.702218,town
+بقيق,Abqaiq,25.935556,49.668333,town
+القصب,Al Qasab,25.2956888,45.5233882,town
+ثول,Thuwal,22.2833454,39.1128145,town
+خيبر,Khaybar,25.7025446,39.2932974,town
+خليص,Khulays,22.1551359,39.3202072,town
+رياض الخبراء,Riyad Al Khabra,26.0547858,43.5580679,town
+ضليع رشيد,Dulay` Rashid,25.5031224,42.8467437,town
+دخنة,Dukhnah,25.3610001,43.6140003,town
+خصيبة,KHUSAIBAH,26.8803911,44.1544356,town
+قبة,Qibah,27.4024971,44.324129,town
+عقلة الصقور,Uglat Asugour,25.828388,42.197907,town
+القوارة,Al Quwarah,26.781858,43.46685,town
+قصيباء,Qusayba',26.887446,43.636258,town
+أملج,Umluj,25.0302778,37.2622321,town
+العوامية,Al `Awwamiyah,26.5883479,49.9840085,town
+فرسان,Farasan,16.702222,42.118333,town
+الذيبية,AL THIYBIA,28.1220478,45.6670708,town
+سيهات,Sayhat,26.475,50.0416329,town
+مدينة الملك عبد الله الاقتصادية,King Abdullah Economic City,22.4025477,39.0807402,town
+المزاحمية,Al Muzahimiyah,24.4727747,46.2705605,town
+مستورة,Masturah,23.115132,38.841644,town
+السليل,As Sulayyil,20.459722,45.574444,town
+ثادق,Thadig,25.281,45.863,town
+العيينة,Al `Uyaynah,24.905278,46.391389,town
+يبرين,Yabrin,23.3014593,48.9717335,town
+صعبر,Saabar,22.4492938,39.1901461,town
+حقل,Haql,29.2864157,34.9469118,town
+الحايط,Al Hayit,25.9859762,40.4719727,town
+السليمي,As Sulaymi,26.2902589,41.359613,town
+الزلفي,Az Zulfi,26.2995806,44.8151967,town
+الشماسية,Ash Shimasiyah,26.318333,44.263056,town
+الفويلق,Al Fuwayliq,26.4437093,43.253492,town
+حرمة,Harmah,25.9246207,45.3318172,town
+شعبة نصاب,,28.8836507,44.7397731,town
+لينة,Linah,28.761111,43.738889,town
+تثليث,Tathlith,19.533333,43.5,town
+الرين,Ar Rayn,23.5406188,45.5108048,town
+الرويضة,Ar Ruwaydah,23.7618986,44.7584819,town
+ضرية,Dariyah,24.7156647,42.9284151,town
+المويه,Al Muwayh,22.4365659,41.761935,town
+ظلم,Zalim,22.7233712,42.1687062,town
+تربة,Turabah,21.2180221,41.6334961,town
+الخرمة,Al Khurmah,21.9080694,42.031793,town
+الشرائع,Ash Sharai,21.4645437,39.9483855,town
+الجعرانة,Al Juranah,21.5603995,39.9565879,town
+الجموم,Al Jumum,21.621168,39.6989787,town
+الشفا,Ash Shafa,21.069444,40.311944,town
+تبالة,Tabalah,20.0135631,42.2164511,town
+المجاردة,Al Majaridah,19.13022,41.9236423,town
+البشائر,Al Bashaer,19.7402585,41.9196752,town
+بلجرشي,Baljurashi,19.859444,41.557222,town
+المخواة,Al Makhwah,19.779444,41.435556,town
+السيل الكبير,As Sayl al Kabir,21.626389,40.415278,town
+عشيرة,Ushayrah,21.758084,40.6509795,town
+الحناكية,Al Hanakiyah,24.879722,40.515278,town
+الشعراء,Ash Shara,24.2753421,44.1865214,town
+البجادية,Albijadiyah,24.2963201,43.741367,town
+عرجاء,Arjaa,24.7225734,44.2909813,town
+ساجر,Sajir,25.180556,44.600278,town
+الجبيلة,Al Jubaylah,24.9138234,46.4448426,town
+رغبة,Raghabah,25.160833,45.796944,town
+سدوس,Sudus,24.991667,46.2075,town
+حوطة سدير,Hawtat Sudayr,25.5976844,45.6179264,town
+حريملاء,Huraymila',25.126667,46.1225,town
+رماح,Rumah,25.569722,47.156667,town
+الدرعية,Ad Dir`iyah,24.7483029,46.5717678,town
+ضرما,Duruma,24.59551,46.133743,town
+الدلم,Ad Dilam,23.996944,47.165,town
+الضبيعة,Ad Dubay`ah,24.098102,47.17225,town
+الهياثم,Al Hayathim,24.16555,47.237637,town
+الحائر,Al Hair,24.402222,46.836667,town
+نعجان,Na`jan,24.077461,47.165904,town
+خريص,Khurays,25.0867945,48.0415825,town
+أشيقر,Ushayqir,25.339137,45.1785527,town
+الحلوة,Al Hulwah,23.4516584,46.8071362,town
+الحريق,Al Hariq,23.633611,46.513889,town
+نمرة,Namerah,19.5814482,41.6654083,town
+صوير,Suwayr,30.117261,40.3888113,town
+الناصفة,An Nasifah,31.078996,37.625122,town
+العيساوية,Al `Isawiyah,30.716111,37.980278,town
+الفياض,Al Fiyad,30.605348,38.099946,town
+الحديثة,Al Hadithah,31.454449,37.158921,town
+العويقيلة,Uwayqilah,30.3632535,42.2382351,town
+الرفيعة,Ar Rafiah,27.011944,47.066667,town
+النعيرية,Nuayriyah,27.4741541,48.4789354,town
+مليجة,Mulayjah,27.272778,48.425,town
+جودة,Judah,25.858333,48.832778,town
+المراح,Al Marah,25.5930579,49.5824801,town
+تربة,Turubah,28.2595753,42.9203796,town
+القاعد,Al Qa`id,27.846003,41.7249917,town
+بقعاء,Baqa,27.9102716,42.3899399,town
+الخطة,Al Khuttah,27.995278,41.732222,town
+روضة هباس,Rawdat Habbas,29.1503987,44.3114119,town
+الأجفر,Al Ajfar,27.4725,42.998889,town
+الشنان,Ash Shinan,27.175,42.443889,town
+المليداء,Al Mulayda,26.318283,43.7807599,town
+البكيرية,Albukayriyah,26.1499429,43.665355,town
+عيون الجواء,Al Jiwa,26.4945913,43.6377184,town
+عين ابن فهيد,Ayn Ibn Fuhayd,26.7737532,44.2126954,town
+الخبراء,Al Khabra,26.0700478,43.6244595,town
+الدليمية,Ad Dilaymiyah,26.028611,43.274167,town
+النبهانية,An Nabhaniyah,25.86088,43.0663784,town
+الحرجة,Harajah,17.9218185,43.367724,town
+الإثنين,al Ithnayn,18.0395887,42.745778,town
+السفانية,As Saffaniyah,27.938744,48.6630306,town
+رأس تنورة,Ra's Tannurah,26.707417,50.067352,town
+أم الساهك,Umm as Sahik,26.6529206,49.914093,town
+التوبي,At Tubi,26.557778,49.991667,town
+الأوجام,Al Awjam,26.562778,49.943889,town
+الجارودية,Jarudiyah,26.541389,49.984722,town
+القديح,Al Qudayh,26.568486,49.989134,town
+تاروت,Tarout,26.5764104,50.055532,town
+الجش,Al Jish,26.504954,49.999303,town
+عنك,`Inak,26.51959,50.02715,town
+القطيف,Qatif,26.5586004,50.0087399,town
+تمير,Tumayr,25.7044346,45.8677264,town
+الأرطاوية,Al Artawiyah,26.5063287,45.353878,town
+الغاط,Al Ghat,26.028611,44.950833,town
+جبة,Jubbah,28.0168538,40.9529882,town
+موقق,Mawqaq,27.385833,41.175556,town
+تيماء,Tayma',27.6225952,38.539257,town
+البدع,Al-Bad',28.4841608,35.0141103,town
+بئر ابن هرماس,Bi'r Ibn Hirmas,28.8699954,36.2577406,town
+حالة عمار,Halat `Ammar,29.161944,36.075833,town
+الدرب,Ad Darb,17.7334328,42.2500809,town
+المضايا,Al Madayah,16.7700821,42.7310559,town
+المطعن,ALMata'an,17.4275188,42.5472534,town
+مسلية,Misliyah,17.459875,42.557204,town
+بحر أبوسكينة,Bahr Abu Sakynah,18.3372839,41.9118076,town
+البديع,Al Badi,16.992779,42.7746761,town
+الريان,Al Rayyan,16.9761297,42.6927044,town
+الريث,Ar Rayth,17.603945,42.8566753,town
+حاكمة ابوعريش,Hakimah,17.009972,42.834281,town
+البرك,Al Birk,18.217222,41.536389,town
+الظبية,Al Zabyah,17.1174765,42.6672841,town
+ضمد,Damad,17.1051176,42.7795037,town
+صبيا,Sabya,17.1502255,42.621495,town
+العارضة,Al `Aridah,17.0395187,43.0837091,town
+العيدابي,Al `Aydabi,17.2352185,42.9404299,town
+الخوبة,Al Khawbah,16.7819669,43.2177921,town
+فيفا,Faifa,17.2632874,43.1066979,town
+صامطة,Samitah,16.597222,42.943889,town
+الجرادية,Al Jaradiyah,16.5802082,42.911944,town
+الطوال,Al Tuwal,16.5308201,42.9690073,town
+ظهران الجنوب,Dhahran Al Janub,17.6617883,43.5194305,town
+هروب,Harub,17.4398271,42.8927267,town
+القوز,Al Quoz,18.9725,41.311667,town
+الهدا,Al Hada,21.368611,40.284722,town
+بحرة,Bahrah,21.4012724,39.4500096,town
+المندق,Al Mindak,20.1105064,41.2828451,town
+الكامل,Al Kamil,22.2640213,39.7982315,town
+مهد الذهب,Mahd adh Dhahab,23.4995868,40.8791554,town
+الرايس,Ar Rayyis,23.5750573,38.6033637,town
+بدر,Badr Hunayn,23.78,38.7907409,town
+الخرخير,Al Kharkhir,18.8536268,51.1217354,town
+البديع الشمالي,Al Badi`,22.0232932,46.5620911,town
+بني حسن,,20.053499,41.373665,town
+الدائر,Alddayer,17.3384764,43.1328881,town
+الفوارة,Al Fawwarah,26.0598216,42.6601484,town
+أم الدوم,Umm al Dawm,22.6277098,41.3537857,town
+الشملي,,26.8629218,40.3239047,town
+العيص,al `Aiss,25.0635722,38.1085415,town
+حرض,Haradh,24.1418987,49.0529843,town
+تنومة,Tanumah,18.953526,42.17026,town
+سعد,Saad,25.1006266,47.5694127,town
+رنية,Ranyah,21.2571996,42.8501935,town
+غران,Ghran,21.9679453,39.3674903,town
+بارق,Bariq,18.9380322,41.9464041,town
+العقيق,Al `Aqiq,20.2836432,41.6560108,town
+أضم,Adham,20.4496878,40.8791135,town
+الأمواه,Al Amoah,18.7139512,43.6609544,town
+وادي ابن هشبل,,18.5876191,42.6924112,town
+البدائع,Al Bada'i`,25.9877958,43.7334802,town
+غامد الزناد,Ghamid Az Zinad,19.594439,41.5201123,town
+حداد بني مالك,,20.5973903,41.0500591,town
+ثار,Thar,17.974877,44.110816,town
+الجله,Al Jilh,24.3383216,45.8056297,town
+أبو معن,Bani M`en,26.6601715,49.8070335,town
+بللحمر,Billahmar,18.6337564,42.3240657,town
+بللسمر,Billasmar,18.7784872,42.2494287,town
+الذيبية,Adh Dhibiyah,26.0301804,43.1575814,town
+الثمد,Ath Thamad,25.5279589,39.3394661,town
+سميراء,Simira',26.494182,42.124944,town
+النابية,An Nabiyah,26.4759512,50.0066756,town
+أبوالسداد,Abu Alsadad,17.7252243,42.2287845,town
+أحد المسارحة,Ahad al Musarihah,16.7106851,42.9531097,town
+المظيلف,Al Mozailef,19.537426,41.0505008,town
+فرعة طريب,Far`at Tarib,18.5649816,43.2038211,town
+أحد رفيدة,Ahad Rufaidah,18.1814093,42.8413581,town
+المحفر,Al Mohaffar,24.9129842,40.5134582,town
+العلا,Al-Ula,26.5588965,37.9596519,town
+العضيلية,Udhailiyah,25.140477,49.2999029,town
+روضة سدير,,25.6174513,45.565428,town
+الغزالة,Al Ghazalah,26.7874812,41.315707,town
+قلوه,Qilwah,19.9401107,41.251301,town
+العرين,Al`Arin,18.5634864,43.3891593,town
+بدر الجنوب,Badr al Janub,17.8813714,43.7163591,town
+الأطاولة,Al Tawilah,20.2475218,41.3607144,town
+عين اللَّوي,,18.0479342,43.0182989,town
+ملهم,mulham,25.1700674,46.3344955,town
+الحريضة,Al Haridah,17.7904063,41.9390129,town
+الكدرة,Al Kadarah,17.7791296,42.3341395,town
+العالية,Alaliya,17.2688761,42.5389066,town
+الأسياح,Al Asyah,26.7958412,44.2036285,town
+أم الحمام,Umm Al Hamam,26.5222697,49.9996375,town
+الفطيحة,Al Fatiha,17.5774711,42.6333475,town
+صفوى,Safwa,26.6484641,49.9466586,town
+ثريبان,Thurayban,19.4451525,41.833535,town
+حبونا,Habuna,17.8518464,44.023155,town
+عفراء,,19.6941742,42.0238787,town
+رجال ألمع,Rijal Almaa,18.2124897,42.2733367,town
+مجتمع نيوم 1,NEOM Community 1,28.1093889,35.1159342,town
+الفرشة,Al Farshah,17.7509943,43.1557165,town
+النقيرة,,27.8662178,48.2638983,town
+النقيرة,,27.8663714,48.2639859,town
+المهدم,,20.9527385,40.7139326,village
+الحلصه,,20.7819359,40.786996,village
+وادي الصدر,,20.1296346,41.3467778,village
+الصغرة,,20.0528047,41.3664551,village
+سدوان,,18.874083,42.227986,village
+مدينة الملك فيصل العسكرية,,18.2001183,42.8064848,village
+لبخة,Labkhah,24.5121227,45.3839074,village
+القرنة,,24.6839986,44.9584919,village
+جفن,Jifin,25.2855533,44.5699149,village
+السحيمي,As Suhaymi,26.6540799,45.2902448,village
+عسفان,`Usfan,21.9224487,39.3535665,village
+العقير,Al `Uqayr,25.6438,50.2149,village
+ضبية,Dabyah,22.4302571,39.427956,village
+الخمرة,Al Khamrah,22.4329526,39.4880381,village
+العبدلية,Al `Abdaliyah,25.910565,43.667518,village
+أبا الحياص,,25.5243265,42.8321256,village
+العاقر,Al `Aqir,25.1055434,42.6452186,village
+ابو حمادة,,25.941555,42.0178232,village
+ابوعردا,,25.9525023,42.9586669,village
+ابوقليبات,,25.5246338,42.6735663,village
+ابو مروة,,25.7916664,43.4216644,village
+عماير عقاب,,26.057771,42.1173978,village
+عماير سعيدة,,25.7690016,41.9419971,village
+الابرق,,25.8666779,43.8140878,village
+العرداء,,25.7338326,43.3020004,village
+بدرة,Badrah,25.1299363,42.5545278,village
+البربك,,25.9801022,44.0347638,village
+البطاح,,25.6451695,43.3966662,village
+البطين,Al Butayn,26.811172,43.872709,village
+الداث,Ad Dath,25.579821,43.15944,village
+الدغمانية,,26.8510705,43.7886311,village
+ضراس,Diras,26.3188553,43.8837828,village
+ديم,,25.7060019,41.8093351,village
+ذوقان الركايا,,25.7840167,42.0369688,village
+دوبح,Dawbah,25.6326741,42.2759777,village
+ضمينة,Dhminah,25.3095292,42.726055,village
+الظاهرية,,24.9278904,42.4151012,village
+الظاهرية الشمالية,,25.4569509,42.903963,village
+الظاهرية الجنوبية,,25.4349875,42.8981724,village
+الدرعية,Ad Dir`iyah,26.1938383,42.5199487,village
+ضيدة,Didah,27.1676126,43.9964498,village
+المرموثة,Almarmoothah,25.5502929,42.8324329,village
+الرفيعة,,26.7625508,44.4738307,village
+الغبية,,26.6296031,43.5242135,village
+الغبية,,25.1923321,42.6925005,village
+الحميمة,,25.6538308,41.6488789,village
+ثادج,Thadij,25.8584157,42.8016606,village
+الجفن,,25.6401645,41.6180024,village
+الحنينية,Al Hunayniyah,25.5143684,42.9634261,village
+الجرير الشمالي,Al jurayeyer Al Shemali,26.3001648,42.4341663,village
+فيضة دخنة,,25.3979986,43.6378344,village
+الجعلة,Al Ja`lah,26.695213,44.236384,village
+الجرذاوية,Al Jardhawiyah,25.3825007,42.7236678,village
+الجرارية الشمالية,Al Jararia,25.5359338,42.8942996,village
+المحوى,Almhawa,25.7459934,41.9253331,village
+الجندية,,26.7911646,44.5358326,village
+الجديدات,,26.2151158,43.7940145,village
+الخناصة,Al Khinnasah,26.838748,43.587168,village
+خضراء,Khadra',25.493199,42.996753,village
+الخبيرا,,26.2192739,42.2107816,village
+الزهيرية,Az Zuhayriyah,25.632104,43.016701,village
+الخطيم,Al Khutaym,25.617067,42.542727,village
+القاعية,Al Qa`iyah,26.427621,45.580715,village
+امباري,,26.0557077,42.2418455,village
+عطي,`Utayy,25.755125,42.769582,village
+خشيبي الحضر,Khushaybi al Hadar,25.762119,43.283533,village
+الرفايع,,26.229422,43.0825312,village
+قراضية,,25.4217663,42.7829661,village
+رشيدة,Rshedah,25.0280483,42.53226,village
+الروضتين,,25.3037463,43.4046865,village
+الوسق,Alwasg,25.4683545,42.8567644,village
+الحيسونية,,25.6680005,41.7238331,village
+صلاصل,Salasil,26.074167,49.448889,village
+الروضات,,25.7919989,43.3438321,village
+شري,Shari,27.256485,43.4009792,village
+الهمجة,Al Hamjah,25.495894,43.068831,village
+شقران الحاجر,,25.9509214,41.9534287,village
+الحمادة,Al Hamadah,25.6008549,43.3397755,village
+السويحية,,25.7669372,43.1353173,village
+البسيتين,As Sulubiyah,26.8416652,43.0029984,village
+صبيح,,26.0151671,43.0275514,village
+صعينين,Su`aynin,25.182836,42.5452298,village
+الطرفاوي,At Tarfawi,25.95413,42.128038,village
+الطراق,At Tiraq,26.677707,43.307631,village
+الطويلة,At Tawilah,24.67092,45.208724,village
+طريف,,26.8253466,44.1798677,village
+الطراق,At Tiraq,27.3177735,44.5427264,village
+ام برقه,,25.3456687,42.7688309,village
+أم سنون,,25.322545,43.3928092,village
+الركيبينة,,26.0910007,44.4000002,village
+الوسيطاء,Alwusayta',26.0313167,42.2094991,village
+ام خطوط,,26.6589308,43.5607079,village
+القيصومة,Al Qaysumah,25.7415711,43.1775377,village
+ثويدج,,25.8030013,42.7940007,village
+عشيرة,`Ushayrah,25.599485,45.796874,village
+الدحلة,Ad Dihlah,25.4120617,43.3822285,village
+قليب الترمس,,26.9976253,43.2884163,village
+القليب,Al Qulayyib,26.763441,48.280886,village
+اللغفية,Al Lughfiyah,25.522882,42.558467,village
+السعيرة,As Si`ayyirah,27.1130029,43.9642717,village
+محرقاء,Mharega,25.580565,42.8040794,village
+المربع,Al Murabba`,25.71656,44.2920676,village
+المدرج,Mudarraj,27.2173337,43.718333,village
+مريحة,,26.7455281,43.2537718,village
+اعيوجات,,26.8846271,43.2331967,village
+المطية,,25.7833337,43.4499996,village
+المصك,,26.134667,43.2033329,village
+مشرفة,Mushrifah,25.15632,44.637075,village
+منيفة الخفيات,,27.2035003,43.5214996,village
+المعلق,,25.2883337,43.6783329,village
+النغبقة,,26.7998336,43.7678329,village
+النبقية,An Nubqiyah,26.4991017,44.3094578,village
+الناعمة,An Na`imah,25.4514889,42.8582584,village
+المهاش,,25.7441671,43.2421663,village
+النقرة,,25.5737855,41.429282,village
+الوسيطة,,25.2378338,43.4059997,village
+الهبيرية,,27.4555003,43.5554996,village
+أم ساروت,Om Saroot,27.4551109,43.4302473,village
+عدامة كحلة,,25.522317,42.6994662,village
+الفجور,,26.8687027,43.5718846,village
+الرويضات,Ar Rwedhat,26.1070003,42.8246663,village
+حمادة الترمس,,26.9491502,43.1545329,village
+الديرية,,25.7479671,43.2306496,village
+رفايع النجج,rvaia alngige,24.9075004,42.4018329,village
+رفايع دخنة,,25.32742,43.6198329,village
+طلحة,Talhah,27.2084481,43.8337523,village
+القليته,,26.6760837,43.5295996,village
+ثرمداء,Tharmada',25.1183534,45.4908974,village
+القضيمه,Qhadimah,22.35074,39.15478,village
+سامودة,Samudah,27.8609869,44.8987228,village
+مقنا,Makna,28.4024205,34.7447455,village
+الحليفة السفلى,Al Hulayfah Assofla,25.9947541,40.8166353,village
+أبرق الكبريت,Al Kabrit,28.1087131,47.8771579,village
+الرقعي,Ar Ruqi,29.078333,46.6375,village
+مليح,Mulayh,26.143333,44.914444,village
+مشاش عوض,Al Mishash,26.4185398,45.1684566,village
+الغماس,Al Ghammas,26.2325511,43.889494,village
+وادي أبو علي,Wadi Abu `Ali,26.182727,43.981754,village
+الربيعية,Ar Rubay'iyah,26.3755475,44.2361044,village
+البصر,Al Bosor,26.2833218,43.8678791,village
+غويمض,Ghuwaymid,26.150278,44.189167,village
+الطعمية,At Tu`miyah,26.260667,44.094756,village
+الثامرية,Ath Thamiriyah,25.9545671,44.2652443,village
+البدائع العليا,Al Badai al Ulya,25.9632773,43.6981905,village
+القرعاء,Al Qara,26.4066297,43.7581846,village
+جردة البريكة,Jaradat al Buraykah,25.986126,43.807986,village
+أم طليحة,Umm Tulayhah,25.933524,44.447064,village
+روضة اللواف,Rawdat al Lawwaf,25.946664,44.2654,village
+مشرف,Mushrif,25.997568,44.265347,village
+الطلعه,Al Talaah,25.8683196,44.0914673,village
+مزارع أم سديرة,Mazari` Umm Sudayrah,26.135646,44.406404,village
+الرويضة,Ar Ruwaydah,26.4148507,44.2225589,village
+الضلعة,Ad Dal`ah,25.978727,43.965196,village
+كحلة,Kihlah,26.609811,42.644122,village
+بدائع المكحول,Bada'i` al Makhul,26.587999,42.561535,village
+دريميحة,Diraymihah,26.188597,43.123971,village
+المطيوي الشمالي,Al Mutaywi ash Shamali,26.515556,42.589722,village
+المكحول,Al Makhul,26.624449,42.607135,village
+الارطاوي الشمالي,Al Artawi ash Shamali,26.631649,42.69181,village
+الحملية,Al Himliyah,26.192222,42.917778,village
+الفيضة,Al Faydah,26.6369927,42.67878,village
+مشاش جرود,Mishash Jurud,26.55859,42.78188,village
+العظيم,Al `Uzaym,26.59045,42.470893,village
+بدائع الصغوى,Bada'i` as Sighawa,26.730402,42.725933,village
+الصلبية القديمة,As Sulubiyah,26.752099,42.795943,village
+الفرعة,Al Far`ah,26.757262,42.758977,village
+كبد,Kabd,26.905848,43.359909,village
+العقلة,Al `Uqlah,26.801098,43.49165,village
+فيضة يكلب,Faydat Yaklib,26.886195,43.143824,village
+البعائث,Al Baaith,26.0219376,41.8031543,village
+قصير ابن متروك,Qusayr Ibn Matruk,26.6734715,41.9991208,village
+المطرفية,Al Mutarrifiyah,26.901249,42.021088,village
+المهاش,Al Mahash,26.8444671,41.3547421,village
+الروضة,Al Ruwda,26.798473,41.6726256,village
+عقلة ابن داني,Uqlat Ibn Dani,26.789722,42.06,village
+بيضاء نثيل,Bayda' Nathil,27.0469046,40.4259613,village
+الفرحانية,Al Farhaniyah,27.311373,40.938756,village
+فيضة إبن سويلم,Faydat Ibn Suwaylim,27.15758,40.628686,village
+الخبة,Al Khabbah,27.435848,40.903595,village
+الشقيق,Ash Shuqayq,27.161667,40.904444,village
+سعيدان,Su`aydan,27.4851849,40.9037475,village
+الغمياء,Al Ghamya',27.3316294,40.8162456,village
+طوية,Tuwayyah,27.66552,40.965714,village
+البدع,Al Bid`,27.543265,40.616364,village
+دليهان,Dulayhan,27.287548,40.967607,village
+جرمة,Jurumah,27.053318,40.913021,village
+حفيرة الشقيق,Hafirat ash Shuqayq,27.188729,40.829834,village
+المليح,Al Mulayh,27.19275,40.885727,village
+روضة الحسو,Rawdat al Hisu,25.809383,44.316677,village
+أم حزم,Umm Hazm,25.8336749,44.5907395,village
+الفروثي,Al Furuthi,25.776046,45.16101,village
+العمار,Al `Amar,25.837362,45.127793,village
+جلاجل,Jalajil,25.679849,45.4515397,village
+جوي,Juwayy,25.8161221,45.4047659,village
+قري التويم,Qiri at Tuwaym,25.6909912,45.5087173,village
+الحائر,Al Ha'ir,25.7920544,45.3797259,village
+الرويضة,Ar Ruwaydah,25.874565,45.141745,village
+الفيصلية,Al Faysaliyah,25.649167,45.555,village
+وشي,Wushayy,25.801477,45.265163,village
+الخيس,Al Khis,25.873109,45.107546,village
+أم عشر,Umm Ishar,27.725,45.062222,village
+أم رضمة,Umm Radamah,28.68,44.693056,village
+تمرة,Tamrah,20.3986089,45.4149732,village
+الزويراء,,20.466667,44.833333,village
+الخماسين,Al Khamasin,20.482531,44.7672925,village
+ابن شعيفان,Bin Shefefani,23.5764353,45.4372482,village
+الروغ,Ar Rawgh,24.062611,45.05199,village
+القلتة,Al Qaltah,24.06394,45.028231,village
+ابو رجوم,Abu Rijum,24.057316,45.036145,village
+القدراوية,Al Qidrawiyah,24.175624,45.14513,village
+خريصة,Khuraysah,23.587222,44.707778,village
+الروضة,Ar Radah,23.747778,44.794167,village
+الدحوة,Ad Dihwah,24.181323,45.886207,village
+مطيعة,Muti`ah,24.204429,45.060772,village
+لعلع,Li`li`,24.075238,45.003712,village
+الغريري,Al Ghurayri,24.075191,45.014322,village
+المدارة,Al Madarah,24.198539,45.037038,village
+الاخضر,Al Akhdar,24.204915,45.103151,village
+العوشزية,Al `Awshaziyah,24.004817,45.019001,village
+الجفارة,Al Jifarah,23.9862345,45.1847814,village
+البعيثية,Al Bu`aythiyah,24.117226,45.089539,village
+لجعة,Bir Lijah,23.6801971,44.887982,village
+نخيلان,Nukhaylan,23.9948439,44.9476659,village
+محيرقة,Muhayriqah,23.9796795,45.0688571,village
+القوسة,Al Qawsah,24.024167,45.052778,village
+الشتلانية,Ash Shatlaniyah,24.123729,45.103234,village
+الوسيطاء,Al Wusayta',24.124014,45.133639,village
+مزعل,Miz`il,24.009322,45.196702,village
+سنام,Sanam,23.6530737,44.7476532,village
+العمار,Al Amar,25.5698514,44.3139266,village
+صعيبه,Saaibi,25.466667,44.4,village
+عين الصوينع,Ayn as Suwayni,25.4511426,44.4262269,village
+مشرف,Mushrif,25.410359,44.465091,village
+عين القنور,`Ayn al Qannur,25.403603,44.495233,village
+الشُّرَيمِيَّة,ash Shuraymiyah,25.4896624,44.4680318,village
+الأرطاوي,Al Artawi,25.378218,44.495612,village
+الدمثي,Ad Damthi,25.383027,44.461907,village
+الفيضة,Al Faydah,25.334836,44.464848,village
+السكران,As Sakran,25.2705458,44.5772611,village
+الحدري,Hadri,25.483333,44.416667,village
+دهيماء,Duhayma',25.52837,43.836981,village
+خريمان الشغار,Khurayman ash Shaghghar,25.448889,44.155749,village
+الأثلة,Al Athlah,25.295918,43.885346,village
+أم طليحة,Umm Tulayhah,25.387448,43.917727,village
+الخالدية,Al Khalidiyah,25.389487,44.149552,village
+علباء,Alba,25.4947704,43.8490259,village
+الديرية,Ad Diriyah,25.213016,44.220632,village
+السنارية,As Sinnariyah,25.278525,44.152306,village
+خريمان,Khurayman,25.533314,44.144425,village
+أوضاخ,Udakh,25.246111,43.92,village
+الشبيكية,Ash Shubaykiyah,25.254557,43.285466,village
+أبو ركب,Abu Rukab,25.1071505,43.4691233,village
+أبو جلال,Abu Jilal,25.143952,43.482521,village
+ابو نخلة,Abu Nakhlah,25.1946683,43.4220374,village
+عريفجان,`Urayfijan,25.173039,43.47684,village
+مديسيس,Mudaysis,25.235699,43.431502,village
+الخشيبي,Al Khushaybi,25.563611,43.352778,village
+بقيعاء الجنوبية,Buqay`a' al Janubiyah,25.047501,43.000147,village
+الصليبي,As Sulaybi,25.62603,43.043726,village
+رفائع اللهيب,Rufa'i` al Luhayb,25.20715,42.820202,village
+أبو طلح,Abu Talh,25.4347364,42.8417272,village
+بيضاء نثيل,Bayda' Nathil,25.208649,42.888146,village
+مظيفير,Muzayfir,25.380619,43.002583,village
+الوطاة,Al Wutah,25.529555,42.574457,village
+مهيضة,Mihayyidah,25.4114224,42.8077785,village
+البصيري,Al Basiri,25.1961319,42.3040469,village
+فيضة ساحوق,Faydat Sahoog,25.3490266,42.1080042,village
+البديعة,Al Bidayyi`ah,25.4092106,42.0882442,village
+مسكة,Miskah,24.8168423,42.9218102,village
+الفيضة,Al Faydah,25.039466,42.382595,village
+مشاش ركيان,Mishash Rukayyan,25.354176,42.581765,village
+عريفجان ساحوق,`Urayfijan Sahuq,25.359461,42.029155,village
+الركنة,Ar Ruknah,25.2951488,42.5750324,village
+الصمعورية,As Samuriyah,24.8377924,42.8612382,village
+أبو جصيصة,Abu Jusaysah,25.521774,42.671132,village
+مطربة,Mutribah,25.487603,42.308501,village
+حمادة نجخ الشمالي,Hamadt Najikh ash Shamali,25.014146,42.673341,village
+دغيبجة,Dughaybjah,22.5897728,41.3590836,village
+الصلحانية,Al Sulhaniyah,22.876389,40.486111,village
+القصر,Al Qasr,22.4982415,40.4379763,village
+الحفاير,Al Hafayir,22.31,40.601944,village
+المربع,Al Murabba`,25.729116,44.302134,village
+رضوان,Radwan,22.089167,41.272222,village
+النوارية,Al Nawariyah,21.5581096,39.7672119,village
+دف زيني,Daff Zayni,21.55895,39.68245,village
+الروضة,Ar Rawdah,21.569787,39.910949,village
+حداء,Hadda,21.4515562,39.557255,village
+أم الراكة,Umm ar Rakah,21.162331,40.029463,village
+المقرح,Al Maqrah,21.2593611,39.9389418,village
+الوهط,Al Waht,21.19151,40.35057,village
+السيل الصغير,As Sayl as Saghir,21.506389,40.482222,village
+المشايخ,Al Mashayikh,21.3530569,40.3267276,village
+سديرة,As Sudayrah,21.361924,40.8493254,village
+الدار البيضاء,Ad Dar al Bayda',21.3622096,40.333873,village
+الجفر,jufer,21.4854705,40.7376554,village
+قيا,Qiya,21.071111,41.006944,village
+الرشدان,Dayf Allah Rashdan,21.2704068,40.551427,village
+الثمالة السفلى,Ath Thumalah as Sufla,21.143889,40.519167,village
+غرابة,Ghurabah,21.151344,40.588478,village
+شقصان,Shaqsan,21.126111,40.840833,village
+بقران,Baqran,21.116667,40.65,village
+الفوقاء,Al Foqa,19.8423505,41.8543559,village
+الغِرسه,Al Juraysah,19.8002826,41.8871954,village
+الوديعة,Al Wadi`ah,17.0575094,47.0881462,village
+العثيثي,Uthaithi,21.2834339,42.8998425,village
+الأملح,Al Amlah,21.1978313,42.7366519,village
+الظرم,Sawla,21.2,42.783333,village
+العطف,Atf,20.144484,42.6329561,village
+الرقيطا,Ruqayqah,20.15,42.666667,village
+الديلمي,Daylami,20.1355241,42.6375684,village
+الحريرة,Huraira,20.100262,42.6405857,village
+المريبعة,,18.947222,41.906944,village
+المنيظر,Munaydhir,18.9470442,41.9159673,village
+سوق الربوع,Suq ar Rab,18.9285048,41.911946,village
+بني رزق النبيعة,Bani Rizq Al`Nabiah,19.3943482,41.8046156,village
+يانف,Yanif,19.3162413,42.0834996,village
+الكديس,Al Kadis,19.3255379,41.8266132,village
+خشرم,Kashram,19.2255568,42.0656399,village
+آل نشوان,Al Nashwan,19.2857816,42.0713919,village
+لحبي,Lahbey,19.2,42.083333,village
+آل زيدان,ALziydan,19.1956837,42.0975109,village
+صدريد,Sadaraid,19.166667,42.116667,village
+آل زينب,AlZainab,19.133333,42.15,village
+العريش,Al Arish,18.664808,42.069191,village
+الظهارة,Ad Dhahara,19.079048,42.139514,village
+غدنة,Ghadna,19.471667,41.809444,village
+الغوانمة,Kidwat al Ghawanimah,18.7678898,41.4102687,village
+الحرجة,Al Harajah,19.5756589,41.9845401,village
+المبنى,Al Mabna,19.6059917,41.6944503,village
+عجبه,Ajibah,19.6864646,41.9294436,village
+الربيان,Ar Rubian,20.0677074,41.4307191,village
+الفارسية,Al Farsah,20.0942647,41.4097252,village
+المصاقير,Musaghir,20.0798518,41.411943,village
+الجلحية,Jilhayah,19.85,41.566667,village
+القرن,Al Qarn,20.1015271,41.4328548,village
+رهوة البر,Rahwat al Barr,20.058619,41.4506989,village
+العامرة,Al Amirah,20.0979889,41.4335225,village
+بلعلاء,Bal al'aa,20.0499083,41.449978,village
+الجادية,Al Jadyah,20.0483849,41.4446618,village
+سبيحة,Sabihah,20.3476428,41.3084031,village
+القسمة,Al Qisamah,20.3076003,41.3320278,village
+المحوية,Al Mahawiyah,20.3246453,41.3271915,village
+الدعبة,Aduabah,20.25,41.3,village
+النعمه,An Naamah,20.1938929,41.2514544,village
+الحجرة,,20.1997012,41.0720687,village
+بدائع الحفر,Bedaiye Alhafr,22.831667,41.118889,village
+ريع العوالي,Rie Alawali,22.8151298,41.1319007,village
+الودية,Al Wudiyah,22.497222,40.389167,village
+القرشيات,Qurayshiyah,21.6139593,40.7125954,village
+الفيصلية,Al Faysaliyah,21.8127479,40.6813141,village
+العاقول,Al `Uqul,24.5322079,39.7779238,village
+العيون,Al `Uyun,24.550019,39.579734,village
+سيدي حمزة,Sidi Hamzah,24.5,39.616667,village
+الحفر,Al Hafr,24.395833,39.154444,village
+عشيرة,Ushayrah,24.0154946,39.666726,village
+المندسة,Al Mundassah,24.6374146,39.3078502,village
+الصويدرة,Suwaydarah,24.726944,40.151389,village
+المليليح,Al Mulaylih,24.829722,39.159722,village
+الفريش,Al Furaysh,24.22,39.281389,village
+المسيجيد,Al Musayjid,24.0855414,39.0952385,village
+دثير,Dathir,24.899722,40.104167,village
+الضميرية,Ad Dumayriyah,23.981667,40.368056,village
+النخيل,,25.0657743,40.4417173,village
+الحسينية,Husayniyah,23.861111,38.901111,village
+شجوى,Shajwa,25.0568632,38.9775442,village
+الواسطة,Wasitah,23.885,38.9025,village
+أم سريحة,Umm Sarahah,23.711599,44.592442,village
+شبيرمة,Shubayrimah,24.6714661,43.5382133,village
+العازمية,Al Azamiyah,24.511573,43.586854,village
+منيفة جلوى,Munifat Jalwah,24.579167,43.551111,village
+افقرا,Aftara,24.568056,44.0529194,village
+الملينية,Al Mulayniyah,24.4880545,44.1185137,village
+الحازمية,Hazmiyah,24.636944,43.511667,village
+القرين,Al Qurayn,24.735429,43.7880755,village
+الرفاع,Rifa,24.5434058,43.952574,village
+عريدة,Uraydah,24.3563912,44.5018402,village
+عين البراحة,Ain Al Baraha,24.7569526,43.7798686,village
+مصدة,Musiddah,26.64178,45.244829,village
+أم طليحة,Umm Tulayhah,24.7668711,43.7207122,village
+كبشان,Kabshan,24.5347944,43.3033275,village
+الصقرة,As Saqrah,24.3104548,43.7287622,village
+أم زموع,Umm Zumu,24.7724069,43.7688528,village
+القاعية,Al Qaiyah,24.3047685,43.5206129,village
+الرفيعة,Ar Rafiah,24.5221523,43.8987968,village
+المصلوم,,23.950539,43.7200617,village
+النبوان,Nabwan,24.5221217,43.9513356,village
+عصماء,Isam,24.7734215,43.6934872,village
+مغيب,Maghib,24.8978984,44.5481047,village
+أم سليم,Umm Sulaym,25.1674163,44.5759409,village
+أرطاوي الرقاص,Artawi ar Raqqas,25.066389,44.702222,village
+خف,Khuff,24.9263389,44.7078577,village
+التسرير,At Tasrir,25.0816584,44.2845651,village
+البرود,Al Burud,25.081293,44.614681,village
+عشيرة المخامر,`Ishayrat al Makhamir,25.114382,43.5947,village
+عسيلة,`Usaylah,25.106143,44.681094,village
+النعايم,An Na`ayim,25.605262,43.942142,village
+الخرماء الشمالية,Al Kharma ash Shamaliyah,25.6048881,44.0610173,village
+العجابات,Al `Ajjabat,25.251038,44.466639,village
+رغلة,Righlah,25.137261,44.596352,village
+نفي,Nifi,25.0197946,43.8194952,village
+الخرماء الجنوبية,Al Kharma' al Janubiyah,25.572961,44.096238,village
+ضبة,Dabbah,25.127457,43.649889,village
+الضبيات الشماليات,Ad Dabbiyat ash Shamaliyat,25.402421,45.326592,village
+البرة,Al Barrah,24.9198811,45.8597688,village
+ملهم,Malham,25.142222,46.264167,village
+أثيثية,Uthaythiyah,25.1672457,45.3958526,village
+ام سليم,Umm Sulaym,24.944382,45.71321,village
+الضبيات الجنوبيات,Ad Dabbiyat al Janubiyat,25.375525,45.358853,village
+الخاتلة,Al Khatilah,25.491467,46.1887,village
+القرائن,Al Qara'in,25.2207786,45.2804579,village
+روضة دعيج,Rawdat Du`ayj,25.240959,45.372314,village
+حليفة,Hulayfah,25.245557,46.208994,village
+رويضة السهول,Ruwaydat as Suhul,25.199919,45.857203,village
+حزوى,Hizwa,24.9916054,46.2320753,village
+الحريق,Al Hurayyiq,25.447021,45.401051,village
+غسلة,Ghuslah,25.2228641,45.2917628,village
+المعشبة,Al Ma`ashbah,25.559549,45.381907,village
+مشاش السهول,Mishash as Suhul,25.291308,45.785568,village
+البير,Al Bir,25.286111,45.954167,village
+العليا,Al `Ulya,25.285181,46.023625,village
+حاجر الشيح,Hajir ash Shih,25.303376,45.278772,village
+البلاد الوسطى,Al Bilad al Wusta,25.307178,46.030604,village
+عودة سدير,`Awdat Sudayr,25.5540058,45.6881486,village
+الجريفة,Al Jurayfah,25.529318,45.256441,village
+ثادق القديمة,Old Thadiq,25.2962532,45.8692233,village
+المشاش,Al Mishash,25.2718454,45.4408712,village
+صلبوخ,Sulbukh,25.078834,46.345318,village
+الصوح,As Suh,25.499553,45.338831,village
+الخطامة,Al Khutamah,25.618229,45.692992,village
+الحصون,Al Husun,25.597142,45.606196,village
+الشكيرة,Ash Shukayyirah,25.341165,45.263283,village
+الجو,Al Jaww,25.324556,46.025989,village
+العويند,Al `Uwaynid,24.883871,45.890163,village
+الودي,Al Wudayy,25.592456,45.772676,village
+مقبلة,Muqbilah,25.585198,45.625645,village
+الحني,Al Hani,24.877213,46.456032,village
+الحسيان,Al Hisyan,25.333576,46.023376,village
+الجنيفي,Al Junayfi,25.57537,45.641362,village
+الداهنة,Ad Dahinah,25.5740301,45.280556,village
+بوضة,Bawdah,24.8986539,46.2992557,village
+العطار,Al `Attar,25.567885,45.639061,village
+العمارية,Al `Ammariyah,24.794167,46.423333,village
+ابا الكباش,Aba al Kibash,24.794224,46.428825,village
+المزيرع,Al Muzayri`,25.5843452,47.2532651,village
+خيالة ابو سويتيف,Khayalat Abu Suwaytif,24.841516,46.475526,village
+النعيمة,An Na`imah,24.597895,46.202288,village
+معانيق,Ma`aniq,24.486835,46.098549,village
+قصور آل مقبل,Qusur al Muqbil,24.5091777,46.3705992,village
+هذلولة,Hadhlulah,24.498925,46.309253,village
+الحوطة,Al Hawtah,24.593704,46.15552,village
+النقعية,Al Nuqah,24.5506441,46.157805,village
+الرفيعة,Ar Rafi`ah,24.488772,46.31971,village
+الذيبية,Adh Dhibiyah,24.503478,45.975068,village
+العلاوة,Al `Alawah,24.68393,46.02006,village
+مشرفة,Mishrifah,24.659177,46.011287,village
+المغرفية,Al Maghrafiyah,24.440845,46.444169,village
+المليحية,Al Mulayhiyah,24.5094838,46.3533422,village
+أبرقية,Abraqiyah,24.5073443,46.0238069,village
+الوسطى,Al Wusta,24.588242,46.207986,village
+العلياء,Al `Ulayya',24.397684,45.811032,village
+البديعة,Al Badi`ah,24.4664996,46.4126984,village
+الأوسط,Al Awsat,24.3722815,46.4379621,village
+القرينة,Al Quraynah,24.467999,46.420047,village
+جو,Jaww,24.493111,46.161625,village
+المشاعلة,al Mashailah,24.480493,46.0566877,village
+الغطغط,Al Ghutghut,24.480496,46.227831,village
+سمحان,Samhan,24.67878,46.001811,village
+أوبير,Ubayr,24.622542,46.462877,village
+قصر فيهق,Qasr Fayhaq,24.4797402,46.3865702,village
+ميضة,Maydah,24.568233,46.210698,village
+الروضة,Ar Rawdah,24.556679,46.232147,village
+الوسطى,Al Wusta,24.502935,46.367694,village
+حجرفة,Hajrufah,24.5107409,46.0620975,village
+صور بن مزبل,Sur Bin Mizbil,24.470651,46.429177,village
+الفيصلية,Al Faysaliyah,24.489722,46.339722,village
+المطيوية,Al Mutaywiyah,24.511818,46.340345,village
+القرارة,Al Qararah,24.4174004,45.8832107,village
+تبراك,Tibrak,24.381389,45.9,village
+خبيب الريم,Khubayb ar Rim,24.4089903,45.927529,village
+المحمدي,Al Muhammadi,24.011389,47.17,village
+العين,Al `Ayn,24.080839,46.872227,village
+هيت,Dahl Hit,24.460556,47.0025,village
+فرزان,Firzan,24.206016,47.244877,village
+الحزم,Al Hazim,24.133357,47.152952,village
+حلة ابن عرفج,,24.241944,47.210556,village
+العماج,Al `Ammaj,24.4401658,46.9787459,village
+اللغفية,Al Lughfiyah,24.161527,46.22168,village
+الحويرة,Al Huwayrah,24.158958,46.273476,village
+المسبر,Al Masbar,24.144185,46.199622,village
+الجفير,Al Jufayr,24.027222,46.298889,village
+النظيم,An Nazim,24.142794,46.183711,village
+حفيرة نساح,Hafirat Nisah,24.180278,46.358333,village
+العدوة,Al `Idwah,24.238354,45.928616,village
+البخراء,Al Bakhra,24.168611,46.186944,village
+عجاج,`Ajaj,24.167849,46.439252,village
+المانعية,Al Mani`iyah,24.3972839,45.8094673,village
+قنيفذة,Qunayfidhah,24.550518,45.705776,village
+المشاعلة,Al Masha`ilah,24.5007619,45.7598974,village
+دلقان,Dalqan,24.267353,45.593718,village
+الغزيز,Al Ghuzayz,24.6701377,45.8403398,village
+أم طليح,Umm Tulayh,24.401512,45.8485221,village
+اللغفة,Al Laghfah,24.467949,45.83569,village
+الجديدة,Al Jadidah,24.4147422,45.8149461,village
+ظلماء,Zalma',24.4758913,45.6717526,village
+الخفق الجديد,Al Khafaq al Jadid,24.4245447,45.7115717,village
+ام السباع,Umm as Siba`,24.284358,45.587251,village
+الصيهد,As Sayhad,24.487416,45.798783,village
+الحرملية,Al Harmaliyah,24.270556,45.181389,village
+ام رضمة,Umm Radmah,24.633104,45.388551,village
+الربواء,Ar Rabwa',24.399979,45.26978,village
+الفيضة,Al Faydah,24.391329,45.337068,village
+الفويلق,Al Fuwayliq,24.390278,45.306667,village
+التوضيحية,At Tawdihiyah,24.206667,48.066944,village
+الفرعة,Al Far`ah,25.330108,45.198155,village
+روضة الفرس,Rawdat al Faras,24.622342,45.363835,village
+العريدية,Al `Uraydiyah,24.4304,45.447822,village
+حويتة,Huwaytah,24.615735,45.257311,village
+ام طلحة,Umm Talhah,24.65058,45.325435,village
+الحفيرة,Hufayrah,24.4472425,44.7092074,village
+فيضة المفص,faydat almafasi,24.343889,44.808056,village
+طحي,Tuhayyi,23.7193662,44.6687822,village
+صبحا,Sabhah,23.2591954,44.6469258,village
+الخنيقية,Al Khunayqiyah,24.265065,45.085775,village
+حلبان,Halaban,23.4812754,44.3682721,village
+جوباح,Jubah,24.547103,45.065863,village
+الخيس,Al Khis,24.257531,45.016094,village
+مغيراء,Mughayra',24.369457,45.01337,village
+الرفيعة,Ar Rafi`ah,24.251339,45.139145,village
+ماسل,Masil,24.2472086,44.67195,village
+ام اثلة,Umm Athlah,24.246072,45.120511,village
+السيح,As Sayh,22.2216827,46.7731794,village
+قطين,Qutayn,22.2339203,46.7787351,village
+الهدار,Al Haddar,21.982778,45.961389,village
+المبرز,Al Mubarraz,25.407682,49.590284,village
+العمار,Ammar,22.2466105,46.7265298,village
+سويدان,Suwaydan,22.0899389,46.7032682,village
+الأحمر,Al Hamar,22.4358122,46.192125,village
+مروان,Marwan,22.0571681,46.6707203,village
+غصيبة,Ghasibah,22.2819406,46.7368355,village
+نقمة,Nuqamah,19.4829876,41.8268499,village
+صمخ,Samakh,19.3669504,42.8035134,village
+الأشعرية,Al Ashariyah,24.3561519,43.0023289,village
+خيبر الجنوب,Khaybar,18.791944,42.873611,village
+كياد,Kayyat,18.736389,41.406667,village
+الدفينة,Ad Dafinah,23.3029167,41.9961069,village
+الخن,Al Khunn,23.3035868,49.2525535,village
+آل روحان,Al Ruhan,19.533333,41.95,village
+ثماء,Thamm'a,19.5279941,41.9744561,village
+ثرب,Thurb,24.2295862,41.7372647,village
+باشوت,Bashoot,19.583333,41.883333,village
+قارا,Qara,29.876944,40.226944,village
+صبيحة,Subayhah,30.039722,38.844444,village
+أصفان,,29.667363,39.6705285,village
+الطوير,At Tuwayr,29.911944,40.197222,village
+النبك أبو قصر,An Nabk Abu Qasr,30.294167,38.701389,village
+الشويحطية,Ash Shuwayhitiyah,30.31,40.196389,village
+زلوم,Zallum,30.168056,40.296944,village
+القنيطرة,Al Qunaytirah,29.974679,40.094669,village
+حزم الجلاميد,Hazm al Jalamid,31.280278,40.104167,village
+هجرة ابن بكر,Ibn Bakr,31.1266447,40.6218136,village
+جماجم,Jimajim,31.00618,37.678231,village
+شيباني,Shaybani,31.3028568,37.4423921,village
+غطي,Ghutti,31.266538,37.527451,village
+كاف,Kaf,31.394805,37.500894,village
+عين الحواسي,Ayn al Hawwasi,31.3728025,37.600673,village
+مجمع الحديثة,Mujamma` al Hadithah,31.512222,37.113333,village
+أم خنصر,Umm Khunsur,30.6962659,41.5969617,village
+الكاسب,Al Kasib,30.502938,41.934952,village
+أم الضيان,Umm ad Diyan,30.948529,41.9774101,village
+المركوز,Al Markuz,30.134167,42.631944,village
+الدويد,Ad Duwayd,30.229444,42.301944,village
+إبن سعيد,Ibn Suayyid,31.0684337,40.7858613,village
+طلعة عمار,Talat Ammar,30.6593239,40.5621957,village
+مغيراء,Mughayra',29.857578,40.416573,village
+هديب,Hudayb,30.071667,40.393889,village
+خوعاء,Khaw`a',29.800833,40.443889,village
+العسافية,Al Assafiyah,28.2647882,38.9821045,village
+مغيراء,Mughayra,29.2870761,37.6803933,village
+العاذرية,Al `Adhiriyah,27.040656,47.037061,village
+مشلة,Umm al Hawshat,27.008333,47.238056,village
+ام غور,Umm Ghawr,27.070815,47.091644,village
+الشيحية,Ash Shihiyah,27.071667,47.009444,village
+الشامية,Ash Shamiyah,27.116052,46.998164,village
+اللهابة,Al Lahabah,27.2288354,46.9794875,village
+الفريدة,Al Farridah,27.166389,46.989722,village
+القرعاء,Al Qar`a',27.453056,46.868333,village
+العيطلية,Al `Aytaliyah,26.565771,47.071177,village
+الحيرا,Al Hayra,27.697222,46.621111,village
+الونان,Al Wannan,26.907621,48.420819,village
+رزحان,Rizhan,26.950263,48.351641,village
+اللصافة,Al Lisafah,27.618611,46.864444,village
+الزغين,Az Zughayn,26.982981,48.424312,village
+ام الشفلح,Umm ash Shifallah,27.605225,47.009107,village
+الصرار,As Sarrar,26.983611,48.387222,village
+الكهفة,Al Kahafah,27.3785612,48.3352274,village
+ثاج,Thaj,26.877458,48.723369,village
+شفية,Shifiyah,26.401944,48.751667,village
+حنيذ,Hanidh,26.579444,48.628889,village
+الحليسية,Al Hulaysiyah,26.583019,48.672268,village
+مغطي,Maghati,26.675492,48.630581,village
+الحناة,Al Hinnah,26.946051,48.77313,village
+الصحاف,As Sahaf,26.939518,48.582377,village
+الفاضلي,Al Fadili,26.974952,49.173692,village
+غونان,Ghunan,26.1335642,49.8971676,village
+الشهيلاء,Ash Shuhayla',26.039877,49.426572,village
+شارع,Shari`,26.092606,49.477184,village
+عين دار,`Ayn Dar,25.94741,49.425156,village
+أمتالع,UmmTali,25.98,48.855278,village
+أم ربيعة,Umm Rubay`ah,26.027834,48.852408,village
+عريعرة,`Uray`irah,25.977396,48.8687799,village
+أم الحمام,Umm al Hamam,26.002303,48.815138,village
+العزيزية,Al `Aziziyah,26.18058,50.194335,village
+شعيبة المياه,Shu`aybat Almayah,27.8421778,42.7761011,village
+سلوى,Salwa,24.740833,50.758333,village
+القصيبي,Al Qusaybi,25.196902,48.468765,village
+الشريهية,Ash Shirayhiyah,27.867685,42.721476,village
+بقعاء الشرقية,Baq`a' ash Sharqiyah,27.8598929,42.4440127,village
+الشيحية,Ash Shihiyah,27.890386,42.681883,village
+طلحاء,Talha',27.6835347,42.9236216,village
+المهينية,Al Mihayniyah,27.697586,43.061019,village
+المعباء,Al Mu`abba',28.001769,42.061971,village
+الزبيرة,Az Zabirah,28.004722,43.685833,village
+الجثياثة,Al Jithyathah,27.714228,42.627728,village
+السفن,As Sufun,27.731632,41.53645,village
+الشعلانية,Ash Shalaniyah,27.726667,42.564167,village
+العرفجية,Al `Arfajiyah,28.0365651,42.3174793,village
+المشيطية,Al Mushaytiyah,27.766634,41.480876,village
+التربية,At Turbiyah,27.825726,41.5812204,village
+الوعيلي,Al Wu`ayli,27.8535616,42.119497,village
+الجثامية,Al Jithamiyah,27.678165,41.725234,village
+الناصرية,An Nasiriyah,27.682931,42.551833,village
+القصعاء,Al Qas`a',27.660658,42.554161,village
+جرعاء القاعد,Jar`a' al Qa`id,27.871216,41.742851,village
+الهرير,Al Hurayr,27.87051,41.791709,village
+منيفة القاعد,Munifat al Qa`id,27.846875,41.657703,village
+النيصية,An Nisiyah,27.6250404,41.6986783,village
+بدائع نقبين,Bada'i` Naqbayn,27.631207,41.639361,village
+السويفلة,As Suwayfilah,27.5760729,41.7497677,village
+مشار,Mishar,27.5797413,41.6469164,village
+الجلف,Al Jilf,27.915061,41.807983,village
+الشعفة,Ash Sha`afah,27.938254,41.76751,village
+النظيم,An Nizim,27.943347,42.200543,village
+ضبيعة,Dubay`ah,27.968897,42.176571,village
+المندسة الشرقية,Al Mindassah ash Sharqiyah,27.9882741,42.0065483,village
+المندسة الغربية,Al Mindassah al Gharbiyah,27.966531,41.903969,village
+الطوال,At Tuwal,27.980704,41.649584,village
+قيصومة فيحان,Qaysumat Fayhan,29.1776364,42.9638219,village
+الجبهان,,29.5735736,43.6321379,village
+إبن سوقي,Ibn Suqi,29.761389,43.266389,village
+ابو صور,Abu Sawr,29.032869,44.416765,village
+الخشيبي,Al Khushaybi,29.3007996,44.0327215,village
+نصاب,Nisab,29.192745,44.715978,village
+إبن شريم,Ibn Shuraym,29.9475,43.364444,village
+الصفيري,As Sufayri,28.5327485,45.8020654,village
+طلعة التمياط,At Timyat,29.856944,43.140278,village
+السعيرة,As Si`ayyirah,27.275441,43.176659,village
+الكهيفية,Al Kihayfiyah,27.198333,42.986944,village
+أم قليب,Umm Qulayb,27.8388965,45.9806177,village
+القيصومة,Qaisumah,28.3097161,46.127502,village
+وتدة,Wutidah,26.2421565,42.082396,village
+النعي,An Ni`ayy,27.173686,42.292352,village
+الضلفعة,Ad Dalfaah,26.3177222,43.6737407,village
+البياضي,Al Biyadi,27.107637,42.199769,village
+فيد,Fayd,27.1132294,42.5188092,village
+الديماسة,Ad Dimasah,26.425025,42.210605,village
+النمرية,An Nimriyah,26.393889,42.338611,village
+الوسيطاء,Al Wusayta',25.665591,43.383747,village
+نفجة,Nafjah,25.663081,43.370584,village
+العش,Al `Ishsh,27.083175,41.810179,village
+الشباكية,Ash Shabbakiyah,26.1715418,42.2570076,village
+المحلاني,Al Mahalani,26.132039,42.21274,village
+الأسامر,Al Asamir,25.64364,43.22614,village
+الجحفة,Al Juhfah,27.065924,42.241779,village
+الصويتية,As Siwaytiyah,25.641229,43.199128,village
+إمارة المستوي,Imarat al Mistawi,26.2110458,44.580051,village
+ثرل,Thiral,27.0852813,42.2289258,village
+السبعان,As Sab`an,27.039167,41.975278,village
+الجابرية,Al Jabiriyah,26.269723,42.1677779,village
+الشيحية,Ash Shihiyah,26.2514819,43.6097188,village
+الطرفية,At Turfiyah,26.5412468,44.0283368,village
+ابلق,,26.545,43.761667,village
+غمرة,Ghamrah,26.603842,42.328175,village
+القرفاء,Al Qarfa',27.255446,42.3041,village
+الوطاة,Al Wutah,26.5230427,43.9045859,village
+روض الجواء,Rawd al Jiwa,26.5312362,43.5719442,village
+اوثال,Aothal,26.525556,43.691111,village
+غاف الجواء,gaf al Jiwa,26.533056,43.602222,village
+نبيها,Nubayha,25.946955,43.06966,village
+البكرة,Al Bakrah,25.9438565,42.3082231,village
+السيح,As Sayh,25.986111,43.235,village
+النومانية,An Numaniyah,25.973333,42.596667,village
+روضة قرادان,Rawdat Qiradan,25.906302,42.875936,village
+عريجاء,`Urayja',27.450335,41.971426,village
+البتراء,Al Batra',25.940481,42.9498212,village
+الرشاوية,Ar Rishawiyah,27.4311401,42.4760195,village
+الدحلة,Ad Dahlah,25.930556,43.675556,village
+الصفراء,As Safra',26.8414458,42.160547,village
+عقلة ابن طوالة,Oglat Ibn Twalah,26.767026,42.081744,village
+الطوال,At Tuwal,26.007778,42.388611,village
+القوعي,Al Qaw`i,25.773358,43.360885,village
+المضابيع,Al Madabi`,26.963057,42.108584,village
+ابضة,Ibdah,26.965956,42.346807,village
+الإفيهد,Al Ufayhid,25.6889763,42.3484422,village
+مهدومة,Mahdumah,25.688764,43.086713,village
+أبا الورود,aba alwurud,27.0230287,44.0757982,village
+طابة,Tabah,27.028333,42.171667,village
+بدائع السبعان,Bada'i` as Sab`an,27.008759,41.958558,village
+عطا,`Ata,25.709344,42.72595,village
+المضيح,Al Mudayyih,26.890365,42.087169,village
+قصر البلاجي,Qasr al Ballaji,25.853084,43.251038,village
+ريع تقريب,Ri` Taqrib,26.892147,42.065533,village
+المعازل,Al Ma`azil,26.8823495,42.1746772,village
+دغنون,Dighnun,26.916955,42.108233,village
+البير,Al Bir,26.918871,42.174435,village
+الخريمي,Al Khuraymi,27.512778,41.743056,village
+الحني,Al Hunayy,24.9671182,48.7542861,village
+آل لعور,,17.85,43.4,village
+العقلة,Al `Iqlah,26.178637,44.824187,village
+آل عبيدية,Al Abidiyah,17.971689,43.1372781,village
+آل عطيف,A Utayf,17.9641533,43.1987127,village
+العسران,Al Ousran,18.053333,43.057778,village
+درامة,Daramah,17.933333,43.15,village
+الشبيرمة,Ashburma,17.9815451,43.1540267,village
+البوطة,Al Buwatah,18.083333,43.15,village
+الوهابة,Al Wahbah,18.165,43.081667,village
+آل عابس,Al Abis,18.0669422,43.166392,village
+عراب,Arab,18.0077955,42.9674395,village
+المسقي,,18.05,42.75,village
+القرحاء,Al Qarha',18.116667,42.883333,village
+آل السواد,Al as Sawad,18.083333,42.983333,village
+عنقرة,Anqarah,18.0722674,42.903118,village
+الفية,ALFaya,18.3850623,42.4509281,village
+الحصن الاسفل,Al-Husn Al-Asfal,18.194474,42.545329,village
+العمارات,Al-Imarat,18.1891161,42.555318,village
+القوز,Jawz,18.2337642,42.4160053,village
+يهن,Yuhan,18.2262134,42.5246861,village
+بني مازن,,18.183333,42.433333,village
+جوحان,,18.2316269,42.5491269,village
+دارين,Darin,26.549919,50.0768,village
+الربيعية,Ar Rabi`iyah,26.568368,50.066784,village
+الملاحة,Mallahah,26.5131833,49.9987555,village
+الخترشية,Al Khatrashiyah,26.620259,49.928965,village
+سنابس,Sanabis,26.576706,50.081668,village
+غزلان,Ghizlan,26.853636,49.901549,village
+منفذ الخفجي,Al Khafji Customs,28.518611,48.414722,village
+السعيرة,As Su`ayyirah,27.8225,47.5125,village
+معرج السوبان,Ma`raj as Suban,27.973619,47.025846,village
+حزوى ( العمانية ),,26.379167,47.323056,village
+معقلا ( الشملول ),Ma`aqla,26.5182476,47.3338362,village
+الشعب,Ash Shi`b,25.9130743,45.9037739,village
+الصداوي,As Sadawi,28.1104385,46.7161275,village
+ابن شرار,Ibn Sharar,27.829295,46.415015,village
+مناخ,Manakh,27.6008615,46.3166134,village
+الوسيعة,Al Wasi`ah,25.7267693,45.8488929,village
+أبو خسيفاء,Abu Khusayfa',25.764167,45.85,village
+العقلة,Al `Uqlah,26.42531,45.357401,village
+جراب,Jirab,26.766034,44.9931462,village
+النخيل,An Nukhayl,26.542172,45.201885,village
+أم الجماجم,Umm al Jamajim,26.8838557,45.3183622,village
+ام سديرة,Umm Sudayrah,26.862439,45.241804,village
+صفيان,Sufayyan,27.0714681,41.3780506,village
+المبعوثة,Al Mab`uthah,27.065347,41.465396,village
+السريحة,As Subayhiyah,27.5275,41.4475,village
+سراء,Sarra',27.062617,41.540212,village
+عقدة,`Iqdah,27.515745,41.601283,village
+الحطي,Al Hati,27.514564,41.089095,village
+الصليعاء,As Sulay`a',27.5089054,41.4643744,village
+بدائع العش,Bada'i` al `Ishsh,27.078953,41.666174,village
+الصهوة,As Sahwah,27.130875,41.144888,village
+توارن,Tuwarin,27.588611,41.442778,village
+غار ابن ناحل,Ghar Ibn Nahil,27.1650539,41.5673661,village
+القليبين,Al Qulaybayn,27.4275,41.475,village
+قفار,Qufar,27.415343,41.619026,village
+المويكر,Al Muwaykir,26.9977654,41.5612366,village
+الودي,Al Wudayy,27.395841,41.573186,village
+الحامرية,Al Hamiriyah,26.9542119,41.7308312,village
+الشبيكة,Ash Shubaykah,27.030323,41.46929,village
+حويان,Huwayyan,27.0199889,41.2171342,village
+قصيريات,Qusayriyat,27.448273,41.101876,village
+الصنينا,As Sunayna,27.321426,41.059288,village
+قصر العشروات,Qasr al `Ishruwwat,27.331667,41.459722,village
+الضلضل,Az Zuluzal,27.3340562,41.3758914,village
+قناء,Qina',27.777224,41.423634,village
+بدائع مريفق,Bada'i` Murayfiq,27.349247,41.632924,village
+مريفق,Murayfiq,27.362365,41.644359,village
+الحفير,Al Hufayr,27.656389,41.293889,village
+المبادع,Al Mubaydi`,27.188729,41.319303,village
+المختلف,Al Mukhtalif,27.1863439,41.2083315,village
+جفيفاء,Jufayfa',27.190941,40.992287,village
+المبدع,Al Mabda`,27.203406,41.308044,village
+الصبيحية,As Surayhah,27.736944,41.45,village
+صحى,Sahayy,27.270332,41.271175,village
+زهوة,Zahwah,29.687222,42.104722,village
+ارينبة,Raynibah,27.2902772,41.5372641,village
+الوبيرية,Al Wubayriyah,27.287858,41.298428,village
+الخريبة,Al Khuraybah,28.0670636,35.1767769,village
+المراغة,Al Maraghah,18.166667,42.8,village
+رملان,Ramlan,17.640779,42.270169,village
+عتود,`Itwad,17.6348405,42.2193432,village
+القحمة,Al Qahmah,16.86839,42.976969,village
+الهجنبة,Hajambah,17.766667,41.983333,village
+الشقيق,Ash Shuqayq,17.721753,42.0260108,village
+أبو السلع,Abu as Sala,17.2406552,42.6067806,village
+الحسينية,Al Husayniyah,17.2529509,42.74897,village
+فرشه الملحاء,Al Malha,17.266157,42.591671,village
+الكدمي,Al Kudmy,17.2703347,42.766858,village
+الجارة,Al Jariyah,17.2123627,42.5493134,village
+العشة,Al Qashshah,17.2281479,42.5575531,village
+أبو القعائد,Abu al Qaaid,17.2723302,42.6080574,village
+الطاهرية,At Tahiriyah,16.653726,42.784965,village
+الخزنة,Al Khuznah,16.879722,42.804444,village
+الأساملة,Al Asamilah,16.917667,42.669413,village
+الكربوس,Al Karbus,16.873052,42.632822,village
+السلامة العليا,Salamah,17.3218948,42.5549267,village
+خطيب,Khatib,16.8956247,41.8565978,village
+مشلحة,Mushallahah,17.3428314,42.7642908,village
+الخرادلة,Al Kharadilah,16.9292748,42.6271722,village
+العسيلة,Al Usaylah,16.9197495,42.7454356,village
+الحقو,Al Haqw,17.516667,42.7,village
+دحيقة,Duhayqah,16.9346142,42.6097605,village
+الخشابية,Al Khashabiyah,16.9453773,42.7223623,village
+الواصلي,Al Wasili,16.9466772,42.691204,village
+سلامة الدراج,Salamah,16.9747906,42.7558579,village
+الغريب,Al Qurayb,16.975,42.725278,village
+الكواملة,Al Kawamlah,16.9608451,42.6732081,village
+العشوة,Al `Ishwah,16.965743,42.654851,village
+قامرة,Gamrah,16.9951129,42.7994216,village
+ملقوطة,Malgota,16.997778,42.673889,village
+قنبورة,Qanburah,16.9869653,42.856566,village
+رديس,Redis,17.0516888,42.7853619,village
+البيض,Al Baid,17.046319,42.8350785,village
+المحلة,Al Mahallah,17.3299582,42.6016747,village
+الخضراء الجنوبية,Al Khadra al Janubiyah,17.0397941,42.8113642,village
+صنبة,Sanbah,17.0256013,42.6963975,village
+فلس,Falas,17.0553231,42.8493348,village
+الخضراء الشمالية,Al Khadra ash Shamaliyah,17.0556931,42.8082206,village
+أم خرق,Umm Kharaq,17.678878,42.492478,village
+الطاهرية,Tahiriyah,17.072585,42.7414336,village
+خضيرة,Khudayrah,17.0784047,42.7505697,village
+القمري,Al Qamri,17.0745661,42.7859318,village
+الحسيني,Al Husayni,17.1519956,42.6818853,village
+الجهو,Al Juhu,17.126176,42.848682,village
+الشقيري,Shuqayri,17.1356356,42.827319,village
+جخيرة,Jakhirah,17.1679945,42.7205026,village
+العدايا,Al Adaiya,17.1664629,42.5498813,village
+الحوراني,Al Horani,16.774444,42.909167,village
+أبو العرج,Abu Al Araj,16.7380568,43.0313283,village
+الحناية,Hinayah,17.2438849,43.0131508,village
+الهجنبة,Al Hijanbah,16.768574,42.991931,village
+الشعفولية,Ash Shafuliyah,16.7537835,42.8607427,village
+أم الدبة,Umm ad Dubbah,16.7666788,43.166667,village
+وادي عروج,Wadi Arwaj,17.2266517,42.9397274,village
+المروة,Al Marwah,16.807335,43.132257,village
+المحطة,Al Mahattah,16.7016895,43.1159423,village
+المجامة,Al Mujammah,16.714271,42.853028,village
+الحصمة,Al Hasamah,16.834444,42.971389,village
+مروح,Marwah,17.2690963,43.1148583,village
+اللقية,Al Laqyah,16.660663,43.039906,village
+جحا,Juha,16.6693548,42.8936037,village
+الخشل,alkhashal,16.8754122,43.1351172,village
+الشطيفية,Ash Shutayfiyah,16.666981,42.874565,village
+مراح,Marah,16.6701,43.0195584,village
+القفل,Al Qufl,16.6736327,43.0791318,village
+أبو الرديف,Abu ar Radif,16.618547,43.131197,village
+جاضع الحيلة,,16.917462,42.950045,village
+الركوبة,Ar Rukubah,16.6209227,42.9659757,village
+شعب الذئب,Shib adh Dhib,16.5472389,42.9792267,village
+النجامية,An Najamiyah,16.563056,42.943889,village
+وعلان,Wa`lan,16.565494,43.055653,village
+ديحمة,Dayhamah,16.534756,42.793659,village
+الجوة,Al Jawwah,16.95665,43.029778,village
+الحضرور,Al Hadrur,16.5431091,42.8684169,village
+الحثيرة,Al Hathirah,16.430854,42.9346365,village
+الموسم,Al Muwassam,16.4184371,42.8263051,village
+الخوجرة,Al Khojra,16.528611,43.014444,village
+الصيابة,Sayyabah,17.0996512,43.088452,village
+جلة الحياة,Jallat al haya,17.6117085,43.06521,village
+الوسقة,Al Wasqah,19.983333,40.566667,village
+آل بي ثور,Bani Thawr,18.595278,42.694167,village
+حلي,Hali,18.7,41.333333,village
+البجيدي,Al Bujaydi,21.480044,40.1094911,village
+شرائع النخل,,21.5159983,40.0624287,village
+الحساسنة,Al Hasasinah,21.383056,40.176667,village
+بحرة القديمة,Bahrat al Qadimah,21.4151209,39.4921617,village
+رهجان,Rahjan,21.316667,40.05,village
+صميمة,Sumaymah,21.251667,39.159722,village
+رغوان,Raghwan,20.6597699,39.5043434,village
+الفج,Al Faj,21.9948307,39.5113509,village
+البرزة,Barzah,21.98195,39.6866711,village
+حفرة,HAFRAH,21.963889,39.544444,village
+جليل,Julayyil,21.9640594,39.7568418,village
+أم الجرم,Umm al Jurm,21.9578816,39.4604445,village
+الشامية,Ash Shamiyah,21.840918,39.524675,village
+السفه,As Sufh,20.1040358,41.2905123,village
+المقيطيع,Al Muqayti`,21.85278,39.47131,village
+هدى الشام,Hadda ash Sham,21.796667,39.683333,village
+الغولاء,Al Ghulah,21.9464865,39.2782516,village
+حلمة,Halamah,21.970584,39.6980646,village
+حشاش,Hishash,21.93659,39.89968,village
+الخيف,Al Khayf,21.6912,39.736782,village
+مشجي,Mashajji,21.727638,39.959627,village
+الضرس,Ad Dirs,21.75451,39.89751,village
+مسيلة,Musaylah,20.1594577,41.2842841,village
+سبوحة,Sabuhah,21.5895754,40.1231864,village
+الزيمة,Az Zaymah,21.6174291,40.1114823,village
+عين شمس,`Ayn Shams,21.645472,39.761862,village
+أبو عروة,Abu `Urwah,21.648086,39.704768,village
+الظاهرية,,21.65,39.716667,village
+البريكة,Buraykah,22.344444,39.32,village
+محنبة,Mahinbah,22.1862263,39.5424376,village
+الخوار,Al Khwar,22.170556,39.550556,village
+الصدر,As Sader,22.1461198,39.4009637,village
+حجر,Hajar,22.1720461,39.5387073,village
+رهاط,Reheat,22.086838,40.0186894,village
+الدف,Ad Daff,22.1144498,39.3120445,village
+المفرق,Mafraq,23.741944,38.763611,village
+الشفية,Ash Shifayyah,23.567778,39.751667,village
+الشوامين,Ash Shuwamin,23.520556,39.706389,village
+المخشوش,Maqshush,23.5844648,38.6015017,village
+الشهباء,Ash Shahba,23.4,39.683333,village
+السويرقية,As Suwayriqiyah,23.3429467,40.3235579,village
+الجصة,Al Jissah,23.330833,40.304722,village
+المضيق,Al Madiq,23.3193078,39.6201392,village
+البصيرة,Al Basirah,23.3237297,39.614123,village
+السدر,As Sidr,23.447778,39.7625,village
+الفقير,Al Faqir,23.421667,39.709722,village
+أبو ضباع,Abu Diba,23.198611,39.558056,village
+صفينة,Sufaynah,23.1401594,40.5520751,village
+البستان,Al Bustan,23.2849557,39.2607595,village
+أم العيال,Umm al Iyal,23.26,39.568889,village
+كلية,Kulayyah,22.5236381,39.2821137,village
+الشبعان,Shaban,24.750489,37.2361688,village
+سوق سويق,Suq Suwayq,24.372222,38.442222,village
+الدحو,Ad Duhu,23.8247653,39.6762799,village
+الفارعة,Far,23.8103185,38.8748347,village
+الحجرية,Al Hijriyah,23.811944,40.2925,village
+الشفية,Ash Shufayyah,23.824722,39.1425,village
+البركة,Birkah,23.8214156,38.8611428,village
+الوطية,Al Watyah,23.7689705,39.2440636,village
+الجديد,AlJadid,23.811944,38.84,village
+ملحة,Milhah,24.05,38.3,village
+صخيبرة,Sukhaybarah,24.3301759,41.2688622,village
+آبار الرقعي,Abar ar Ruqi,28.9835197,46.584168,village
+غوان,,17.3326323,42.6037937,village
+مران,,22.6378096,41.3819439,village
+فريجة,,20.1138497,40.325107,village
+غميقة,,20.3030245,40.4589386,village
+الوطيات,,20.3076933,40.4205508,village
+الغالة,,20.2577263,40.1576133,village
+طفيل,,20.7072984,39.7343312,village
+المجيرمة,,20.4663177,39.7188682,village
+القصار,Al Qesar Heritage Village,16.6690971,42.1485693,village
+السرداح,,23.8452478,44.996947,village
+ساحل حلي,,18.7805631,41.3313539,village
+نبعة,,25.8341937,44.2105626,village
+بني هريره,,20.024108,41.4016034,village
+الجياسر,,23.9924502,41.8219101,village
+البديع الجنوبي,,22.0039881,46.5659271,village
+الحزم,,22.0122963,46.5722088,village
+سلطانة,Sultana,25.0130066,46.4671695,village
+قرية الجديد,,26.9768212,38.7699459,village
+اعبلية,,23.9940636,45.3898291,village
+الفويسة,,23.9467194,45.5560343,village
+الخروعية,,23.8455073,45.64606,village
+الخروعية,,23.831777,45.6473288,village
+السيح,,23.6452225,45.7703215,village
+الشفاء,,23.4942826,45.5228597,village
+قبيبان,Qubyban,23.5179336,45.5269279,village
+المغيدر,,23.0832,45.2518,village
+برودان,,22.5248392,45.0865135,village
+النايفية,,22.413548,46.6096206,village
+الفرشة,Al Farshah,23.1468696,46.9115457,village
+الخشبي,,22.4874275,45.0478707,village
+الشبهانة,,22.6835995,45.0237633,village
+القرارة,Al Qararah,24.41813,45.883794,village
+طريف,,22.8090619,44.7804952,village
+البوق,,22.7678087,44.8736028,village
+خيم,,22.7377027,45.0276788,village
+الدماغية,,22.7802518,49.3512904,village
+الكتيب,,27.4660914,38.896894,village
+العفوص,,20.0669673,41.3670822,village
+العسلة,,20.0608748,41.3601591,village
+رباع,,20.0592901,41.3571891,village
+الجوفاء,,20.0678888,41.3413193,village
+نعاش,,20.0479373,41.3756762,village
+العصداء,,20.0816089,41.3627087,village
+عنقه,,19.56141,41.5462318,village
+العارض,,19.5592163,41.5418787,village
+دغبج,DAGBAJ,22.3793076,40.7149473,village
+البطحاء,Al Batha,24.1330295,51.5675853,village
+وادي سيال,,19.9945581,40.9154936,village
+المشعلية,,17.7578284,44.46435,village
+العطيف,Alatif,21.8754798,41.0136341,village
+صاحب البار الاعلى,,16.6316264,43.0110116,village
+الثوير,Ath Thuwayr,26.6015963,44.6373162,village
+مزيريرات,mzererat,27.7827646,41.6259615,village
+الحميمة,Al Hammah,20.0599157,42.6253609,village
+جديدة عرعر,jdedt arar,31.2357979,41.4232336,village
+الربوعة,Rabou'a,17.5796598,43.3256182,village
+الجوة,Al Jawah,17.2807743,43.1374613,village
+وادي دفا,Wadi Dafa,17.4081549,43.2034065,village
+ريع مصيدة,Rayaa Masaida,17.3766612,43.0735352,village
+الشولة,Al-Shulah,20.1015267,41.4077804,village
+الهبيرية القديمة,Al Hobairiah Algadeemah,26.2595615,42.449938,village
+الموسى,Almosa,20.1079808,41.4206529,village
+شبرقة,Shibreqah,20.1225073,41.3966565,village
+عويرة,Awirah,20.1851673,41.2586991,village
+بالخزمر,,20.0979517,41.3054885,village
+الوسق,al wasg,26.0105869,42.3531532,village
+الرويضات,Al Rwedhat,26.2561431,42.2405283,village
+هجرة الدهو,,25.5534903,48.0685857,village
+الصلصلة,Assleslah,25.2644619,39.3285602,village
+أبلة,,25.6995748,40.3145778,village
+بدع بن خلف,,25.7095802,40.3774595,village
+فيضة أثقب,Fidhat Athgab,26.0406183,40.6222165,village
+قرى وادي نيرا بالديان,,19.9144025,41.1512724,village
+حداب السلاطين,,19.887507,41.0429044,village
+عشرة,,19.8779726,41.0757132,village
+شعثان,,19.8275721,41.0750587,village
+قرى وادي الشعب الشامي,,19.8047658,41.1166973,village
+قرى وادي الحضن السويدي,,19.9023516,41.0232346,village
+قرى وادي رشوة,,19.9718933,41.1127131,village
+قرى وادي سمعة,,20.0015666,41.1138718,village
+قرى وادي حنذية,,19.8780267,41.2175864,village
+النجيل,,20.0821882,41.1343074,village
+الضموء,,20.1119356,41.1062849,village
+المضحاة,,20.0904246,41.105605,village
+قرى وادي لقط,,20.1074333,41.1393748,village
+قرى وادي الحزر,,20.1241708,41.1376167,village
+قرى وادي دو,,20.1074675,41.1862827,village
+عثوان,,17.3298089,43.2031703,village
+عيبان,`Ayban,17.2791961,43.0478048,village
+القرين,Al Qurayn,26.0103045,43.3685671,village
+الطرفيه الغربيه,At Turfiyah al Gharbiyah,25.4197297,42.3081402,village
+وادي عصيل,,23.6091794,44.4816838,village
+عروى,,23.9089163,44.6346652,village
+الشرمية,,23.8017664,44.8844325,village
+أبو مروة,,24.2365241,44.9592178,village
+دسمان,,24.2228466,44.9006813,village
+قصر بن عقيل,,25.8401475,43.3691262,village
+الجديدة,Al jdedh,27.9871734,42.1109313,village
+بدائع الجرعاء,,27.2641957,41.3912883,village
+الحميراء,Alhomyra,17.1282309,43.0585809,village
+آل عبيد,,19.5356866,41.9454659,village
+القليبه,,28.3825593,37.6934878,village
+العزيزية,,22.1584826,39.3446003,village
+شقري,,27.9835356,36.0,village
+الزراع,,28.3928968,35.7739571,village
+شواق,,27.399911,36.5032414,village
+الظلفة,,27.3819254,36.8196022,village
+رحيب,,27.4698726,36.8156255,village
+المعظم,,27.6557056,37.556427,village
+شرما,Sharma,28.0306558,35.242029,village
+الشرف,,28.9219819,35.1856578,village
+السرو,,28.415679,35.5375098,village
+النشيفه,Al Nashifuh,27.021494,37.2642863,village
+ابو راكه,,27.0977077,37.190289,village
+الفارعه,,27.1507853,37.0547778,village
+عين الأخضر,,27.6366051,36.8161537,village
+الديسه,Al Disah,27.6076545,36.4281706,village
+أسبطر,,26.9755397,40.2797672,village
+حسمى,,28.4979683,35.8271175,village
+رأس الخريطه,,27.8082643,35.9941852,village
+الجو,,27.2957037,37.2555102,village
+بجده,,28.5270761,35.6704814,village
+المويلح,Al-Muweleh,27.6930507,35.4834632,village
+الصورة,Alsourah,27.8644183,35.3448116,village
+الحيانية,Al Hayyaniyah,28.70771,42.307556,village
+فضلا,Fadlan,26.3775645,37.8278868,village
+مصادر,,26.1239129,38.0318001,village
+المرامية,Al Marameyah,25.6332956,37.8719331,village
+المنجور,,25.9483112,37.2199618,village
+مغيراء,,26.4673318,38.0753844,village
+بدا,Beda,26.8446068,36.9171951,village
+الفقعلي,,24.6600538,38.4115292,village
+ابيار الماشي,,24.2015653,39.5463627,village
+اليتمه,,23.8098611,39.6433044,village
+وادي ريم,,23.9577144,39.4188055,village
+خلص,,23.8212382,39.3883515,village
+الهنديه,,23.6392672,39.7439231,village
+الاكحل,,23.2985008,39.8525637,village
+السهم,AL Saham,21.9891371,39.5392431,village
+مشذوبة,Mashdhuba,27.3428079,45.0220287,village
+الرضم,,24.8365322,42.1923641,village
+الزيته,,28.8597354,35.4771485,village
+ضم,,28.4887274,35.808255,village
+روى,,28.2744307,35.6150635,village
+المرير,Almuryer,27.336409,41.5083937,village
+البرقاء,Al Barqa',26.7895479,44.2250597,village
+نعيجان,,29.5409522,42.0965018,village
+لوقة,Lawqah,29.8250763,42.7400446,village
+زبالا,Zibala,29.391385,43.558318,village
+حبران,,27.7362256,40.594711,village
+ميقوع,,29.8209957,38.9234095,village
+اللميماء,,30.5542739,42.4943849,village
+مركز الصحن,,30.2367645,42.486501,village
+الاضارع,,29.8297563,39.5730806,village
+قبيعة,qabiea,24.3007493,44.530766,village
+أبو عجرم,,29.8898692,39.3058322,village
+ام العراد,Umm al `Arad,26.459574,42.746977,village
+سلام,Salam,24.7515861,43.133955,village
+عذفاء,,29.2552269,41.4447451,village
+السليمانية,As Sulaymaniyah,30.5565569,41.1464002,village
+الشقيق المروت,,29.300904,39.9217297,village
+الناصفة,,30.1555134,40.3326833,village
+الجبيلي,,29.180175,41.6130695,village
+الحوي,,29.2088135,38.1939064,village
+مركز الحماد,,31.4248969,37.9857773,village
+ابيط,,28.0469304,39.1082443,village
+أشيقر,,28.8294861,42.0202896,village
+شغب,,27.2683733,36.4579534,village
+الشواجرة,ALshawajira,16.991027,42.6105039,village
+الحمى,alhumaa,17.1551916,42.8663887,village
+الحوميات,,23.0671481,42.8729657,village
+الخاصرة,,23.4085547,43.9306966,village
+الحنوه,,24.3956984,46.6635709,village
+روض ابن هادي,,26.1584586,40.6358746,village
+الثمامية,Athmamyah,25.9794,41.21075,village
+الوسعة,Al Wasaa,26.137828,40.532032,village
+النحيتية,An Nuhaytiyah,25.8708555,41.4421809,village
+الرقب,Ar Ragab,25.749633,41.099034,village
+رح صعبة,,16.9635878,42.8853485,village
+صماد,smad,17.3410573,43.0314004,village
+المحدار,Mehdar,24.7338972,50.7045743,village
+رغوه,ragwah,28.6115055,44.0540214,village
+الجرارية الجنوبية,Al Jarariah Aljanubiyah,25.4956089,42.9053396,village
+قرية العسلة,,20.0606486,41.3606098,village
+القيرة,,19.9599809,44.0402146,village
+سلطانة,,18.8560093,45.1131696,village
+العجلية,,21.3725276,46.0804899,village
+السهوة,alshwah,19.3264005,42.0641157,village
+الصحنه,Sahna,23.9915443,47.1382553,village
+الحفيرة,,22.8424548,44.9581379,village
+الفاو,Al Faw,19.783164,45.140355,village
+ام أثلة,,23.1544074,49.3191126,village
+مدركة,Madrakah,21.98702,39.99442,village
+القراصة,,25.1566613,38.1687382,village
+المثلث,,24.792985,38.3436804,village
+رخو,,24.7358237,38.0145905,village
+الرذايا,,24.6159142,39.9240692,village
+ترعة,,25.1765824,38.4389863,village
+ابوشكير,,24.505858,37.6769058,village
+العشاش,,26.0677894,39.3640035,village
+اللحن,Allahan,25.1474045,39.3086563,village
+الشبحة,,24.8042901,37.7313789,village
+نبط,,24.6447592,37.5309234,village
+الشدخ,,24.7043748,37.6050035,village
+النجف,,24.487535,38.0490747,village
+النباه,,24.3526208,37.6043197,village
+فجر,,28.8186073,37.8596466,village
+العفيرية,,20.5492596,42.1359917,village
+بني سعد,,20.9466176,40.8093539,village
+القوامة,,20.7582268,41.6963788,village
+ربوع العين,Rabu Al Ain,20.6101601,40.7459551,village
+الصبيخة,,19.0995521,43.3097516,village
+جاش,Jash,19.373229,43.452238,village
+بريم السليل,,18.711736,42.8357117,village
+مريغان,,19.541598,43.7960403,village
+الواديين,Al Wadiyayn,18.085573,42.802538,village
+الحبلة,,18.0254848,42.8580969,village
+قليب غنيم,,28.5309638,44.2361485,village
+نمران,,22.6150102,41.1368757,village
+نساح,,24.3571196,46.3492953,village
+العجلية,,21.3949032,46.0913208,village
+تندحة,,18.3450607,42.8452052,village
+المضة,,18.8358697,43.2422812,village
+السعدية,,20.7062285,39.9086683,village
+بني يزيد,,20.7217337,40.5637986,village
+البهيم,,19.6907344,42.3571526,village
+ماوان,,23.9195109,46.8381542,village
+نعام,,23.6148038,46.638912,village
+دارة المردمة,Darat AlMardamah,23.6832508,43.1182626,village
+رفائع الجمش,,24.6768803,43.6763788,village
+منية,,24.9920316,43.4094377,village
+ام شيح,,26.782844,44.461606,village
+الحفيرة,,22.8702016,42.5326701,village
+الريان,Ar Rayyan,21.67869,39.8978,village
+الشلايل,,23.9700614,39.3700125,village
+ابوعشره,,24.1240883,43.2907677,village
+البدرانيه,,25.4703478,44.4735366,village
+يدمة,Yadamah,18.529167,44.203056,village
+الخربه,,17.661445,43.874245,village
+شوحطه,,17.943614,43.770261,village
+الحياء,,17.970006,43.800559,village
+الرون ال العون,,17.592223,43.744984,village
+السود,,17.570915,44.014835,village
+العرقوب,,17.74807,43.838604,village
+هجرة ال عمر,,18.109417,43.884308,village
+الغافية,Al Ghafiyah,18.046492,43.988144,village
+الحصينية,,17.814631,44.445491,village
+الجفه,,17.768154,43.915272,village
+شعب ال هادي,,17.774377,43.963895,village
+الحمضة,,17.856753,43.720243,village
+دوَّح,,17.672839,43.924584,village
+حبونا,,17.68537,43.945291,village
+النكاسي,,17.566195,44.327517,village
+نعوان,,18.180571,44.337494,village
+ابا السعود,,17.456524,44.112103,village
+ال قنه,,17.72717,43.758545,village
+رضية,,17.726054,43.76421,village
+الجهوش ال عيسى,,17.599454,43.74861,village
+فرع الجبل,,17.6670639,43.7690807,village
+هجرة ال مشعل,,18.181944,44.049447,village
+ال شعفه,,17.4681934,43.7680671,village
+الظاهرة ال عبية,,17.594433,43.747473,village
+ال ابو غبار,,17.738349,43.773007,village
+هدادة,,17.603338,43.764296,village
+القرن,,17.7223696,43.7145563,village
+المختلف,,17.708373,43.714728,village
+المشنة بير ابن داحن,,17.59557,43.741937,village
+الجوشن,,18.137956,43.861649,village
+تنما,,17.836089,43.715823,village
+الحاجر,,17.501693,43.621817,village
+هجرة ال قبلان,,18.11609,43.879309,village
+فردة الصدر,,17.552376,43.994837,village
+هجرة القايمة,,18.466623,44.195187,village
+ال خفران,,17.599561,43.756614,village
+نزغه,,17.74749,43.831029,village
+هجرة الصايف,,17.804353,43.715007,village
+ال راكه دار يام,,18.142354,44.115708,village
+صلة ال جازعة,,17.598059,43.735821,village
+المجمع,,17.764206,43.966255,village
+تالبان,,17.671101,43.916388,village
+ثجر,,18.369913,44.771283,village
+المحيريق,,17.901664,43.707497,village
+الحرشف,,17.668934,43.882227,village
+شعب عشر,,17.59572,43.765969,village
+الوطن,,17.724144,43.756206,village
+شعب المحوي,,17.687666,43.931494,village
+الشط ابن منصر,,17.596385,43.746936,village
+بير العطف ال عرودومان,,17.600827,43.752215,village
+الحجف,,17.869949,44.164181,village
+مركز الخضراء,,17.444701,44.719419,village
+المنخلي,,18.0395181,45.7679913,village
+الخالدية,,18.9550684,45.1020744,village
+ال عريج,,17.493196,43.758609,village
+هجرة ال سالم,,17.89381,43.729105,village
+تريمة,,17.90617,43.922138,village
+هجرة الفطحة,,18.063326,44.163043,village
+العضبات,,18.164349,44.075582,village
+قطن,,18.140616,44.122403,village
+وسط,,18.293781,44.208448,village
+الخانق,Al Khaniq,17.7335,43.7573,village
+المحال,,17.721226,43.754597,village
+لاهومة,,17.8408767,44.2785076,village
+النقعاء,,17.698438,43.949325,village
+هجرة ال ابو فقايا,,18.187201,44.33758,village
+المليحه,,17.954278,43.806353,village
+برقاء الغضب,,17.534781,44.456434,village
+لحيفة,,17.677796,43.891754,village
+العريسة,,17.559071,44.30769,village
+الزبادين,,17.573683,43.77305,village
+هجرة ال مخلص,,18.07251,44.187484,village
+ال صومان,,17.58673,43.77172,village
+الثامريه,,24.367075,43.6335526,village
+التويم,At Tuwaym,25.661565,45.539741,village
+الثروي,,24.6380005,46.4658394,village
+الجبيله,,22.2631931,46.6545563,village
+الجمانيه,,24.1182518,43.2606621,village
+الجمش,,24.7892761,43.7719345,village
+الحثاليه,,26.0195293,44.994915,village
+الحسي الجديد,,20.0804329,45.5871239,village
+الحسي,Al Hisi,25.4161038,46.1004558,village
+الحشيف,Alhashif,24.8235874,43.8024254,village
+الحماده,,25.3714406,44.4362251,village
+الخليفيه,,24.3393922,43.301426,village
+الخضارة,,23.5996368,42.4039562,village
+السليه,,24.8778095,43.3334045,village
+الربواء,,23.3393593,45.9533653,village
+الرفيعه بالسر,,25.3700619,44.4408545,village
+الرشاويه,,24.6437995,43.9675007,village
+الرميثي العلوي,,24.1543217,43.3592186,village
+الريشيه,,24.198225,43.5015259,village
+أم أرطى,,24.6516593,42.2725932,village
+ام المناشير,,25.087345,43.7759486,village
+السوقيه,,24.6861076,43.5383873,village
+السليمانيه,,25.103242,43.8083414,village
+ام القطا الجنوبيه,,24.5117855,43.4876404,village
+ام القطا الشماليه,,24.5195961,43.4853897,village
+ام جدير,,23.2518605,44.9498963,village
+بحار,,24.1602495,43.6241366,village
+بديعه النفعه,,24.2943773,43.694799,village
+بطاحه,,24.1090469,42.9180679,village
+بلثقاء,,21.657357,43.9795389,village
+حمام,,20.8294,45.8144,village
+حوي الشل,,24.1798573,43.5258598,village
+الهيلة,,18.7373086,41.3263096,village
+الصلب بكنانة,,18.7359027,41.2934041,village
+الزيالعة,,18.7327011,41.2869988,village
+البيضين,,18.6978056,41.371252,village
+بدرة,,18.748604,41.3197804,village
+الصفة,,18.7641858,41.3788724,village
+الفريق,,18.7079359,41.382213,village
+كياد,,18.7337226,41.4047548,village
+باشوت,,18.7246619,41.3224903,village
+البراكيت,,18.7656828,41.2952454,village
+بدرة,,18.7440758,41.3102326,village
+الهيجة,,18.7324761,41.3249515,village
+شيع,,18.8107579,41.3565482,village
+الشعب,,18.7666201,41.4257685,village
+مخشوشة,Makhshushah,16.8633351,43.1223586,village
+الكدوة,,18.7661607,41.3466731,village
+الخوالدة,,18.7485746,41.3012999,village
+منجية,,18.7637035,41.3584009,village
+دقيشة,,18.7392073,41.3219482,village
+الدبيسية,,18.7386374,41.3149442,village
+حلي قديم,,18.717533,41.309894,village
+ساحل حلي,,18.7867487,41.3125484,village
+جريده,,25.922649,43.332717,village
+القبعيه,,25.934451,43.77629,village
+الثلوث,,18.9441952,41.3235884,village
+الحبيل,Al habil,18.089207,42.226975,village
+العقلان,,26.095877,43.050957,village
+العيثمه,,25.5428306,41.3038727,village
+رفايع الذيبية,,26.048026,43.107262,village
+اللغف,,26.263332,44.79435,village
+عنان,,23.7975175,45.2850076,village
+الاثلة,,26.305389,44.714699,village
+أم سدرة,,26.151409,44.365196,village
+مشرف,,19.0053299,41.419085,village
+الجميعات,,18.8684471,41.2535871,village
+عنيكر,,18.8909845,41.2603873,village
+نزوى,,20.461144,44.8553053,village
+أبا الصبان,Aba Asaban,25.7682986,40.488995,village
+خطامة سدير,,25.5878337,45.6989731,village
+الأحمدية,,25.7626171,43.7879219,village
+الحجازية,,26.0197053,43.2352664,village
+الحماده,,25.2577839,43.3520088,village
+الهويدي,Al Huwaydi,27.023663,41.319806,village
+الشويمس,,26.1550097,40.2755712,village
+الخالدية,,23.9892711,45.1642976,village
+الشواق,,19.9206834,40.7401736,village
+بوا,,20.7051,41.2508635,village
+ناوان,,19.5448119,41.1550396,village
+جرب,,20.4440002,41.9337215,village
+بسل,,21.2230557,40.7352522,village
+مرفوض,,21.2256854,40.7756335,village
+الشعبين,Ash Sha`bayn,18.220163,42.279842,village
+الحمادة,,24.2842015,42.8766715,village
+المساعدية,,25.8928987,44.82898,village
+قرية المديد,,18.4438264,41.6507502,village
+رقة الصفراء,,18.0107906,41.7919254,village
+قرية الرصاصة,,18.0348957,42.0853234,village
+قرية النوتي,,17.9405339,41.9469375,village
+قرية الكدا,,18.4281722,41.6391316,village
+قرية ظهرة المنجحة,,18.2114338,41.8940628,village
+قرية المرصد,,18.4721875,41.6684939,village
+قرية المجمعة,,18.1655686,42.0646595,village
+قرية وادي لحسن,,18.0875514,41.9915684,village
+الجلة,,18.3552232,41.886492,village
+الحقو,,18.473396,41.738425,village
+عرمرم,,17.8504579,42.0369531,village
+النجدين,,18.2518513,42.1131091,village
+أحد ثربان,,19.1024963,41.6363162,village
+ثربان,,19.0449219,41.7755737,village
+طلعة بلحارث,,19.4633052,41.6427992,village
+الحلق,,19.5082994,41.6049571,village
+فرع العبادلة,,19.5023507,41.6116476,village
+وادي عمود,Eammud,17.5727073,43.020538,village
+المسنى,,17.6342599,43.3188776,village
+كحلا,,17.5613697,43.2473992,village
+خشم عنقار,,17.6338902,43.1615372,village
+ابو الحشاف,,17.4437586,42.423319,village
+الشجنة,,17.4485932,42.4778479,village
+الشعف,,17.7832105,41.9852204,village
+القرمل,,18.3136482,41.7218475,village
+مراقة,,18.3355637,41.7368168,village
+الجمة,,18.4895088,41.7071705,village
+المرسال,,18.48482,41.6854819,village
+ال شواف,,19.2838949,41.9909514,village
+صعبان,,19.2906556,41.9784504,village
+القاهرة,,24.9207368,43.0301097,village
+الناصفه,,24.9106143,43.1529806,village
+الجامعية,,25.6854041,43.3040695,village
+المستنقع,,20.5348795,40.5432434,village
+داحس,Dahis,17.8224659,41.9070816,village
+صلب,,18.1181663,42.2833796,village
+دغبج,,17.87621,41.9787018,village
+السحال,,18.1063366,41.9209671,village
+الجب,,17.9830225,41.7348982,village
+القعرة,,18.1115259,41.6905578,village
+العقدة,,18.2037992,41.7039434,village
+خبت بن جبران,,17.7524574,42.017204,village
+عجيبي,,17.7615921,42.0844997,village
+الشروم,,17.8812847,41.7843895,village
+المقطوع,,17.9090252,41.7677307,village
+الحومة,,17.9341717,41.7647705,village
+السرير,,17.9615135,41.7512093,village
+البراق,,17.9525471,41.7240639,village
+الطرق,,17.9429703,41.7510147,village
+خيور,,19.2139931,44.1861763,village
+وادي فو,,18.3202629,42.2689743,village
+ذم سنون,,18.3456374,42.4415366,village
+أم زبدة,,18.1330242,41.6937828,village
+المناعية,,24.9440403,40.0594445,village
+توارن,,27.6587339,41.450459,village
+ام الغيران,Om Alghiran,22.8715875,40.8203012,village
+الديماسة,,26.4251749,42.2108807,village
+النعضاء,,18.3009892,43.7854919,village
+خدان,,20.7716731,42.6641594,village
+قليب خضر,,30.8337268,37.8668326,village
+تيهان,,17.097001,42.6138592,village
+الشعارة,,17.1060535,42.6254207,village
+الغابشية,,26.0617955,44.2650209,village
+لغراف,,18.0191135,42.0690575,village
+الطراشة,,16.9926538,42.6349006,village
+نعام,,24.556137,43.5823101,village
+الرفيعة,,24.5205682,43.5566649,village
+المدرع,Al-Mudara',24.4944796,43.6188621,village
+الشفا,,24.5708797,43.6292108,village
+سليسان,,24.3769812,43.665971,village
+نجخ,,24.6681887,43.6607898,village
+المشف,Almishaf,24.6036211,43.6176705,village
+الشامية,,24.6249221,43.5279277,village
+الدرعية,,24.6512743,43.4946029,village
+كحلة,Kihlah,24.6816471,43.5523536,village
+الظاهرية,,24.6814287,43.5460767,village
+روضة شبيرمه,,24.6628112,43.5292007,village
+الهمجة,,25.0019998,43.4872893,village
+روضة ابن حباب,Rawdhat Ibn Habab,24.7960952,43.7244348,village
+العبل,,24.8358572,43.6469254,village
+الشجون,,17.9721,42.0051,village
+الرس,,19.4702406,42.5322907,village
+ثرف,,29.0075461,35.494728,village
+عزيزة الترمس,Azizat Aturmus,27.1659927,43.4116178,village
+الجيبان,,24.6844942,50.7265375,village
+أنباك,,24.4063594,50.8389944,village
+تماني,,17.7294,46.1439,village
+الصاهد,,24.3161226,43.4155904,village
+بلاد آل موسى,,18.8917917,42.0088005,village
+أم بيض,,18.2438425,41.5537897,village
+لبوانة,,18.259987,41.69144,village
+روضة العوازم,,25.5920423,42.7765273,village
+طفيلة,Tfelah,24.6548972,43.0341573,village
+مقزع,Muqza`,17.537379,42.78977,village
+قرضة,,18.1129115,42.5271522,village
+الرفيعة,,30.063335,40.3207705,village
+الجحفة,,18.7731091,42.8945035,village
+مقابل الشرقي,,18.8346337,42.8953822,village
+بادية,,18.919895,42.8920042,village
+الواسطه,,19.0127255,42.9167786,village
+الذيبة,,19.0417545,42.9207195,village
+السمار,,26.1235714,43.113205,village
+الشيط,Ash Shayyit,27.543112,47.281178,village
+ريية,,22.1072,45.2085,village
+مشرفة غثاة,Mushrifat Ghathah,24.407394,43.2284245,village
+بديدة,,24.406746,43.2323986,village
+الخالدية,,24.3632716,43.2425739,village
+بدائع العضيان,,24.3483653,43.2761316,village
+أمهات الذيابة,,26.2125119,43.6762804,village
+مركز الرفاع,,27.1047,47.0187,village
+عقلة صفية الجنوبية,,26.6387,44.5804,village
+قصر ابن علي,,24.2872241,43.3797052,village
+وساع,alwisae,17.4778781,42.9006168,village
+ابو الخلقان,,25.7335587,45.8891579,village
+علوه العباد,,25.8350316,44.1285181,village
+الحسي,,24.6482751,37.332809,village
+شوية,Shawyah,26.367623,47.244227,village
+عقلة الغويري,Oqlat Alghwairi,24.7204824,43.8009749,village
+الفاخرية قرية آل مخثله,,22.9893228,44.9612821,village
+الهدود,,19.2637201,43.5488109,village
+المعبوج,Al Ma`buj,16.9010164,42.5989595,village
+السالمية,,22.2023371,40.7275282,village
+المرقاب,,20.2876708,42.1287213,village
+شواص ديار بني واس,,19.870556,41.9348739,village
+تباشعه,,18.8170484,42.5940208,village
+السراجية,,23.8820679,38.895856,village
+العديف,,18.8788705,42.1152648,village
+الرطرطيه,,20.0221729,42.3773804,village
+شديق,,19.9881546,42.3557984,village
+ظليم,,22.0822941,42.1627589,village
+مطربة,,22.737822,44.417901,village
+الهضب,,21.3905,44.187,village
+آل مهري,,19.2615451,42.0132951,village
+حسوة,,18.1363404,42.3171378,village
+الصفق الأحمر,Al Ahmar,25.7583099,39.2627978,village
+أبو زباير,,24.979552,39.3584239,village
+الديسة,,25.5588774,39.3454957,village
+الصميد,,23.7454402,38.650031,village
+رحبة الحسني,,25.5925361,39.4324207,village
+القرينة,Al Qarinah,25.1018621,46.1930295,village
+شناصير,,24.287007,39.449971,village
+بئر مراخ,,24.276368,39.518775,village
+الفلقه,,26.24878,37.561839,village
+أم العراد,,22.864806,40.566349,village
+قرم,,26.385931,37.471372,village
+الفرش,,26.431277,37.36186,village
+سرار,,26.578783,37.24175,village
+الخرقة,,26.731582,37.21051,village
+شوساء,,26.6607934,37.3217426,village
+الهذلولي,,26.310253,39.672461,village
+المقرح الأبيض,,26.470794,37.587305,village
+عورش,Awrsh,26.657072,37.580238,village
+العذيب,Al Adhib,26.706517,37.91315,village
+الشراعية,Al Shiraeia,26.694653,37.902668,village
+الوفظ,,26.515926,37.537285,village
+المقرح الأسمر,Al Maqarah al'Asmar,26.6005,37.462979,village
+بادية خريط,,26.2644,39.537305,village
+الحجر,,26.841302,37.951125,village
+أم طليحة,,26.722076,37.895079,village
+الملسن,,26.769855,37.895725,village
+المنقاء,Al Munqa,26.835081,37.856111,village
+قصيب الأعوج,,26.30845,37.959383,village
+أم غطية,,26.297783,37.973267,village
+الخشيبة,Al Khashiba,26.345067,37.945583,village
+الوزب,,26.40781,38.008702,village
+أبو زرائب,,26.425391,38.060475,village
+دف رحال,Daf Rahaal,26.42571,37.762117,village
+بئر الأراك,,26.029565,37.688097,village
+اماهيك,,26.108454,37.656903,village
+المهدرة (جيدة),,26.1409607,37.4426144,village
+غضن عليا,,26.022189,39.347379,village
+سيل عرعر,,25.91943,38.100695,village
+العين الجديدة,,25.886065,38.217242,village
+القصير (قصير عمودان),,25.738587,37.996771,village
+الدقم,,23.558917,38.6027,village
+الزباير الجديدة,,25.491208,38.348437,village
+الحنوة,,24.685205,38.070226,village
+الجوه,,24.686569,38.077171,village
+الخيامة,,24.694143,38.065702,village
+الحرضة,,25.771285,39.299073,village
+بئر بن زويد,,24.402056,37.541142,village
+الواديين,,24.371001,37.612333,village
+المثلث,,24.346919,37.616475,village
+مصنع الإسمنت,,24.273677,37.556929,village
+هدنة السرير,,25.593297,39.323201,village
+العتبة,,24.666121,37.547426,village
+أجل,,24.571474,37.738783,village
+واسط,Wasit,23.967648,38.710893,village
+رمث,,24.394021,37.461804,village
+المشيريف,,24.701985,37.600066,village
+مجراي,,25.473923,37.925452,village
+نخل الشريق,,24.878077,38.745261,village
+المشاش,,24.954733,38.039917,village
+المشاش,,25.094575,38.416916,village
+الصفيحة,,25.04155,38.024367,village
+ضفيان,,24.949083,38.043,village
+عرفه,,25.091183,38.2731,village
+الدارة,,25.185114,38.464415,village
+الصباخية,,23.838412,39.144928,village
+منوارين,,25.25535,38.32265,village
+البديع القديم,,25.307039,38.283927,village
+النقيعة,,23.88097,39.750007,village
+مزارع عاره,,23.89427,39.752902,village
+وادي المجز,,23.933854,39.683993,village
+الفرشة,,23.950421,39.650459,village
+الفقرةالشمالية,Al Fiqarah Northen,17.0983257,42.5643308,village
+المليحة,,23.816838,39.665507,village
+مزارع اليتمة,,23.823041,39.639026,village
+الرصيدة,,23.867212,39.750882,village
+المسبعه,,23.852466,39.703428,village
+حارة الدوداء,,24.038026,39.44883,village
+الظمو,,24.091932,38.879668,village
+بهمان,,24.165727,39.021998,village
+ابار عذبة,,24.029403,39.47506,village
+بئر الصاعدي,,24.043479,39.553442,village
+بئر ماطر,,24.25686,39.557372,village
+الدويفعة,,24.1760734,39.5643232,village
+الصرباني,,24.019106,38.950483,village
+أبو رويث,,24.02133,38.947845,village
+مشيط,,24.101176,39.078762,village
+المقدار,,24.12402,39.057867,village
+وتر,,24.054345,39.088987,village
+المكيمل,,24.057349,39.084694,village
+نزله الصواعد,,24.027609,39.0834763,village
+الطلعة,,24.0205058,39.0582541,village
+ترجم الترعه,,24.0165929,39.0439937,village
+أبو لصب,,24.097907,39.089596,village
+التراجمة,,24.203514,39.281243,village
+مريات,,24.197115,39.273652,village
+مزارع ملل,,24.202072,39.292842,village
+مرى,,24.165524,39.293091,village
+السليمية,,23.934366,39.034046,village
+معذبة,,23.893512,39.103429,village
+العطشان,Al `Atshan,26.959863,44.106441,village
+المعيرج,,23.920187,39.128358,village
+رحقان,,24.163603,39.077397,village
+السيالة,,24.238049,39.171342,village
+الثاجة,,24.278225,39.17862,village
+الجردوح,,24.2892311,39.2631569,village
+روض البهم,,24.074036,39.60239,village
+وادي الحنو,,23.933066,39.557807,village
+وادي حظة,,23.993575,39.413466,village
+وادي ريم,,23.962157,39.366968,village
+الدوداء,,24.106612,39.373045,village
+الحليقة,,24.109342,39.296244,village
+بئر بن معنز,,25.333331,39.333332,village
+سفاء,,24.074114,39.212807,village
+بئر الروحاء,,24.072963,39.162626,village
+نزلة عامر معوض,,24.086083,39.186695,village
+العويقل,,24.107707,39.177016,village
+شبرمة,,24.116672,39.204368,village
+هبت,,24.057307,39.1879,village
+سدارة,,24.159676,39.209045,village
+الرواعية,,23.99731,39.436335,village
+الراغية,,23.980277,39.420125,village
+الناصيبة,,23.923717,39.388708,village
+الحنو,,23.91079,39.549278,village
+شعيب انفة,,23.8335153,39.5106132,village
+مثعر,,24.341029,38.93118,village
+المفرق (المثلث),,25.032077,38.936443,village
+بادية رشاد,,24.828314,39.142968,village
+النغيرة,,24.32624,39.55717,village
+بادية محيبل,,24.346709,39.385225,village
+بادية بواط,,24.672489,38.996741,village
+حورة,,24.363179,39.132993,village
+حويرة,,24.373392,39.141491,village
+ابا العريج,,24.295027,39.295373,village
+الفقرة,,24.350476,38.9444,village
+السديرة,,24.365017,38.866583,village
+عين طوالة,Ain Twalah,25.084453,39.50489,village
+الشفية,Ashfayah,25.20439,39.31727,village
+البحرة,,24.599169,39.405939,village
+ملل,,24.595748,39.24751,village
+الجوة,,24.579452,39.368201,village
+الحفيرة,,24.595937,39.343784,village
+المثناة,,24.573279,39.444703,village
+غزيل,,24.617254,39.27017,village
+ابار الصميما,,24.590609,39.819715,village
+العوينة,,24.634057,39.85416,village
+الرصيعة,,24.717602,39.815788,village
+القبيبة,Algbebah,24.671557,39.636022,village
+مليحا,,24.737665,39.780425,village
+سد الغاب,,24.595245,39.567854,village
+العصيلب,,24.765593,39.180477,village
+مزارع الحمض,,24.78326,39.209475,village
+ملح,,24.718657,39.277715,village
+وادي سنان,,24.727877,38.219204,village
+القويز,,24.625902,38.486791,village
+قوت,,24.690696,38.628324,village
+علقة,,24.623886,38.145237,village
+دوايت,,24.601683,38.154083,village
+السويرقية,,23.326827,40.292317,village
+لمذخرة العليا (المساوق),,23.263344,40.274472,village
+وريثان,,23.284983,40.30338,village
+الجصة العليا,,23.298627,40.288541,village
+فاضة سويرق,,23.319968,40.301137,village
+الزرب,,23.333212,40.301591,village
+يدعة,,23.7679019,39.2439224,village
+بئر بن عمري,,23.801824,39.223777,village
+الأبطن,,23.35826,40.247729,village
+الرمثية,,23.388635,40.2742,village
+حازم,,23.329844,40.137605,village
+الذبال,,23.436248,40.598222,village
+المثلث,,23.319579,39.929805,village
+الرحاب,,23.299722,39.933611,village
+النشي (النشج),,23.33175,40.031183,village
+عروى,,22.788511,40.1187459,village
+الحماط,,23.023733,39.935806,village
+رعل,,23.042193,39.961368,village
+الجرنافة,,23.133578,39.954755,village
+علل,,23.04149,39.946137,village
+القرن,,23.031166,39.881731,village
+الزليف,,23.068743,39.91781,village
+قداعة,,23.18765,39.94994,village
+الحويل,,22.603226,40.480284,village
+المحاجر,,22.67019,40.493307,village
+مشرفة بالجبل,,22.643688,40.501773,village
+الحمنة,,23.007799,39.891015,village
+وريقة,,22.985221,39.979715,village
+المحلل,,22.883973,39.97265,village
+مشرفة,,22.993475,39.938925,village
+الصميماء,,22.932095,39.907888,village
+فيد العلا,,22.855616,39.955216,village
+أم الرجوم,,22.893183,39.88445,village
+البقعية,,22.975883,39.908062,village
+الصحيرة,,22.921643,39.89902,village
+المواريد,,22.939641,39.903345,village
+مخضور,,22.858751,39.90729,village
+الأحيرش,,22.92879,39.898827,village
+عويجاء,,23.135713,40.575115,village
+اللجيجة,,22.626646,40.60031,village
+الديوانية,,23.202788,40.488426,village
+الشعيبين,,23.222846,40.417132,village
+العيديات,,23.189533,40.49606,village
+السرحية,,23.256216,40.51764,village
+النعيمة,,22.688511,40.309859,village
+الحفنة,,22.632454,40.347434,village
+العش,,22.835677,40.550957,village
+الرشاء,,22.801354,40.373466,village
+المنصة,,23.134238,40.426544,village
+الهويملية,,22.8907744,40.412185,village
+الفعرة,,22.89274,40.397486,village
+النبيعية,Al-Nabiah,22.8747321,40.4323073,village
+أبو صفادين,,22.870373,40.462851,village
+شبرقان,,22.886829,40.48875,village
+هجرة الحومة,,22.876967,40.5143,village
+الرفايع,,22.694614,40.472305,village
+انبيع,,22.951894,40.424765,village
+أم الرجوم,,22.9504,40.4009,village
+العضيلية,Alaodheliyah,23.165783,41.097501,village
+الفيضة,,23.108136,41.068299,village
+الظاهرية,,23.09901,41.062251,village
+المزاحمية,Almzahimiyah,23.09688,40.962159,village
+العلم,,22.999617,40.524928,village
+نخل مغور,,23.00989,40.554129,village
+الصدير,,23.107425,40.680795,village
+ذخر,,23.091586,40.689787,village
+الموسمية,,23.076629,40.714297,village
+الرجل,Arrjal,23.146389,41.226667,village
+النازية,Annaziah,23.200351,41.285231,village
+عضيرة,,23.552515,40.941297,village
+الحفيرية,,23.455798,41.29332,village
+العثياء,,23.607321,41.244859,village
+أبو رمثة,,23.463128,41.35264,village
+ام شكاعا,,23.608403,41.163026,village
+النعضة,Annedhah,23.3966537,41.1939739,village
+المشعلية,,23.597067,41.360361,village
+السالمية,,23.106024,40.831927,village
+الوايلية,,23.197639,40.770689,village
+اللخجة,,23.229472,40.866579,village
+الجرذاوي,,23.159444,40.736111,village
+الحصانة,,23.441338,40.765327,village
+الجروي,,23.406956,40.697522,village
+أم رضيم,,23.472703,40.861178,village
+أم الدمار,,23.454332,40.805165,village
+رفيعة أم الحبحب,,23.456337,40.86534,village
+هميجة المهد,,23.512335,40.978802,village
+الفاتنية,,23.473936,40.908042,village
+غضيرة,,23.573493,40.984983,village
+العرج,,23.409602,40.988252,village
+ثجر سويدان,,18.3629818,43.7966919,village
+سويقه,,24.559255,38.116936,village
+الضبعان,,24.534742,38.066733,village
+المشبرق,,24.379965,38.277699,village
+عرضا,,24.499481,38.284408,village
+فايضة,,24.445034,38.258924,village
+صمد الصعيد,,24.479817,38.27665,village
+الفرشة,,24.4629,38.279667,village
+الثمد,,24.485719,37.999755,village
+الهلالية,,24.515252,38.044654,village
+القصورية,,24.497531,38.052534,village
+الصفصف,,24.457379,38.041549,village
+التلعة الحمراء,,24.4863568,38.0394766,village
+ثما,,24.518128,38.080382,village
+الحميراء,,24.74154,37.88198,village
+ضاحك,,24.739279,37.843136,village
+زحل,,24.729751,37.835457,village
+دانة,,24.7394,37.914883,village
+سويس,,24.72251,37.84866,village
+الخشيرماء,,24.742413,37.84485,village
+النقيرة,,24.763652,37.852422,village
+تومل,,24.766879,37.822474,village
+رحاب,,24.754583,37.861985,village
+السديرة,,24.769759,37.819242,village
+محيريق,,24.773235,37.930724,village
+ام الحفر,,24.7683,37.92559,village
+بئر أحمد,,24.403044,38.717538,village
+اليسيرة,,24.392333,38.478167,village
+رهباء,,24.359167,38.728056,village
+أبو قرن,,24.187939,38.69417,village
+كتانة,,24.360124,38.426638,village
+قري,,24.627033,38.096906,village
+الصفراء الصفيراء,,24.671933,38.09017,village
+لاية,,24.707164,38.017531,village
+اللحيان,,24.733998,38.008381,village
+الحميضة,,24.701083,38.057117,village
+سلم المتعية,,24.665245,38.081994,village
+اللطية,,24.740116,38.017781,village
+وادي عباثر,,24.502677,38.513626,village
+الفرعه,,24.47726,38.502367,village
+البقاع,,24.388819,38.600976,village
+البلدة,,24.376879,38.613542,village
+صوري,,23.655228,39.446361,village
+وادي ظلامة,,23.711355,39.563085,village
+وادي العقدة,,23.730077,39.507929,village
+العقدة,,23.761075,39.497495,village
+خلص,,23.787266,39.431785,village
+السفح,,23.708023,39.463904,village
+فرشة الشامي,,23.677759,39.459179,village
+العضيرسة,,23.804017,39.807567,village
+الضليل,,23.717048,39.485018,village
+سميرة,,23.793478,39.600325,village
+الخضلة,,23.736579,39.471962,village
+الملحة,,23.791962,39.465514,village
+الحلبة,,23.807342,39.751949,village
+الفارع,,22.858336,39.862512,village
+المحضة,,23.273833,39.709667,village
+اليسيرة,,23.308768,39.592716,village
+العد,,23.303719,39.4913,village
+بادية مجاح,,23.26437,39.423806,village
+مغيسل,,23.09905,39.773717,village
+الراجف,,22.81492,39.816211,village
+الغضن,,23.634663,39.688174,village
+الحرة,,23.53451,39.875145,village
+المقلب,,23.537681,39.863673,village
+وادي العطشان,,23.4925603,39.6995278,village
+المجرمة,,23.396229,39.668942,village
+الهمجة,,23.659842,39.667589,village
+مخطط ملح,,23.484461,39.836899,village
+المديرا,,23.478317,39.776217,village
+الريان,,23.4531,39.760033,village
+صخوي,,23.65169,39.670224,village
+لحج,,23.650254,39.629513,village
+الجظع,,23.62005,39.633667,village
+الرمضة,,23.462183,39.6526,village
+الفراش,,23.426367,39.653267,village
+البركة,,23.422568,39.227639,village
+مريخة,,23.551791,39.100743,village
+أم السدر,,23.556385,39.277046,village
+الأرطاوي,,25.043694,40.709884,village
+العدوة,,19.3066013,42.0677377,village
+ابوغريملية,,25.068571,40.228265,village
+المقرن والسقو,,25.238492,40.407075,village
+القثيلية,,25.14765,40.375167,village
+كحلة,,25.115718,40.396009,village
+دعيب حمدى,,25.12105,40.4183,village
+لوي,,24.99385,40.6078,village
+مديسيس,,24.807841,40.487301,village
+الحفائر,,23.1249973,48.9684051,village
+الفارعيه,,23.731917,40.870333,village
+بادية المزرع,,23.827506,40.418216,village
+الحبابية,,23.8644,40.291933,village
+الجميزة,,23.637183,39.918767,village
+الحريقة,,23.937988,40.330553,village
+المفيرق,,24.513397,40.233892,village
+قوزة,,24.666363,41.064495,village
+سهلة المزرع,,23.835791,40.39108,village
+القليبية,,22.9597668,49.0256077,village
+الرضام,,24.917703,41.386831,village
+الزابنية,,24.432778,42.078333,village
+الحمادة,,24.246526,41.579341,village
+الطويلة,,24.272293,41.575493,village
+المنتزه,,24.348917,41.625461,village
+بريريق,,24.386661,41.609838,village
+بدائع ساق,,24.278901,41.41994,village
+مزارع الحار,,24.516018,39.916135,village
+المروة,,25.088915,40.423034,village
+بادية الصويدرة,,24.877473,40.022097,village
+السليمية,,24.95795,40.142233,village
+المسبعة,,23.966656,40.101497,village
+مزارع القفيف,,24.01296,40.183244,village
+عقيربان,,24.776961,41.789467,village
+غفرة,,23.86722,40.906852,village
+ام عرد,,23.827633,40.977756,village
+ام المخاييل,,24.2417899,40.8988817,village
+الزاحمية,,24.09618,41.017363,village
+الجديدة,,24.0146684,41.0556199,village
+الحمدانية,,24.063293,41.078623,village
+البريكة,,24.055455,41.070346,village
+الرفيعة,,24.086507,41.072078,village
+الخويرة,,23.870416,41.099833,village
+سريحان,,23.867783,41.232945,village
+بدائع مشرفة,,24.0030562,41.3324901,village
+هجرة البدنه,,23.977127,41.675962,village
+رشيدة,,23.711488,41.623485,village
+القبية,,23.830222,41.818967,village
+العويشة,,23.870546,41.822867,village
+اليوسفية,,24.2089862,41.9770603,village
+الوبره,,23.974215,41.891625,village
+الرفيعة,,23.918389,42.118722,village
+صعيبة بن موسم,,23.854278,42.079291,village
+العيادية,,23.859883,42.064183,village
+الحمادة,,23.941667,42.125278,village
+الظاهرية,,23.944367,42.090022,village
+المرقاب,,23.916667,42.098889,village
+الحمدانية,,23.920533,42.081683,village
+العقل,,18.1391953,42.0970827,village
+فيشان,,18.0675564,42.2981377,village
+فجر روام,,18.4140472,42.0547485,village
+العاينه,,18.0182495,42.2727776,village
+ثمران,,18.6983398,42.1565192,village
+الراحه,alrrahuh,16.7253644,43.1585079,village
+وادي النخيل,Wadi Al nakhil,25.4254629,42.828617,village
+اللوي,,21.1762642,42.7464463,village
+أم الفروغ,,21.1671322,42.7359705,village
+قرية المزكاء,,26.1453,40.388,village
+الشرمان بني ذبيان,,20.6204542,40.8738181,village
+الحدباء,,17.8182231,44.5018865,village
+اللصب,,18.7568255,41.5068417,village
+قوز الشاهد,,18.7409104,41.4379918,village
+الفايج,,18.8818703,41.5842644,village
+المقعى,,18.869864,41.5778452,village
+البيشية,,19.3283088,41.1478725,village
+آل سليمان,,19.4590685,41.9660629,village
+المجيصة,Almajeassah,25.9306389,40.344449,village
+آل شتاء,,17.9901828,43.1502794,village
+الجنية,,18.301167,41.72364,village
+الفرش,,18.3565259,41.7050058,village
+الخضراء,,18.3503364,41.6981112,village
+دثن,,20.6090755,40.6778221,village
+الفحو,,20.5338046,40.6639573,village
+متان الحب,,25.7246886,38.3653067,village
+الضليعة,Ad Dulayah,25.6670489,38.326404,village
+الزباير,Az Zubayir,25.631941,38.3280133,village
+الخفيج,,25.8750278,40.7418256,village
+المغار,,25.6708854,40.7343424,village
+جبله,,25.4989471,40.6645851,village
+فيضة المسعار,,25.6170793,41.0127053,village
+شُطِيْن,,25.8891678,37.1792145,village
+الغيناء,,18.02396,42.4119785,village
+رطيان,,28.6046472,41.6628928,village
+الهبيريه الجديدة,,26.2086831,42.4786647,village
+حصاة الداب,,26.8510236,38.5609698,village
+العقيلة,Alougeylah,27.0651951,41.3427849,village
+الجانبه,aljanibah,17.5283672,43.0588662,village
+الشرى,,18.3468875,41.9232758,village
+المرجِّبات,,19.4189314,41.6080587,village
+الذيابيه,,24.879694,49.7014732,village
+جمعة ربيعة,,19.056269,41.5066942,village
+المعقر,,19.0640522,41.5276607,village
+الحصاحص,,18.4446902,41.6886575,village
+المرضي,,18.3457238,41.8877744,village
+الرمادة,,18.2394637,41.9345067,village
+قرية نعمة,,19.1479616,41.8315932,village
+المدانه,Almadanh,19.2382913,42.0722929,village
+العُرُش,,19.319458,42.0709513,village
+الصالحية,,25.5086623,44.1617567,village
+عصام,Assam,24.7234183,43.6249217,village
+فايزية الحدباء,,24.7109232,43.6789167,village
+العامرية,,25.4524491,44.2004335,village
+الوهابية,,25.4217842,44.2099714,village
+رفايع النايع,,25.2603997,43.0676762,village
+العدوة,,24.2015357,43.8458163,village
+أم العراد,,25.9296131,48.9660154,village
+شخيب,,24.4903186,46.2673897,village
+غزايل,,20.9706246,41.070023,village
+أبو راكة,,20.9339941,41.2014336,village
+الطرفيه,,25.4121463,44.4407966,village
+مصدة,,24.5351973,44.2736375,village
+العسيبي,Alesibi,23.9863309,42.4706275,village
+الروضة,,26.2800489,44.8119745,village
+العزيزية,Alaziziyah,23.3735562,40.8695936,village
+القويعية,Alguwaeiyah,23.4081961,41.2587015,village
+حيلان,Hilan,23.5852564,41.6974179,village
+قرية الشعراء التراثية,,24.2629004,44.1822827,village
+مشرفة,,26.405167,45.1123389,village
+البرزة,,26.678272,45.340607,village
+اللنسيات,Allensiyat,23.6573666,42.581023,village
+المثناة,,24.5385222,43.9421061,village
+الفرعة,,23.4984387,46.8190859,village
+خباش,Khubash,17.5498537,44.7411346,village
+خيران,,20.4091381,45.4313582,village
+العصمان,Alosman,20.4949973,41.0262846,village
+أبو عشيرة,Abu Ashirah,24.5378827,43.5754426,village
+الأصافرة,,20.490709,41.0421983,village
+الأحلاف,,20.3419828,41.1543902,village
+قملان,,20.4227653,41.1235295,village
+كيد,,20.4476677,41.1665872,village
+الصليعاء,,18.6190106,44.25067,village
+عبدالمانع,,18.595301,44.3247216,village
+ال فهاد,,18.6115155,44.3416682,village
+ال شعيله,,18.6299887,44.2790266,village
+الحرفشية,,18.1221592,44.6458753,village
+السلام,,18.3337491,44.2027723,village
+النبطية,,18.3959922,44.1667943,village
+الصباحية,,18.4446708,44.166906,village
+ليان,,18.3764556,44.1486571,village
+الصحن,,18.4394114,44.1296387,village
+نحران,,18.27557,44.1906434,village
+الوهلان,,18.3413586,44.1986897,village
+فارعه السلام,,18.3085639,44.2029248,village
+المربع,,18.3032012,44.218319,village
+الخضارية,,17.9991096,44.1178354,village
+عويل,,18.0991667,44.1337133,village
+العاتق,,18.0733505,44.1050029,village
+ال هباش,,18.0126708,44.1268781,village
+الرحبة,,17.9298398,44.1539829,village
+الرهوة,,18.2591584,43.4959629,village
+مجيرشه,,18.2710416,43.5020194,village
+الحصيصه,,18.2179498,43.4925613,village
+حرشفه العليا,,18.2504371,43.492803,village
+روضة بن نورة,,18.4239798,43.40277,village
+الخنقة,,18.303314,43.5048387,village
+النهدين,,18.5616913,43.7413406,village
+الحمراء المشاعله,,18.8956298,43.660273,village
+كحلان آل شبوة,,19.6684882,43.2000291,village
+الحنثرية,,19.7603359,43.0347519,village
+العنقرية,,24.6071528,50.6756681,village
+ذم سودة,,18.1664028,42.325489,village
+غار السبيل,,22.7966347,44.5059471,village
+الجندلة,,20.2307457,40.8502944,village
+الجرثمية,,21.1838608,42.7310867,village
+شرمة,,18.3490769,42.3767372,village
+الصنبور,,18.0315113,43.2418251,village
+وادي الرهط,,18.0264434,43.2887008,village
+بني عيسى,,19.4226208,41.4799156,village
+لومة,,19.5360813,41.4149673,village
+كعيت,,19.0039575,41.9026735,village
+حوالة,,19.7922332,41.7171834,village
+فيضة أبان الأحمر,Faydat Aban Al-Ahmar,25.4441045,42.854793,village
+صروم,,24.8234196,37.472393,village
+القرارة,Al Qrarah,24.8868828,43.2905294,village
+راحة سنحان,,17.8353041,43.4122239,village
+عضاضه,,18.1337987,42.6534831,village
+السويداء,,18.0098095,42.6832809,village
+شعف ال سودة,,18.9880059,42.1313561,village
+الحيط,,21.0360184,40.3240623,village
+الغمايات,,20.6557024,40.7973997,village
+الفاضية,,18.7718964,42.1059837,village
+الملازم,,19.089257,42.0355956,village
+الفروخية,,20.7169194,40.357878,village
+العماشيه,,25.6370082,43.9617042,village
+روضة فردة,,25.6099199,43.9944654,village
+راكة,,18.5765065,41.570309,village
+الفطيح,,18.8019341,41.5515091,village
+القواعد,,18.752058,42.0868378,village
+احامر,,26.8128303,38.7263358,village
+الجهراء,,26.8669235,38.8837476,village
+المثلث,,26.8190796,38.9273783,village
+محير ذويرة البويطن,,26.8566867,40.0423733,village
+نعيمين,,26.9316521,40.0876541,village
+سلم الزواهر,,19.8240774,40.7410379,village
+ملاكيك,,23.129976,45.3870151,village
+الرفود,,18.4359627,41.9573669,village
+العوينة,,24.6242847,39.8270226,village
+المرتب,,18.111835,41.776233,village
+المروة,,18.130956,41.791745,village
+سير,,18.16369,41.869446,village
+الصعادي,,18.2740275,41.7569498,village
+العليا,,25.1682519,43.0876931,village
+الجرباء,,19.4682489,42.8259402,village
+العرقين,,18.3370166,43.2787081,village
+الحبيل,,17.549843,42.7984731,village
+القائم,,17.713451,42.4351216,village
+العاينة,,18.0199681,42.2440539,village
+الصرة,,18.5503214,42.3995526,village
+الجحفه,,17.3343773,43.190567,village
+الحامدية,,24.8600785,42.625436,village
+ثريان,,24.8263237,42.6239457,village
+ناهية,,20.934668,41.224853,village
+يبس,,19.540448,41.361923,village
+الليمة,,19.2715206,42.2180557,village
+الحفار,,19.1559564,43.1288421,village
+الغضاة,,18.7156908,43.1884081,village
+قرّا,,19.0040264,43.4866714,village
+الحرض,,18.7291431,43.6796959,village
+الرس,,17.8979378,43.2348671,village
+المصنعة,,19.8419561,41.5646634,village
+الربقة,,19.8351168,41.5688915,village
+مفرغ السيل,,18.1250134,42.0648003,village
+شمرخة,,18.2666333,41.9806371,village
+الجبوب,,18.5223073,43.6137472,village
+سقف,Saqf,26.9204265,41.1263598,village
+الماجدي,,22.4312592,40.4538002,village
+جو غمرة,,18.2813095,42.2170831,village
+مصيدة,,17.3896427,43.0433197,village
+روام,,18.3536797,42.0695992,village
+عنيزان,,25.2736712,44.2334446,village
+قريدة,,20.2064686,41.2349586,village
+القتيباء,,19.6340441,41.3275767,village
+القعر,,19.6515611,41.2779525,village
+الصهوة,,19.6420993,41.3426048,village
+العصداء,,19.6400925,41.3338382,village
+قرن مخلد,,18.9622453,41.849559,village
+النصيلة,,19.0459104,41.7827112,village
+المحرق,,19.0327702,41.7810402,village
+ولد اسلم,,18.2476835,41.9272215,village
+علكم,,18.2979203,42.4692123,village
+النجيل,,18.3128377,42.4281833,village
+النجاد,,18.302351,42.403595,village
+رحاب,,21.4608484,40.4238287,village
+الديّرة,,18.9920311,43.7697716,village
+قرين سارة,,20.0989399,40.9582726,village
+الحومة,,19.9366991,40.9926933,village
+الطينه,,20.0985791,40.8552933,village
+المهد,,20.4054432,40.8219261,village
+الرفيعة,,25.6340918,43.3169059,village
+العايشية,,25.5163515,43.6167216,village
+العبيلة,,25.4398778,43.6040863,village
+روضان,,18.6130065,42.8326025,village
+الأثب,,18.7113373,42.4904896,village
+الحسو,,24.609802,41.6143577,village
+المحامة,,24.7636296,41.6123301,village
+عنيزة,,19.1751614,43.6018829,village
+الخيمة,,25.7672863,42.4997368,village
+قمبور,,18.9735392,41.3382294,village
+المرصوفه,,18.4132905,41.4775783,village
+قَيلة,,18.4216214,41.4751104,village
+الحلفة,,18.5120135,41.4457923,village
+القزيعات,,18.4880368,41.4553722,village
+الحصيان,,18.6084472,41.435731,village
+الشَّليلا,,18.5575619,41.4351767,village
+الصخر,,19.4961205,41.5606194,village
+الذَنبة,,19.4817047,41.6010437,village
+العيينه,,19.4800877,41.5911536,village
+غريب,,19.4477329,41.6217651,village
+صقارن,,19.4897697,41.5982786,village
+الجعافر,,19.4436054,41.6077385,village
+حضرة,,19.4844187,41.5778195,village
+علمان,,19.4802589,41.6063652,village
+غزة,,19.4886875,41.5675926,village
+بالحصين,,19.5460587,41.5352325,village
+حدبة حجران,,19.4841186,41.570329,village
+العلكة,,19.0380994,41.8903702,village
+الطرفاء,,21.7056497,39.8724099,village
+العريش,alearish,17.1442239,42.7244929,village
+الفرشة,Alfirsha,17.1494928,42.743123,village
+وتيشة,wataysha,17.1373878,42.704335,village
+الرمحية,,25.5723836,46.9756079,village
+أم جرفان,,25.5916295,42.7912367,village
+بدائع اللهيب,Badia Allahib,25.2327004,42.9299691,village
+الديّرة,,18.9975515,43.7518995,village
+سلامان,,20.2100301,41.2389381,village
+عمضان,,20.2003216,41.2236325,village
+المثيلة,,20.2724297,41.3057621,village
+المشقر,,19.2317149,41.8090619,village
+الحويمض,,22.6565632,39.9099344,village
+مشرق,,22.6113238,39.8822806,village
+البقعة,,17.718765,43.2687178,village
+حبرة,,17.7922298,43.1380216,village
+المتية,,17.7638233,42.9575894,village
+السبلة,,17.7624798,43.031929,village
+عدِن,,17.7546863,43.2548938,village
+ضموة,,17.8078446,43.00942,village
+الثافرة,,17.8496012,42.9866126,village
+وادي ذهب,,17.9447001,42.8567879,village
+الجوين,Al Juwain,17.5354976,42.8529401,village
+المفجر,,17.6367265,42.9948709,village
+الجزعة,,17.4986071,42.9153443,village
+جناب شكر,,19.8764994,41.8046409,village
+القائم,Al Qaim,17.11179,42.8554652,village
+الصليلة,,20.1208451,40.8739004,village
+الرفغة,,18.0103437,43.5312466,village
+السطيح,,26.1644976,37.4506963,village
+المجمع,,26.2493038,37.289772,village
+العماير,,27.0100819,37.238459,village
+أم نخله,,26.8207988,39.5618409,village
+البحرة,,24.6260584,39.4011375,village
+السطيح,,24.5789721,37.3858919,village
+نُعظة,,24.9125805,37.5664406,village
+الفاجية,,25.0482693,37.3013916,village
+الدبيبات,,25.0207596,37.3350487,village
+الجريف,,26.4295796,36.3978958,village
+أم الشبرم,,23.6446777,45.1393293,village
+الظبيبة,,27.4433265,36.5456086,village
+تولة,,25.6154862,37.3572619,village
+المدقة,,25.9005971,37.4162154,village
+الرقيبة,,26.2750191,37.6192727,village
+مرجع الروض,,26.1212358,40.6769359,village
+الرافعية,,29.8041691,39.6722127,village
+الفاو,,28.2659919,45.6945362,village
+الفاو,,23.6180239,45.3889911,village
+النميص,,23.2674054,44.6551429,village
+الحرجة,,22.893931,44.8033171,village
+الضبط,,22.8631863,44.7883234,village
+مثاب,,17.9544411,43.1574631,village
+العمار,,18.7619301,42.9102373,village
+عشيرة,,24.042487,45.3761608,village
+القرافين,Algarafin,21.8366433,40.6894348,village
+صدر وائلة,,17.8750276,42.5731561,village
+رثمة,,17.8107376,42.6076164,village
+خبة,,20.4912193,40.8214107,village
+الحويّه,,20.4778016,40.708925,village
+الأقحاف,,20.4945647,40.7136421,village
+ذهب,,20.560894,40.6170425,village
+غمرة,,20.4777801,40.6794003,village
+الصُّمّان,,20.568518,41.033486,village
+المدارة,,20.4873755,41.1343532,village
+المشاقيف,,20.5586336,41.050348,village
+الضُّبَعة,,20.5361977,41.1330528,village
+السراحين,,20.6105919,40.9726482,village
+محنا الساق,,20.5854,40.747199,village
+حسلات الشمالية,,24.9534406,42.6171002,village
+أم لج,Om Lej,24.9303436,42.6769841,village
+العدانة,,25.7707359,43.2515649,village
+القشبة,Algishbah,21.521734,40.1020021,village
+الحليفة,,19.3602035,41.2540015,village
+الرقبة,,19.1588648,41.7734755,village
+واصل,,19.1266966,41.7903238,village
+الخرسوع,,19.1548671,41.7734203,village
+الدارين,,20.4771681,41.1005129,village
+ثلوث عمارة,Thuluth Amarah,19.2402635,41.793428,village
+الفرش,Al Farsh,19.2068116,41.7717031,village
+القصرة,,20.4727099,41.0946688,village
+الزوكة,,19.1291654,41.7793352,village
+حلاة,,19.2062264,41.7157453,village
+الزبرة,,20.481712,41.1116717,village
+العتلة,,20.4761698,41.1083208,village
+أم الرجوم,,22.8672413,39.8832533,village
+الراجف,,22.8500186,39.8630468,village
+قرى يتمة,,18.24245,41.7963028,village
+بني ذيب,,18.6944279,41.622664,village
+الحقلة الشمالية,Alhaqluh north,16.6390267,43.0644035,village
+الحقلة الجنوبية,,16.631861,43.0588136,village
+شعب آل دهمي,Sha`ab Al Dahmi,16.6557121,43.0611895,village
+القرة العليا,Alqarrah al ‘Ulyā,16.6323101,43.0491899,village
+القرة السفلى,Alqarrah As Sufla,16.6269504,43.0424391,village
+غرغرة,,18.8087006,41.7931137,village
+خلاوي,,18.0260385,41.7734194,village
+أم مرازة,,18.8052266,41.8189833,village
+حبطن,,18.6766624,41.8387527,village
+قرية نيوم الإنشائية,Neom Construction Village,28.1076448,35.3229117,village
+كُلَيّة,,22.6336122,39.3303029,village
+قرباء,,22.6336273,39.3295731,village
+النابع,,26.3809661,37.0456938,village
+حديباء,,26.3522087,36.9664484,village
+الكفيرة,,18.6393544,41.5063495,village
+الأجر ع الجنوبي,,18.4895768,41.6551856,village
+الأجر ع الشمالي,,18.503315,41.6767464,village
+المعصبة,,18.4557478,41.6148981,village
+الرُّقيبَة,,18.778965,41.5362625,village
+الخرشة,,18.4634446,41.6802598,village
+الخنذلة,,18.2660761,41.5950273,village
+عصيرة,,18.0274253,41.6892335,village
+الطرشية,alturashia,16.5734314,42.9516853,village
+الشمهانية,,16.5372235,42.9227143,village
+المباركة,,16.5349299,42.9413048,village
+العرق,,17.5406339,42.2699942,village
+الرَفيق,,18.4872564,41.5012263,village
+الجَلمْة,,18.47969,41.531967,village
+الفصلة,,18.2858501,41.5256669,village
+المشعب,,18.1472398,41.9285701,village
+درامة,,17.9371374,43.1489504,village
+وتران,,18.2834426,41.8989431,village
+العرابة,,17.9627304,43.1087685,village
+النايفية,,27.9293463,45.3776228,village
+أبو العُشَرة,,16.9215952,43.0610301,village
+المُطقطقة,,16.6984712,43.1008673,village
+عتم,,18.5409498,42.4358822,village
+عبِل,,18.5373535,42.4202423,village
+الفركسة,,18.5780849,42.3684692,village
+ال كامل,,18.6238524,42.2706798,village
+الخيشة,,19.3586093,42.0617869,village
+وعل,,19.2724585,42.1671586,village
+الحديب,,19.6493779,41.9063377,village
+النصباء,,20.14118,41.2928772,village
+حميم زهران,,20.0877123,41.3813201,village
+العامر,,20.0787948,41.3819004,village
+مولغ,,20.1035137,41.2966881,village
+عنازة,,20.1019633,41.2906286,village
+العنق,,20.1555386,41.2912102,village
+الشفاء,,18.8055403,42.0933833,village
+عتام,,20.4119835,41.0954552,village
+عويا,,20.4013596,41.1017303,village
+بلاساء,,20.4243102,41.1098594,village
+العاصد,,20.5038368,41.0355465,village
+العلبة,,20.4022273,41.086893,village
+الحدب,,20.4010259,41.0928686,village
+الشطفة,,20.5200513,41.0406549,village
+العصيدة,,20.2203691,41.0720885,village
+عنزين,,20.2577366,41.0359283,village
+حراض الاسفل,,20.2731663,40.8334789,village
+الحفرات,,20.3019033,40.8610853,village
+المرية,,20.3354709,40.880276,village
+خمران,,20.3547738,40.9420355,village
+ابشعاب,,20.2674774,41.0304168,village
+نابر,,20.1391628,41.0669338,village
+الشاطئ,,19.6710804,41.5656699,village
+المعقص,Al Ma’qas,19.5126707,41.6676972,village
+العينة,,19.2870331,41.8199806,village
+حدبة ال مده,,19.4455605,41.7241554,village
+القضيَْة,Al Qadiya,19.3765444,41.7964525,village
+قضرَيمة,,19.1123477,41.8885508,village
+صبح,Sabah,18.6369389,42.3133064,village
+الخللة,,18.6666346,42.3828368,village
+عبالة,,18.6908836,42.2509956,village
+سنومة,,19.6865484,42.3512712,village
+البشش,,20.0401451,42.4771601,village
+ال عمودة,,18.8819667,42.8882011,village
+بطحان,,19.3902442,42.8079287,village
+العيينة,,19.0334557,42.8962619,village
+حبَث,,18.4292234,42.2208685,village
+الشجعة,,17.4859238,43.0097008,village
+الحوطة,,18.4149193,42.7781103,village
+المشارق,,20.2598361,41.3203817,village
+الدهامين,,20.2619381,41.3325195,village
+التويمات,,20.3262541,41.3348708,village
+الجحيرة,,20.4821935,40.7465267,village
+الرهط,,20.4773885,40.7420173,village
+السهي,AlSuhai Village,16.5018596,42.7539267,village
+المقالي,Almaqali,16.5117147,42.7933955,village
+البيسري,Albaysari,16.5566735,42.764048,village
+الجرب,Aljarrab,16.5653288,42.8171655,village
+عببه,Uababuh,16.5402971,42.8339341,village
+الحامضة,Alhamida,16.6064482,42.8127561,village
+الجروب,Aljurub,16.5944951,42.7931823,village
+الهلية,,16.6208896,42.8368964,village
+جريشة,,21.1204214,40.4935935,village
+الكدمي الموسم,Alkadamiy Almawsim,16.4399904,42.8668941,village
+الرمضة,Alramada,16.4518704,42.903158,village
+زمزم,zamzam,16.4372308,42.842018,village
+قرية خرفي الأثرية,,20.8049372,40.7550059,village
+الأرطاوية,,28.041491,42.196869,village
+مرر,,18.5055828,43.7643547,village
+الفرع,,18.5788594,43.91043,village
+لتين,,18.2645397,42.0006981,village
+الصنقة,,20.1911932,40.791202,village
+طفالة,,19.6542761,41.3988126,village
+الكربة,,19.630968,41.4052256,village
+العصير,,19.7006406,41.3865686,village
+الغرف,,19.6388657,41.4101392,village
+الحصّ,,18.7697253,41.489103,village
+المرصوفة,,18.3279247,41.4852791,village
+جوفلة,,18.9958126,41.5273115,village
+أم الخشب,,19.0313504,41.4726818,village
+الملصة,,18.8843752,41.8156601,village
+مغلوث,,19.1822745,41.6123019,village
+مليحة,,18.7071606,41.6624808,village
+الضموم,,18.5644171,41.7338961,village
+القري,,18.6326796,41.7216071,village
+نعام,,19.2131043,43.9290087,village
+القوزية,,19.6457354,43.5114195,village
+العزيزيه,,18.6216309,43.6148258,village
+السايلة,,18.835723,43.0188766,village
+الرُشادة,,18.4934516,43.6115007,village
+حلة الرقيعي,,17.0628824,42.8191482,village
+رح العقلة,,17.0311206,42.884104,village
+الدقيقة,,17.1387398,43.0985176,village
+الديدب,Daydeeb,30.8313689,41.2738538,village
+هجرة تماني,,24.9217803,50.3811549,village
+هجرة الفرداني,,24.9004507,50.4198646,village
+الرديفة,Ar Radīfah,29.8051805,39.6885609,village
+القراين,Alqarayin,24.6664014,50.4994297,village
+الشقيب,,19.6775333,41.5667613,village
+الشرفة,,18.4754462,41.7539158,village
+فارعة الهاد,,18.4328842,41.7524414,village
+العليم,Al Ulaym,28.7623783,40.4507911,village
+بخشة,,16.8961693,42.6375371,village
+مساملة,,16.9054262,42.6521152,village
+العجيبية,,16.9005789,42.6446612,village
+هيجة رملان,,17.724418,42.335369,village
+القاع,,17.3174147,42.489109,village
+المباركية,Almubarkiah,26.1509984,43.9364183,village
+الكويرة,,24.6318975,38.8829472,village
+البويبية,Al Boweibiya,26.8668888,47.1191275,village
+الحبلة,Al Habala,18.0347773,42.8740694,village
+البواردي,Al Bawardi,24.5989873,43.9391434,village
+الهمجة,Al Hamjah,23.7069827,45.6789546,village
+الشواطن,Ash Shuwaytin,24.3949076,42.1480239,village
+الطليعة,Taleeah,27.9993112,46.7537482,village
+الفرعة الشمالية,,19.1636493,42.1836568,village
+طلالا,Talala,19.56052,42.0774929,village
+قرى جبل البلس,Balas Mountain Villages,19.8135776,41.8648458,village
+البديعة,,24.5488419,43.9074859,village
+قرى وادي عياس,,20.1345848,41.2325476,village
+الحنكة,,20.141184,41.1981463,village
+قرى وادي غليلة,,20.1274512,41.2045146,village
+حفر العتش,,25.9553494,46.4977462,village
+الحفنة,,25.6918985,46.5569201,village
+رويغب,,25.6561144,46.3641615,village
+الحفيرة,,25.9213384,46.5222312,village
+ذهبان,Dhahban,21.9310119,39.1181744,village
+سرورة,Sarurah,24.5511824,43.6216237,village
+فيضة العبسي,Faydat Al-Absi,24.545869,43.6330033,village
+قرى وادي أشحط,,20.0615736,41.2597061,village
+صلّالة,,27.5901668,47.3704952,village
+البويضة,,25.9906673,40.3906414,village
+الوطاه,,19.4103478,41.0142279,village
+الخفيق,,25.8412391,40.3306354,village
+الغبيبة,,18.451188,43.2330075,village
+حنيش,,18.4481328,41.7799821,village
+قفيلة,,18.8858718,41.845293,village
+صوانة,,19.9518016,40.7940593,village
+الحمرة,,17.420697,42.828892,village
+الحشيفاء,,17.3965499,42.8289405,village
+الصفحة,,19.1269709,41.9847285,village
+الحمرة,,17.8065236,43.4545028,village
+جرجرة,,18.6623162,42.1955747,village
+المجرْنب,,19.4562957,41.8239374,village
+أخفه,,18.9169296,41.7090356,village
+قحفن,,18.9753952,41.6386185,village
+شعب الجعدة,,18.9006417,41.9529937,village
+القابل,,18.8980755,41.947735,village
+الميفاء,,18.8927868,41.9595296,village
+المعازب,,18.8905645,41.9665916,village
+المدورة,,18.9421913,41.8940247,village
+أم لَج,,18.9515553,42.0331726,village
+مضارح,,17.9701113,43.411926,village
+البعيثة,,20.7517479,41.5477244,village
+المجصة,Almajassah,25.9483497,40.3429048,village
+المغاوي,,18.8738612,41.3997453,village
+الشعبه,,19.0577631,41.2249417,village
+السلاطين,,19.440368,41.0573465,village
+مثيية,,19.7559473,40.9292175,village
+الصهوة,,19.6040881,41.321984,village
+العصلة,,21.3730698,41.7593128,village
+الصايدة,,20.345233,41.591584,village
+القُصيم,,18.6907873,42.0628614,village
+آل أبو جمعة,,17.7119837,43.2308263,village
+العاتق,,18.4250031,41.73312,village
+قاعة,,17.7018108,43.3620453,village
+أم حزم,Umm Hazem,23.7638929,45.6620394,village
+إيهالا العليا,,22.1707937,39.842011,village
+عسيلة,,19.6756997,40.9321499,village
+الحجيرة,,21.1365305,42.6954452,village
+حلوة,,18.367451,42.0206107,village
+الحجيرة,,18.3525429,42.007061,village
+الاهمال,,18.2817158,42.0614551,village
+اللحيان,,20.1990676,41.6186084,village
+الفويلق,,27.6275928,42.6112246,village
+الفرع,,20.4409322,40.9122976,village
+جذل,,20.5395679,40.788166,village
+جرشاء,,18.4398837,42.5599508,village
+المثناة,,20.6085487,41.07956,village
+الحمود,,20.3053178,41.333894,village
+الكلبة,,20.3175674,41.2999773,village
+المحاطبة,,20.2963197,41.3365138,village
+محوية,,20.3058799,41.1229326,village
+زعرة,,20.25252,41.078209,village
+خومان,,20.3349703,41.0900836,village
+الشرقية,,20.584259,41.018346,village
+الوهسة,,20.4310494,41.0934944,village
+الحدة,,20.3999534,41.0900795,village
+السايلة,,20.4249054,41.1001528,village
+المضحاة,,20.408978,41.108347,village
+سيحان,,20.3562669,41.2020036,village
+الثودة,,20.358783,41.200059,village
+شقاوة,,20.5448143,41.1214274,village
+السقيفة,,20.3776163,41.2408627,village
+سدان عفيف,,20.5921336,41.1145856,village
+الرواجح,,20.5884986,41.103298,village
+المصاقعة,,20.5351259,41.1085594,village
+الخيالة,,20.826882,41.370375,village
+الضاحية,,20.8709615,41.2223192,village
+المصبح,,18.7257328,42.0205307,village
+الخمرة,,18.0577338,43.099129,village
+ظهرة بني مأجور,,17.652971,42.6045561,village
+ردوم,,17.7868068,42.8296013,village
+يرعرع,,17.8251228,42.8275757,village
+العرجة,,18.2351144,43.3140469,village
+المصياد,,18.0465028,43.146346,village
+الزاوية,,17.9766407,43.2002373,village
+الشقحة,,18.0317593,43.4701805,village
+الغرس,,17.9632547,43.5211106,village
+العَرَف,,17.9709751,43.5284007,village
+الخضارة,,17.887663,43.696225,village
+رتاد,,18.2452036,43.8482188,village
+رحوب,,18.3395869,43.8225156,village
+إيساف,,18.3962955,43.8802032,village
+العواسجة,,18.5560956,43.7863433,village
+الحجر,,18.7934367,43.9764562,village
+العمق,,18.7452686,43.7046427,village
+الروضة,,18.9176544,43.5881016,village
+الحيد,Al Hayd,24.867216,43.716613,village
+القرْنة,,17.5015082,42.9511984,village
+نعمة,,17.4885817,42.9539381,village
+الجرعاء,,27.2622881,41.3997191,village
+الغريبين,Algherayben,27.2554021,41.3745868,village
+جذجة,,20.8244337,41.6304642,village
+جاوة,,20.7990582,41.6630335,village
+أم الطينة,,20.5047574,41.6657091,village
+الغرابة,,20.3481955,41.6058883,village
+الجذي,,20.323286,41.568351,village
+السليم,,20.3212207,41.5605612,village
+مطربه,,24.4690744,43.8673782,village
+الرفقتين,,18.3458674,42.3762558,village
+مجزوعة,,18.5251055,41.8880073,village
+قرن الماء,,18.6570712,42.1012312,village
+الصوارمة,alsawarima,16.6587203,42.7655595,village
+المقراء,,18.7338665,42.084336,village
+الأقفية,,18.7040623,42.4616617,village
+اللصادين,,17.7574303,43.4920502,village
+صوله,,18.4678604,41.9102891,village
+نخر القيف,,18.4557575,41.906936,village
+راع القاع,,18.4610759,41.9165001,village
+قرى دالج,,18.3640828,42.1133388,village
+ضرغط,Dharghat,26.5311683,40.5422169,village
+ضريغط,,26.4883584,40.5980766,village
+لبدة,,26.6423763,40.4731125,village
+خلصة,,18.6361392,41.860803,village
+الفرشة,,18.7117748,42.0598639,village
+النُصُب,,18.6265765,42.0117668,village
+الخريق,,19.7211542,41.4061275,village
+مظللة,,21.1423461,40.8120335,village
+الفرعة,,20.4927933,44.7455013,village
+المخصر,,18.3802535,41.7328418,village
+العين,,18.369136,41.7431663,village
+منهوجاء,,20.3401527,41.1754112,village
+الحزم,Alhazem,20.4674613,44.7688813,village
+المعلمات,,18.5975539,41.4699923,village
+خضيرة,,20.334034,41.156622,village
+الجبابير,,20.495411,41.046898,village
+الشمول,,20.3404722,41.1602484,village
+السطح,,20.916321,40.289486,village
+ثرب,,20.869103,40.231583,village
+نيات,,20.9459192,40.3004172,village
+الحمراء,,20.8714005,40.2399106,village
+العوشزية,,24.8562317,43.1966143,village
+البناة,,20.5752819,41.0633247,village
+البخترية,,22.413946,39.3628823,village
+أم الغار,,22.3665111,39.4286323,village
+جضة,,22.5025788,39.6971295,village
+الزبيرة,,22.9942095,39.7189708,village
+أبو خصيفة,,22.3774863,39.4981405,village
+أم ظفيرة,,22.4096681,39.3819038,village
+الدير,,22.3564099,39.4676012,village
+الحليفاء,,22.131975,39.579615,village
+الخيف,,22.1590411,39.5817449,village
+المصك,,25.6293696,43.0911575,village
+الحمادة,,25.6848538,43.1961445,village
+السليمانية,,25.5628137,43.1526483,village
+الفتخاء,Faatkha,27.4609009,41.2830659,village
+العقيمي,,23.6502748,47.1019668,village
+أبو رخم,,22.087227,40.501794,village
+الندحة,,22.12143,40.462168,village
+الفرد,,22.004904,40.485255,village
+ذوي لافي,,22.100557,40.482426,village
+الخويرمة,Alkhwermah,21.6703644,40.4192791,village
+الرانة,,21.0621147,40.827282,village
+الصنيع,,21.056253,40.805885,village
+الشظابية,,20.5368371,41.0589565,village
+المقصرة,,20.5343995,41.0624469,village
+الملحة القديمة,,20.534462,41.0869139,village
+الهملة,,20.5244082,41.0751653,village
+اليعاسيب,,20.5270947,41.0695522,village
+الحفار,,20.5436983,41.0955324,village
+الوُلجِة,,24.1029574,38.8152387,village
+مَثْعَر,,23.6854478,39.0880654,village
+الثويلة,,17.5250102,43.6493582,village
+زعفران,,21.2199402,40.7362404,village
+الجاهلي,,20.0755643,41.4244462,village
+أبا الطحين,,17.6731529,43.943882,village
+فم لبيد,,23.8201844,39.3773097,village
+المجرمة,,23.4057961,39.6596794,village
+العطشان,,23.4796963,39.6975098,village
+الماتيَة,,23.4325333,39.6631088,village
+مدسوس,,23.7891474,39.4307815,village
+الشعبة,,22.288888,39.7912301,village
+يعرى,,18.6988679,42.9827093,village
+أبو شوك,,19.2307949,42.1245652,village
+أبو قرنين,,19.2312587,42.1117343,village
+الغدران,,20.9182914,40.7456265,village
+الشريجة,,17.5780837,43.2279334,village
+تشوية,,17.5168523,43.2520595,village
+بواظ,,18.0727933,42.9696207,village
+الشعيراء,,20.94467,40.6835278,village
+الفايجة,,17.6566757,43.2579553,village
+جحيرة,,25.5440759,42.7121776,village
+حازم,,23.3018208,40.1072807,village
+الأرين,,18.7779063,42.5563014,village
+السّرو,Assaro,19.3005239,42.0804189,village
+الثمامية,,23.8432178,38.8969078,village
+حجر,,23.0137043,39.7314763,village
+حراز,,17.3137007,43.164486,village
+عبل,,18.6948613,42.6230563,village
+جبحة,,17.3757076,43.0024185,village
+الكظامة,,18.6705633,42.4519421,village
+المكشف,,18.1962114,42.2892489,village
+رخيمان,,19.3499824,43.7185168,village
+عرعر وردة نعمان,Arar,21.3514689,40.1217985,village
+القفرة,,20.0940772,41.2419548,village
+الخالدية,,25.4648945,43.5915871,village
+هلالية الخميل,,25.1684061,43.5288996,village
+أم ردهة,,25.2694963,43.447942,village
+بدايع المرازيق,,24.9313817,43.9707413,village
+هضلاء,,24.7394575,44.2693362,village
+الوهيطي,,24.1575108,45.0373071,village
+الحقانية,,24.1320992,45.1572304,village
+الشقران,,25.136883,43.1653736,village
+رعلة,,18.4825941,41.9821034,village
+المبنى,,18.9015217,42.0209885,village
+تمباشة,,18.853419,42.003822,village
+المرتمض,,18.8597374,41.9933205,village
+الشجاء,,18.9017409,42.0267305,village
+مسعى,,18.857732,42.0035,village
+الأحمر,,24.6773691,38.0820243,village
+دف الرفحة,,24.6606287,38.0893775,village
+بدائع الصفراء,,25.9578837,40.6310172,village
+مراتخ,,18.3794745,41.9096578,village
+إخلال,,18.209484,42.019561,village
+البياضة,,26.2190263,40.5766139,village
+بطين العريق,,24.4498405,42.6979059,village
+الحمدانية,,24.7004074,42.8690463,village
+السليمانيه,,24.775125,42.774957,village
+أم المخاييل,,26.4844735,37.568287,village
+السلطانية,,24.2352519,47.7637123,village
+الفيفا,,23.3281323,39.7928617,village
+المقرح,,23.4182691,39.3468152,village
+السفلى,,23.8909786,38.8980418,village
+الخرماء,,23.8957409,38.9024543,village
+النباج,,30.4280644,38.3985686,village
+الجماجمية,,24.6803852,40.0027758,village
+السبخة,Sabkha,17.0813004,42.5243794,village
+الرجيع,Allrajie,17.1412503,42.5160993,village
+ابو الطيور,,17.1580013,42.4978707,village
+العرضه,,17.1423901,42.4852357,village
+قوز الجعافره,Qawz Al-Jaafra,17.1373798,42.4418091,village
+المريبد,,24.5591389,38.4115926,village
+عواها,,20.8158928,39.9922844,village
+عالية الدوداء,,24.0601296,39.3364981,village
+أبو شهاب,,22.5412595,39.6547715,village
+الفايزية,,24.1554646,38.812373,village
+لفَّى,,24.1054056,38.8356477,village
+الطُفيان,,24.1620901,38.8306589,village
+أم عثمان,,23.0929131,39.0545447,village
+الشاقة,,23.112219,38.9641506,village
+الخدد,,22.3086973,39.7961657,village
+نُخُب,,22.3397181,39.9151934,village
+المزارع,,22.4341039,39.9882688,village
+المعَلاة,,22.0962548,40.0536288,village
+أم الحنطة,,20.7920988,39.966966,village
+المهد,,20.8325646,40.0752365,village
+الصحم,,20.694632,39.960297,village
+الحبيل,,20.739299,39.973107,village
+سعية,,20.529418,39.956459,village
+جبهان,,20.2230954,40.394641,village
+بزى,,20.1794751,40.4371336,village
+منشد,,20.3431433,40.7880198,village
+كساب,,20.3427714,40.784302,village
+المهلال,,20.6291504,40.6007881,village
+الوكف,,20.897545,40.7782041,village
+الكلاد,,20.8998737,40.7805445,village
+الكشمة,,20.8816755,40.7526826,village
+الضارب,,20.9788483,40.7687662,village
+المغرز,,21.0338751,40.6627219,village
+المهظم,,21.031834,40.6694964,village
+الخوقا العليا,,21.0468578,40.6585475,village
+زوران,,21.2652333,40.5456997,village
+العاند,,21.6828645,40.673102,village
+خد الحاج,,21.3130748,40.557027,village
+الزود,,21.3048925,40.5519043,village
+الحمادة,Alhamadah,21.8427959,40.6898655,village
+العيينة,Alauyaynah,21.7153338,40.5923041,village
+العزيزية,Al Aziziyah,21.7895289,40.6616773,village
+العوالي,Alawali,22.065948,40.71458,village
+المغايبة,,22.0755709,40.7032874,village
+السالم,,22.139007,40.734116,village
+ذوي عياد,,22.081563,40.692867,village
+السرار,,22.1794916,40.7493588,village
+النزهة,,22.235378,40.738526,village
+الراشدية,,23.9914477,41.0029933,village
+الخويرة,,23.8989606,41.0019475,village
+شبيشير,,24.2218753,40.9833893,village
+حديجة,Hdejah,25.2864808,41.4611235,village
+الضباعين,,20.8986561,40.8249697,village
+الشمط,,25.3768537,41.6127995,village
+الحايل,,25.1979181,37.5289044,village
+واسمة,,24.2404015,38.8265472,village
+بيرين,,20.7170315,40.4520993,village
+المربع,,25.3881552,38.3520484,village
+سليلة جهينة,,25.5346583,38.4055424,village
+دار الرمادة,,19.9523098,41.4963943,village
+دار الجبل,Dar Al Jabal,19.9470153,41.4837005,village
+صاهد بن هداب,,25.3579049,44.5339898,village
+الخبراء,,21.8169695,42.3557142,village
+أم راكة,,21.9538791,42.0809674,village
+المشقر,,21.9523287,42.3387607,village
+الينود,,19.2976078,44.2720211,village
+المحمدية,,18.7980816,44.0412477,village
+المشمخة,,18.8238602,44.068821,village
+الخوايس,,18.049541,43.5980774,village
+الخضيرة,,17.8499965,43.4072952,village
+تباشعة,,19.4464342,42.8076733,village
+السعدة,Assaedah,26.7979177,41.5843929,village
+العزيلاء,,19.7966631,41.9796871,village
+الخضاير,,18.7809573,42.9565289,village
+أبو سديرة,Abu Sidyrah,25.4770884,42.8228452,village
+العوضية,Al Awadiyah,25.5837304,49.5936584,village
+القاع,,20.4034178,41.1199924,village
+الخنق,,21.1962453,42.7823653,village
+العزيزية,,18.7427502,44.1580794,village
+الخوير,Akhwer,27.6109137,43.172308,village
+العسافية,,24.8003839,43.8084199,village
+جرير,,20.2598229,43.9955325,village
+العقيلية,,24.9974822,43.6645666,village
+الأحمدية,,24.5473679,46.2202441,village
+سامودة,,23.4535399,44.7315324,village
+النجد,,23.3049501,44.637254,village
+المحرق,,23.2334055,44.6986794,village
+الحمل,,21.828773,44.004431,village
+أم سرحة,,21.5856468,43.9556659,village
+الحنثرية,,19.7445439,43.0157086,village
+بيضان,,18.8662987,43.9445457,village
+الشعران,,18.9603962,43.9329267,village
+يهرة,,19.0702062,43.9334525,village
+الأبارق,,18.9782735,44.1999766,village
+الأحمدية,,18.5222266,43.3415662,village
+الفيضة,,19.3420591,43.9632904,village
+أم عليبة,,22.7255043,45.1404684,village
+أم القلات,,22.6608232,45.1461687,village
+أم أثلة,,22.766428,45.2753601,village
+العيينة,,22.9739512,45.4468412,village
+دار السلام,,22.9254239,45.4696264,village
+المجيد,,23.6379442,45.3390174,village
+الخاطبية,,23.6647529,45.3311126,village
+حمادة أبو بطنين,,24.8123399,43.8045551,village
+البئر,,18.2524051,42.1926698,village
+مراوة,,20.1151687,41.3697534,village
+الجنادل,,18.6841695,43.589882,village
+القهبان,,20.2479016,41.3397452,village
+القامرة,,20.2009182,41.3671532,village
+حلالي,,18.0879023,42.5360479,village
+العدابة,,18.7170833,43.3323443,village
+المحالة,,19.4618597,42.3495643,village
+ابن صليم,,18.959019,43.6057788,village
+لهو,,18.9111691,43.7650604,village
+الحجر,,18.9078642,43.6808743,village
+الحنظلة,,19.8862989,41.372723,village
+الزغلة,,20.1037985,41.1177377,village
+رَمسَ,,20.21785,41.2043822,village
+مصلوُم,,18.3325579,42.7096494,village
+ثَروُق,,20.2146531,41.2004258,village
+نعى,,23.2438803,39.1336792,village
+العقدة,,16.8112002,42.7321542,village
+الرد,Arrad,17.1432882,42.9978933,village
+الصدر,,19.3649601,41.7118236,village
+الميضاحة,,27.6523284,41.4414521,village
+العريدة,,27.6957508,41.5883142,village
+عرشاء,,19.7114258,41.576767,village
+أبو النورة,Abu Al Nuorah,17.0496145,42.8834942,village
+المجصص,Al Mujassas,17.0428232,42.8753136,village
+ال مطاعن,,16.953311,42.8856084,village
+زبارة رشيد,,16.9394354,42.9055898,village
+خضيرة عياش,,16.9090884,42.923367,village
+الدوشية,,16.9267762,42.9288087,village
+رح الحجاجة,,16.960273,42.8990324,village
+المحلحلة,,16.7906459,43.0097076,village
+الجعدية,,16.7949352,42.9937259,village
+الحبجية,,16.7822248,42.9432026,village
+المخشلية,,16.7846819,42.9496742,village
+الخمس,,16.7705049,42.776684,village
+مزهرة,Mizhirah,16.8255355,42.7296031,village
+الوحلة,,16.7916019,42.7144969,village
+رح الجدور,,17.0243058,42.8714474,village
+شهدة,Shahda,17.2165139,42.4636831,village
+الجمالة,Al Jamalah,17.1851468,42.5781035,village
+الخضراء,Alkhadra,17.2782359,42.5380655,village
+الرياحين,,20.723006,40.7044408,village
+الشميسي,,21.4327203,39.6451799,village
+أبو حليفاء الشمالي,,22.1248451,39.4991655,village
+أبو حليفاء الجنوبي,,22.1097935,39.4928894,village
+المحلة الجنوبية,,17.2905772,42.5999842,village
+المجديرة,Almajdirah,17.3337542,42.5456069,village
+السلامة السفلى,,17.3025589,42.5441724,village
+المدرك,Madrak,17.3348389,42.5264093,village
+النقاش,Nagash,17.3193495,42.5254027,village
+العبادلة,Alabadilah,17.3581269,42.4841096,village
+نمرة,,20.6367113,40.7667402,village
+أسيود,,20.6339877,40.7466141,village
+المهلال,,20.6857344,40.6469164,village
+عازبة,,20.6656441,40.7062988,village
+الحواة,,20.6718587,40.7077442,village
+البواطن,,20.6602276,40.7089587,village
+الصفح,,20.670287,40.739691,village
+الحوير,,20.6506957,40.6987776,village
+الشواجرة,,16.9983007,42.5925401,village
+السادلية,,16.9262978,42.8299424,village
+المشوف,,17.2033431,42.9158033,village
+عفراء,,20.4220537,41.0816589,village
+الدار,,20.4757788,41.0278903,village
+العش,,20.4319695,41.0811667,village
+الحصناء,,20.4684838,41.0312993,village
+الحمدة,,20.4710771,41.0894773,village
+الدعاملة,,20.4754342,41.069143,village
+النجمة,,20.4749008,41.0379806,village
+الملد,,20.4400907,41.0810796,village
+الخضارين,,20.47461,41.0635006,village
+المشهق,,20.5227365,41.0840574,village
+المقصرة,,20.537129,41.06739,village
+القزيعة,,20.5295513,41.0650968,village
+سوق الليل,,16.7175391,42.9909997,village
+المقطاع,,16.9306596,43.0394106,village
+الحصامة,,16.8829249,43.0491531,village
+المديري,,16.8711765,43.0709995,village
+البندرية,,26.5981557,44.2773834,village
+الحنبة,,17.0080989,43.0794954,village
+الجبانة,,17.0414397,43.0935287,village
+وادي الساهية,,17.0631849,43.0884647,village
+سالم,,16.9920718,43.0687173,village
+عرق,,16.960762,43.0511085,village
+القصبة,,16.9608967,43.1140064,village
+الحنبكة,,16.9384661,43.1126116,village
+دبير,,16.916963,43.1187404,village
+الركبة,,16.8902398,43.1212722,village
+السلب,,16.8785953,43.1136308,village
+القرن,,16.7869946,43.2016341,village
+الدفينة,,16.787919,43.1939093,village
+البحطيط,,16.7852997,43.1854335,village
+سودانة,,16.7806774,43.1723175,village
+البيضا,,16.7701483,43.1469438,village
+صميل,,16.7755705,43.129667,village
+ام الشعنون,,16.7985498,43.1007562,village
+المقطابة,,16.8229195,43.1380338,village
+المعطن,,16.8107041,43.1168709,village
+المقلوع,,16.8566988,43.1143998,village
+القبضة,,17.6370591,43.5320201,village
+ابو غبارة,Abu Ghabarah,17.0634625,43.0387162,village
+الرخة,,17.0185071,43.0106529,village
+بريقع,,17.0299428,43.0323613,village
+المبيّت,,17.0384671,43.0067642,village
+مسقية,,17.0636207,43.0265486,village
+ام الدود,,17.0533695,43.0480994,village
+المزحيتر,,17.0950104,43.0369625,village
+السمرة,,17.1172266,43.0392299,village
+عرعر,,25.9555497,38.0655425,village
+المصع,,26.5471351,40.5209362,village
+ضهاء,,19.2976238,42.7943268,village
+المصفق,,16.5414098,43.035357,village
+رمادة,,16.6920234,42.9892015,village
+قنبورة,,16.6922289,43.0056381,village
+الوتد,,16.6826507,43.0461287,village
+أبوحجر,,16.6824452,43.0255508,village
+صاحب البار الاسفل,,16.626467,43.0062604,village
+الشعوب,,16.6156107,43.0146718,village
+بيش العليا,,17.3913098,42.5703907,village
+أم الخير,,17.3748867,42.5917625,village
+قائم الدش,,17.3462963,42.5972557,village
+الاحولة,,16.9695394,43.028512,village
+البحثة,,16.9529147,43.0281579,village
+القوع,,16.9773176,43.0710196,village
+قائم أحمديني,,16.9651884,43.0758476,village
+الروان,,17.0151061,42.9855645,village
+السد,,17.0388342,42.9528308,village
+القومة,,16.7342356,43.1452846,village
+عَشة سبيع,,16.7312355,43.1324958,village
+المعرم,,16.7207139,43.1216811,village
+ام التراب,,16.6958874,43.1142997,village
+ابو ذيل,,16.6960929,43.0871772,village
+السودي,,16.7012825,43.0734444,village
+المعزاب,,16.5757375,43.0926704,village
+خبت سعيد,,16.9986804,42.7326107,village
+الضهر,,20.7404517,40.957418,village
+عريدة,,23.1520765,41.8932691,village
+نقبان,,27.3231936,36.7384126,village
+الخضراء,Al Khadrah,16.703163,42.9134559,village
+المراونة,Al Marawenah,16.7334136,42.8903246,village
+السر,As Sirr,16.7328588,42.904036,village
+صديقة,,16.917567,42.7718352,village
+بحرة,,16.9334969,42.7700328,village
+مبترية,,16.903853,42.8053736,village
+القوامشة,,16.8866887,42.7741098,village
+المشايخ,,16.9012662,42.7858686,village
+البرصاء,,16.8954353,42.7823066,village
+بديع الخرم,,16.9065425,42.7753758,village
+الأساملة,,16.8833111,42.7678335,village
+الأساملة الكبرى,,16.8670587,42.7576732,village
+البختة الجنوبية,,16.8874484,42.734381,village
+البختة الوسطى,,16.8957638,42.728877,village
+البختة الشمالية,,16.9036169,42.7185881,village
+الظبية الشمالية,,27.3494034,39.7416344,village
+تيثان,,20.7340298,40.6391525,village
+الحصامة,,16.9163352,42.9745674,village
+ماهسة,,16.9112028,42.9784298,village
+الحالية,,16.9063372,42.9765844,village
+الجيبة,,16.9029292,42.9692244,village
+الوحم,,16.8921708,42.9687631,village
+الشهيلية,,23.6772678,42.1431831,village
+الفارسية,,24.5242811,41.5063884,village
+النميرة,,25.6800248,41.0585003,village
+الكهفة,,27.0671512,43.0243492,village
+الرانة,,19.2102924,43.5834107,village
+المستجدة,Almistejeddah,26.6718146,41.5350366,village
+ريع البكر,Rie Albakr,26.7618554,41.4946187,village
+الصداعية,,26.8195716,41.4924769,village
+البركة,Albirkah,26.4592098,41.0916786,village
+قرية صفيط,,25.5982335,40.6062111,village
+مرغان,Maraghan,26.1726374,40.9314586,village
+المُصّبِّح,,19.5946102,43.5127983,village
+البرود,Albuoruod,26.8712484,44.1583969,village
+قصر العبدالله,,26.7955134,44.2068524,village
+الجهيفه,,17.9536263,42.7185899,village
+المدورة,,17.9448681,42.6750908,village
+المحرق,Al Muharraq,16.6526267,42.1500878,village
+صيّر,,16.85084,41.8150195,village
+أبو طوق,Abu Tawq,16.9436147,41.9239801,village
+السقيد,Al Saqid,16.8612268,41.9331836,village
+محالف,,22.6303287,40.0851612,village
+محلية,Mahleiah,16.9405581,42.6436472,village
+القليب,,25.4595547,41.7551804,village
+الوسيطاء,,25.6410637,40.5487747,village
+الشقران,,26.1882915,40.8044815,village
+المعترض,,17.1279683,42.6871926,village
+الشينة,,18.2950516,42.4672279,village
+الدليمية,,25.6145661,42.6746551,village
+أم أثلة,,25.3631215,42.6784473,village
+رعشة,,16.7769315,42.8471947,village
+صفوة,,16.8675105,42.9075765,village
+المقيدر,,16.8686604,42.9000234,village
+المحازرة,,16.8899739,42.897191,village
+المعايدة,,16.8739992,42.8932428,village
+أم النور,,16.8873663,42.8876209,village
+العروس,,16.8783421,42.8290737,village
+الجغادمة,,16.8636294,42.8409934,village
+الظافرية,,16.8681881,42.8380322,village
+عذيبة,,16.8395917,42.8395986,village
+الظبرة,,16.8175228,42.8184628,village
+الوسيعة,,16.8602,42.8112745,village
+بردان,,17.0415935,43.0751502,village
+الخالفة,,17.0357465,43.0678546,village
+البطيش,,17.0214482,43.0299218,village
+أم العظام,,17.0139942,43.0386735,village
+العلايا,,16.993304,43.1027984,village
+المهشمي,,17.0133028,43.0880779,village
+العقص,,17.0055995,43.0924308,village
+قويد الزبرة,,17.0072987,43.0878854,village
+الحرائق,,17.0055853,43.1050837,village
+قائم الصيد,,17.005811,43.0996764,village
+قائم العقم,,17.0109716,43.1002235,village
+المحلبة,,17.0210461,43.1105876,village
+الحوراء,,17.0165732,43.1098151,village
+حطباية,,17.0178453,43.1053734,village
+أبو الحناية,,17.0157422,43.0994725,village
+أبو محيثلات,,26.3216833,36.7403159,village
+الحجفار,Al Hijfar,16.5444141,42.8464635,village
+الواسط,Al Waseet,17.0364748,42.7539396,village
+محلة ضمد,Mahallat Dhamad,17.041932,42.7613639,village
+منتوفة,,17.157506,42.8092468,village
+قائم العرب,,17.2295438,42.9219961,village
+الحدبة,,17.1571267,42.8467333,village
+قماح,Qummah,16.6477254,42.0300758,village
+الحسين,,16.7451981,41.8774795,village
+المسيلة,,16.7159872,42.1225369,village
+أم الصيود,,17.4681019,42.3827433,village
+سمرة الجد,,17.5304577,42.2854327,village
+السميرات,,17.5315216,42.2449206,village
+غيّة,Ghia village,19.1017829,41.9972187,village
+وادي الرباح,,16.8634446,42.916975,village
+أم الحجل,,16.8829518,42.9131555,village
+حرجة عياش,,16.9357549,42.9322099,village
+الجربة,,16.9266817,42.8857326,village
+بطحان,,17.0278675,43.0452714,village
+حنيظل,,26.9759189,44.0986495,village
+البعيثة الجديدة,,27.2058807,44.2798502,village
+الخبطة,,17.4319311,42.6363945,village
+الحضن,,17.4297611,42.585926,village
+دولة,,17.546744,42.612276,village
+منشبة,,17.5958396,42.3150443,village
+الردحة,,17.515418,42.4082307,village
+الدهناء,Addahnaa,17.2508889,42.5099875,village
+الحوامظة,,17.2439664,42.4675527,village
+نورة,,17.1930748,42.4981787,village
+جميما,,17.2032198,42.5128627,village
+حلة علي بن موسى,,17.2113773,42.5636632,village
+المحاصية,,17.2187872,42.5320387,village
+بقران,,21.1264871,40.6482829,village
+الحرف,,17.0975191,42.5312752,village
+شيبان,,17.1238828,42.5601928,village
+الأثلة,,17.1693854,42.520791,village
+جريبة,,17.1106981,42.5533423,village
+الجدين,,17.1145664,42.5765916,village
+السفالة,,21.2296335,41.6552641,village
+الحائط كرا,,20.6543591,41.6897034,village
+خدعة,,20.2811241,41.6849365,village
+الهتافرة,,20.0822894,41.3550751,village
+الرخيلة,,20.0579155,41.3338275,village
+الكعامير,,20.1198044,41.2978401,village
+الوكف,,20.2091789,41.2300339,village
+القرنطة,,20.1972179,41.3025219,village
+المشاف,,17.3937156,42.8532785,village
+الزهب,,17.3699941,42.8507808,village
+أم القضب,,17.2984856,42.6258373,village
+أم سعد,,17.2853324,42.6111173,village
+المنصع,,17.4485598,42.7141211,village
+العامر,,20.58248,41.082242,village
+الحسناء,,20.5746507,41.0837085,village
+الوادة,,20.610632,41.106363,village
+المزاريع,,20.631866,41.045237,village
+راوان,,20.596386,41.059692,village
+النصباء,,20.614148,41.022711,village
+الموارقة,,20.5899535,41.0216765,village
+الخالدية,,18.5482953,43.640502,village
+سدير,,18.9154049,43.7762117,village
+مغماد,,19.7310463,43.8427984,village
+ال عريج,,19.7262849,43.8005326,village
+المحمدية - الكرافيت,,20.4109313,44.6059164,village
+الشيدية,,20.5890808,45.7389717,village
+أم طلحة,,22.5625048,45.4368661,village
+المحمدية,,22.8345308,45.0145962,village
+الرفايع,,22.8673766,45.0606258,village
+المغزالية,,23.6147499,45.0938072,village
+فرعة الرويضة,,23.7360732,44.6865841,village
+أم فخذين,,25.5028885,42.7309186,village
+الجحفة,Aljuhfah,25.4290846,42.8099251,village
+اللحجة,,17.7674901,42.7892082,village
+النجفة,,17.7693324,42.7543605,village
+انبوان,,26.4110802,40.5479706,village
+النايع,,26.6443527,41.6133802,village
+عيال عبيد,,25.9434058,40.7881942,village
+الصفراء,Assafra,26.1824693,41.3489787,village
+الأحمدية,,24.3881068,43.9997123,village
+منصبة,,19.1545736,42.5361013,village
+منحل الأسفل,,20.3964138,41.3498192,village
+الوفيزة,,18.9666259,42.51991,village
+مربط,,18.9516041,42.5358539,village
+البردان,,18.7264437,42.8862984,village
+البجادة,,22.9924206,44.9937671,village
+الناصرية,,23.0836441,45.0225334,village
+الفيصلية,,22.9720965,45.0089348,village
+الصدر,,22.9703198,45.0089019,village
+العبلة,,23.1066948,45.0362147,village
+زربة,,23.7743727,44.7285907,village
+أتران,,17.6626443,42.8338631,village
+وادي الكبب,,18.2672424,41.8650475,village
+مكدة,,18.2910595,41.9303398,village
+العقدة,,18.4655427,41.7016547,village
+المدبغ,,18.4489712,41.6564886,village
+أم صفقة,,18.4695694,41.6834048,village
+الشهيباء,,25.8530225,42.5774989,village
+مطربة أبانات,,25.4861547,42.6856696,village
+ناصفة أبانات,,25.4445031,42.7036929,village
+العبيل,,25.3685323,42.5882175,village
+السنافية,,25.057685,42.536911,village
+العجيمية,,25.035442,42.548011,village
+النخيلة,Annkhelah,24.9271729,42.6431511,village
+العرداء,Alarda,24.916682,42.688982,village
+حلة محيش,Hillat Muhaish,26.5373697,49.9968214,village
+الخويلدية,Al Khuwaildiyah,26.5510271,49.9900519,village
+أم الكفوف,,25.8322313,40.0825965,village
+الناصرية,,25.5905011,44.0087892,village
+العقيلة,,25.9522449,43.2076192,village
+قطن القديمة,,25.9692911,42.36521,village
+بدائع الضرب,,26.3401231,40.5982905,village
+سلطانة سواج,,25.1789169,43.1396255,village
+البطينة,Albetenah,22.6602841,41.1592776,village
+ريمان,Riman,23.3296654,41.637598,village
+مودان,,18.2319813,41.8043452,village
+الرقيطاء,,28.8651222,35.492798,village
+السلمين,,17.6292111,42.7552305,village
+أم زريبة الغربية,,25.6976079,41.0436289,village
+الغرابية,,25.6039664,41.0027066,village
+أبو زرايب,,25.8820999,40.3144491,village
+غصن علياء,,26.0179083,39.3723694,village
+فياض الضحايا,,26.1578254,39.9506846,village
+الغيثاء,,22.1309986,40.6431046,village
+الوسيطاء,Alwoseta,25.206692,42.5468097,village
+أم سرحة,,23.9067065,40.9934828,village
+القشبة الجنوبية,Algishbah Aljanubiyah,21.5170999,40.09967,village
+ريع الذياب,,21.5,40.4799995,village
+لبوا,,18.2193609,44.3999296,village
+مشرفة,,26.7249577,42.0988191,village
+بدع ابن داثان,,27.0353813,41.4031258,village
+أبو رية,Abo Riyah,25.9547615,41.33535,village
+الخالدية,,19.4940023,43.8452442,village
+أجلساء,,18.8948111,44.1723702,village
+اللجام,,18.5915648,44.1540551,village
+البياض,,18.3339516,43.9355497,village
+الغيضة,,18.355634,43.9896984,village
+العُرف,,18.3529916,43.9571329,village
+الرفيعة,,18.3378342,43.8905019,village
+ال خرصان,,18.2930657,43.8594386,village
+الوشيجة,,18.4390716,43.5908027,village
+بن شداد الناصري,,18.4371843,43.5947983,village
+ذات يومين,,18.6862011,42.270928,village
+الدُّرّس,,18.7218952,42.2552071,village
+دهناء,,18.9163219,42.2050209,village
+البيضاء,,18.8505723,42.0575439,village
+المروة,,18.8465148,42.0443541,village
+الحجناء,,18.7680329,41.9504449,village
+قوافل,,18.8324507,42.0356096,village
+المغيمر,,18.7883101,41.9317546,village
+المعروض,,18.7739203,41.9403592,village
+القلالة,,18.7819769,41.9462532,village
+منصاب,,18.781101,41.9405276,village
+غضاريق,,18.86359,42.004788,village
+الجنيدلة,,18.484211,41.5483398,village
+العويرم,,18.3050644,41.5303779,village
+خور الذيابه,Khawr ah Dhi'abah,26.0307102,49.458021,village
+قشيعة,Qishayya,17.8360293,44.0267455,village
+أبو شعيب,Abu Shu`ayb,21.5846031,39.700736,village
+الغريف,At Tarif,21.6024004,41.863201,village
+الغويبة,Al Ghuwaybah,25.2573455,49.6892152,village
+العرفاء,Al `Arfa',21.5321729,40.6195881,village
+ال ثابت,Thabit,17.7505023,43.4842241,village
+المطيوي الجنوبي,Al Mutaywi Aljanubi,24.7145394,42.8921441,village
+القوباء,Al Qawba',19.545325,42.2789702,village
+عمق,`Amq,21.2761412,39.5810543,village
+واعر,Wa`ir,19.8084415,42.5225543,village
+سِبيعة,Sibi`ah,27.275482,42.2527197,village
+هدبان,Hadban,30.0721456,40.3526954,village
+الدار البيضاء,,21.2169228,42.9400003,village
+الغضياء والسلمات,Al Ghadya' Wa Asslemat,25.5730254,42.716968,village
+قمران,,22.0439817,44.6129268,village
+الروضة القديمة,,23.1555821,45.2186067,village
+إيحامر,,23.1555368,45.245551,village
+جوف بلقرن,Jawf Balqarn,19.3221772,41.8597965,village
+أبو عرينة,,24.0383663,43.454937,village
+سبت شمران,Sabt Shumrān,19.4726447,41.790685,village
+آل سلمة,Al Salamah,19.4108125,42.0060025,village
+آل شغيب القف,Al Shagheib Qaf,19.0985371,41.9672213,village
+شعف بلقرن,Shaaf Balqarn,19.5311455,41.8979497,village
+إبيان,Ibyan,19.4966839,41.6907533,village
+آل يزيد,,19.499184,41.9508891,village
+آل عمران,,19.4926522,41.9538369,village
+آل دعمان,,19.312905,41.9028188,village
+البيضاء,,19.3297254,41.9315403,village
+المزاحمة,,21.116134,40.585031,village
+الخريصية,Alkhresiyah,24.1079976,42.6905641,village
+العيدانية,Alidaniyah,24.0566233,42.8396617,village
+الدبيجة,,24.9685755,45.7553804,village
+الحصاة,,22.862562,44.9784845,village
+الجدعاء,,22.5173197,44.798037,village
+العسيلة,,21.5847954,44.0908253,village
+خثعم,Khathaam,19.7743042,41.8739286,village
+قبيلة العوامر,Al Awamer,19.6704248,41.7060732,village
+الجاهرة,,25.1916504,43.7107697,village
+طلحة,,22.2786874,44.9189746,village
+الفيصلية,,19.6638581,43.7310755,village
+نخال بلقرن,Nakhal Balqarn,19.3886212,41.8627215,village
+غماء,,18.8585339,42.2350502,village
+كبداء,,18.8057594,42.2491417,village
+المعَدَنْ,,19.2005043,42.7738991,village
+بنش,,18.7750626,42.2517662,village
+كرامة,,18.9921589,42.1471863,village
+الأنصاب,,18.9926052,42.1485863,village
+ال جميرة,,19.2075572,42.0530722,village
+حليل,,19.8563489,41.8382868,village
+جناب شكر,,19.8769173,41.8053593,village
+قرن بالحصين,,19.8324947,41.6524544,village
+الساق,,19.9803205,41.6959355,village
+جناب العصفرة,,19.977684,41.6394768,village
+صخوان,,20.0214329,41.6771584,village
+العصفرة,,19.9734569,41.6575437,village
+جميلة,,20.492234,41.664229,village
+الهجاجهجة,,20.756919,41.549059,village
+أم الطينة,,20.502688,41.665093,village
+مطاردة,,20.483432,41.661128,village
+الغبة,,20.485026,41.669308,village
+أم عثمان,,20.581817,41.51482,village
+النباعة,,20.620892,41.52216,village
+الخدرة,,20.578435,41.483657,village
+البعيثة,,20.753112,41.546888,village
+النغير,,21.243935,41.674913,village
+المرتكزات,,20.62216,42.426295,village
+غِيَب,,20.629933,42.41807,village
+القدرة,,20.4490986,40.5177231,village
+الجهوة,,20.5674701,40.636968,village
+حراضة,,21.6776256,41.2511573,village
+ذعبلوتن,Thabalotn,19.7072733,53.9638191,village
+الثعبان,,19.735385,41.2192336,village
+كُبر,,24.9335645,38.1833717,village
+ضواء,,19.3654785,42.3109093,village
+فيضة السمار,,26.2170258,41.7996521,village
+ذريع الجب,,18.4364491,41.7093735,village
+الصلامة,,18.4404945,41.7147827,village
+الحمرة,,19.7328131,41.4875795,village
+مرمى الحباب,,18.2776737,43.597496,village
+الدويمة,,18.9537296,41.5918884,village
+رشاة,,18.974205,41.5569458,village
+الرصيصية,,19.0100422,41.5777473,village
+ضها,,20.896237,40.335952,village
+الوريمة,,20.584952,40.425384,village
+الفراع البيّض,,20.653684,40.212042,village
+الأوسط,,20.6568241,40.1780205,village
+الصريب,,20.655625,40.381374,village
+الحوطة,,19.2024822,42.2471619,village
+المدمونة,,17.4962292,43.1572418,village
+الشاقة الشمالية,,19.9780441,40.6643221,village
+أم قويف,,23.635612,42.176341,village
+بادي,,18.905969,41.964383,village
+القسوية,,18.8867493,41.9722977,village
+مخبطة,,18.3802795,41.8549995,village
+الأخيضر,Alokhaydher,25.5267371,42.8818964,village
+وادي شاقر,,17.7422695,43.5990944,village
+العوراء,,17.8166542,42.7959137,village
+العين الزرقاء,,24.2993145,39.6432953,village
+بني عمرو,Bani Amr,19.3805195,42.0477434,village
+ليّكَة,,20.5856915,40.8481789,village
+نيد مجبا,,17.2820854,43.1080132,village
+مشاش الثلابيت,,25.8264809,41.065979,village
+جرد,,20.0891557,41.8728018,village
+NEOM Construction Village 2,,27.4747087,35.6507761,village
+Trojena Pioneer Camp,,28.7424499,35.4544178,village
+أم ارطى,,26.9309158,41.3599243,village
+الحمود,,18.9380469,41.2861404,village
+القحمان,,18.9391653,41.2949316,village
+تضراع,,17.9102984,42.6432186,village
+ليف,,20.2968407,41.810215,village
+الجوفان,,25.4719172,45.3050057,village
+دار السلام,,22.1928331,40.7361699,village
+الشعرية,Asheriyah,21.7415217,40.6228587,village
+وطاد,,22.0954121,40.400548,village
+المزرع,,23.5345525,40.6275072,village
+الحزم,,23.6624783,41.6467368,village
+المخلوبة,,18.2210388,41.9431534,village
+Neom Residential Camp 01,,28.1328561,34.6452004,village
+Neom Residential Camp 26,,28.0809225,35.214663,village
+Neom Residential Camp 09,,28.2032797,35.0935208,village
+Neom Residential Camp 13,,28.1885361,35.1033014,village
+Neom Residential Camp 11,,28.1981927,35.1133493,village
+Neom Residential Camp 05,,28.2487646,35.0931336,village
+Turtle Bay Village,,25.5001894,37.006073,village
+مغطية,,28.4580898,44.5321388,village
+الرفيعة,,23.8804545,42.6393937,village
+الثامرية,,23.8088284,42.5648994,village
+فيضة غثاة,,24.3561774,43.3620628,village
+الفيصلية,,24.2974235,43.7103118,village
+الصدارة,,25.0390004,43.9485739,village
+النفاه,,24.9731067,43.918799,village
+تلعة رشيد,Taleat Rishid,25.5121252,42.8246529,village
+2 قرية نيوم,NEOM Community 2,28.1161195,35.3191062,village
+بئر عسيكر,,25.0300465,37.5994034,village
+الرفايع,,25.8173547,43.2101133,village
+خريسان,,25.3279022,44.5498878,village
+الخالدية,,25.355931,44.5562659,village
+الحميرات,,22.1575067,39.4044909,village
+كتيفة,Kutaifah,26.2622074,41.9098162,village
+دريعة,Dreah,26.2067365,42.0325327,village
+الشنانة,Ash Shinanah,25.811535,43.44625,village
+حمراء القعساء,Hamra Algeasa,26.4796005,41.9150305,village
+المعترضة,Almuetardhah,26.8659494,41.4911714,village
+عريض,,24.9946842,45.7055855,village
+عقلة ابن جبرين,Oglat Ibn Jibrin,27.1015008,41.2805886,village
+عماير ابن صنعاء,Amaiyr ibn Sanea,26.976222,40.2991751,village
+بيضاء نثيل الجنوبية,Bedha Nithil Aljanubiyah,26.9747352,40.3179452,village
+العدلة,Aladlah,25.5121189,39.3638584,village
+الخوي,Akhwai,27.2272114,42.2121132,village
+شعيب الحمر,Sheeb Alhumr,26.0616424,43.0461064,village
+ذويبة,Thuwebah,26.0272187,43.1743562,village
+محيوة,Mhayuwah,25.6537687,42.9149322,village
+أبو طرفا,Abo Tarfa,25.513436,42.8538156,village
+القاعية,Algaeiyah,24.903194,42.1680399,village
+الرمثية,Arrimthiyah,24.741742,42.9551804,village
+فيضة نومان,Fidhat Nawman,24.4556193,42.9330078,village
+حديجة,Hudayjah,24.5554954,43.2374354,village
+هرمول,Hurmul,24.7656616,43.1861309,village
+بدائع الدلابحة,Badia Addlabhah,24.7010635,43.7030029,village
+فيضة الجمش,Fidhat Aljimsh,24.6766598,43.6893639,village
+العمارية,Alammariyah,24.6661889,43.665047,village
+المنيفية,Almnifah,23.9400034,42.8458002,village
+فيضة عفيف,Faydhat Afif,23.8990512,42.8548511,village
+البادرية,Albaderiyah,23.935383,42.7476333,village
+الخالدية,Alkhaldiyah,23.9246649,42.7582247,village
+بيضاء نثيل,Bedha nithil,23.8914809,42.6685186,village
+أم الريلان,Om Arrilan,22.8314279,41.1530728,village
+لحي ضب,Lehi Dhab,22.6420886,41.3395068,village
+مقر شنيف,Magar Shanif,22.6410882,41.1378855,village
+الزربان,Azzerban,22.8194445,41.1453236,village
+المتايهة,Almetaihah,22.8354569,41.1324208,village
+المرقب,Almargab,22.6078484,41.3393962,village
+الرقابية,Arrgabiyah,23.1475242,40.9919483,village
+خرجاء,Kharja,23.4979556,41.0507408,village
+العدل,Aladel,22.180187,40.8060062,village
+المواقيع,,19.4327602,43.5379677,village
+الغمر,Alghamr,23.5520794,40.7354739,village
+صنعا,Sanea,22.4972316,40.4243015,village
+القصر,Algaser,22.6098235,40.553073,village
+الأصيحر,Alauseher,22.6023518,40.4131515,village
+القرارة,Algararah,22.4784482,40.391127,village
+الكويمة,Alkwemah,21.7200349,40.5907071,village
+العانة,Alanah,21.7302758,40.6019348,village
+السيل,Assel,21.6248037,40.426584,village
+الشعب الأحمر,Ashieb Alahmar,21.6323474,40.3216922,village
+العرجاء,Alarja,21.3783188,40.1424674,village
+عوهز,,17.6422272,43.0793571,village
+الكرة,Alkarrah,21.9566947,39.7031165,village
+ماود,Mawed,21.9803146,39.6827598,village
+الدهماء,,18.3305534,42.3581842,village
+الغزوية,,19.2760629,41.107033,village
+عاجة,,19.2634181,41.1036318,village
+العوادات,,19.4095935,41.2233088,village
+بني سحار,,18.9704426,41.1894607,village
+الكدسة,,18.9664653,41.2160897,village
+السمرة,,18.9778086,41.2619018,village
+المناديل,,18.9770577,41.2835097,village
+عيسان,,16.8184499,42.9319407,village
+المعالي,,22.695163,39.7255649,village
+الخويرة,,23.8690682,41.0719989,village
+الجوهرية,,21.8165624,42.4477474,village
+ال البحر,,18.9073811,42.5381164,village
+الحدباء,,18.5868789,43.2155533,village
+الشرف,Ash Sharaf,24.6148052,44.3417984,village
+الفيصلية,,24.5948698,44.3653301,village
+نقبين,Naqbin,27.6248414,41.6223142,village
+حيد عبس,Haid Abbs,19.2984539,41.9657263,village
+فرواع,,19.1583748,41.6124077,village
+خلص المحاميد,,23.9332183,39.0640086,village
+المجالدة,,26.9347534,37.4342079,village
+شدانه,,20.7631835,40.8538929,village
+الوفض,,26.5122931,37.5554913,village
+صنعاء,,22.9808231,41.634137,village
+ظفيرة,,25.3347268,42.9433153,village
+حي آل مزهر,,18.0791039,42.7478039,village
+الكر,,26.6072967,36.8514758,village
+ابو القزاز,,26.7691341,36.6891485,village
+سدحة,,24.8110091,42.5033534,village
+المردمة,AlMardamah,23.675591,43.130351,village
+مشاش بن دانه,,26.8207933,39.9185621,village
+مشرفة السمار,,25.3504829,42.8039784,village
+السطيح,,24.8806327,37.3281074,village
+الفهدة,,26.750874,48.1331155,village
+النحيلات,,20.8700351,40.9482068,village
+البظاظة,,19.6196057,41.9752341,village
+الأحول,,20.3419758,40.7786248,village
+الحنو,,20.3490914,40.8247648,village
+القرن الأحمر,,20.080529,40.851944,village
+ضروة الشويمس,,26.1921516,40.0971699,village
+الفلقة,,26.2220397,37.5945986,village
+الجحفة,,26.0734164,38.7959372,village
+الحشاة,,26.3967489,37.3801347,village
+البيضاء,,26.3620307,37.4448225,village
+طليح,,25.2469218,38.0617031,village
+الجهالين,,20.6245495,41.0517469,village
+الحمة,,20.6644091,41.0505867,village
+صقران,,23.6504472,44.2318636,village
+بئر المسمى,,24.0115597,39.19011,village
+خالف النكر,,16.9106177,43.1180763,village
+أبو المرو,,17.0207281,43.0737018,village
+الملاقي,,16.9890048,43.0579197,village
+الحنانية,,23.7868137,39.4542393,village
+الضربه,,26.8497911,41.7518867,village
+أم الاثموم,,21.1941161,40.7815569,village
+طاده,,21.5378539,40.3338006,village
+ALDAHMA,,20.546993,41.0486997,village
+الغراء,,17.1010893,42.6207948,village
+عمق,,25.4577674,37.3385167,village
+قرية شلال,,26.7865595,37.8548404,village
+الملوي,,25.3381214,40.3804969,village
+مشاش بن نامي,,24.540852,40.6789482,village
+الأبواء,Al Abwāʼ,23.1085691,39.0712452,village
+السلمانية,,19.185839,44.2679742,village
+ارميص,,21.8584249,42.3588955,village
+المقحوزة,,19.6586804,42.0145424,village
+قرا,,19.5572591,42.2431121,village
+تفتفان,,21.4441266,40.2384715,village
+مخرم,makhram,17.4641042,43.1582549,village
+السبعانة,,21.2280936,42.9799094,village
+حلة المنقطع,,19.3288991,42.0038869,village
+المسلمة,,20.3396878,40.5919435,village
+شعب الصلة,,19.5654466,41.4499852,village
+الملحاء,,19.5502823,41.4290673,village
+العقدة,,19.540293,41.4062771,village
+جوة المعين,,19.56008,41.452163,village
+مروان,,19.5318364,41.4048953,village
+قرية ال جلدة,,18.5267625,43.1970186,village
+المشذا,,20.7366311,40.7706979,village
+مقمور,,19.8970585,41.5767878,village
+سقامة,,18.41338,42.206144,village
+المسلمة,,18.426226,42.1543927,village
+الحنو,,21.140294,40.5422275,village
+كرا الحشرج,,20.4105982,41.5978306,village
+راكان,,27.5133271,36.2701288,village
+علقة,,23.6137165,39.1942733,village
+النقيرة,,27.8713882,48.2596089,village
+صيادة,,24.349888,44.4903759,village
+الظويهرة,,23.722524,39.1598226,village
+الشهيد,,23.7263222,39.2756354,village
+الدوارة,,23.8180792,39.3541368,village
+آل حذيفة,Al-huthayfia,19.6246971,41.7225509,village
+الادخالات,,18.8169561,44.0175927,village
+جحفة جويل,,18.7897749,43.9387837,village
+الفيصلية,,18.8258626,44.0602939,village
+الظفرة,,18.8837783,44.0866805,village
+واجش,,18.7208612,43.8338734,village
+الشعران,,19.0362541,43.9681529,village
+الجثوة,,19.0303606,43.2340587,village
+الشميط,,19.0193588,43.2159595,village
+بردان,,19.0197378,43.2268065,village
+ال مسعد,,18.9974336,43.1791559,village
+دريع,,19.0064011,43.1805089,village
+الجماد,,19.005547,43.1907561,village
+سامودة,,19.0430353,43.2942202,village
+الحثوة,,19.0376724,43.2535886,village
+شواحط,,19.2518029,42.842124,village
+الحجفة,,19.2489206,42.818859,village
+الحميطة,,19.4929471,42.8369631,village
+الجفرة,,19.2310923,42.7881805,village
+ربوعة,,19.4939033,42.8275884,village
+القاع,,19.268195,42.8559035,village
+بادية,,19.2472586,42.8267671,village
+الذراع,,26.3825839,37.3994173,village
+الشنيفيه,,24.5282263,43.5989875,village
+العشيرة,,26.9597362,37.2724311,village
+الرمام,,26.9282485,37.2831846,village
+الضبط,,25.3423977,37.5354267,village
+الحنجور,,19.9303938,41.464938,village
+الحنكة,,19.4835974,41.7275033,village
+ال خلوفة,,19.6965479,41.7749503,village
+الحمراء,,20.8915641,40.2703869,village
+السطح,,20.916321,40.289486,village
+الرايم,,19.6532184,41.8085314,village
+خارف,,18.9352521,42.3641503,village
+الفريعة,,26.0481376,38.9275566,village
+الفرح,,17.5211331,43.642681,village
+الرحبة,,17.507611,43.6926734,village
+ثرباء,,17.489486,43.6262098,village
+النزوح,,17.5626161,43.6472403,village
+ذات المزن,,17.538503,43.84464,village
+الخنق,,17.5760641,43.6348441,village
+جعار,,17.558918,43.5977799,village
+النمصة,,17.6264176,43.6517322,village
+الراحة,,17.5679965,42.9931674,village
+مملس,,17.5660507,42.9943448,village
+مرويد,,17.6225299,42.9939137,village
+الحواي,,17.6417999,42.9975729,village
+كنا,,17.6474103,43.0029516,village
+القميشي,,17.620169,42.9969325,village
+حدبة حلنفاء,,17.6617124,43.0008921,village
+الجهى,,17.6167043,42.9644674,village
+الدميا,,17.6166154,43.0044821,village
+الفطيحة,,17.6141801,43.0069975,village
+حبيل ميلة,,17.5557151,43.014562,village
+الشعيفرة,,17.5874499,42.9368841,village
+مخاسير الجبجب,,17.5793124,42.9754039,village
+عارض العزاة,,17.5757691,42.9738895,village
+الحردة,,17.5529725,43.0075683,village
+ماغس,,17.5613459,43.0015848,village
+الخفج,,20.715891,40.444696,village
+ذات الضب,,17.5190736,43.7272085,village
+الشامية,,17.6867442,42.9055999,village
+الجوة-قهبو,,17.6655456,42.9314571,village
+المبجولة,,18.6603031,43.2138374,village
+المجراء,,18.7081934,42.6939793,village
+ذبيرم,,18.2565378,43.4159646,village
+الكهيف,,18.1980929,43.4234959,village
+الرجل,,18.0925577,43.4779889,village
+الرجيلة,,18.0418935,43.4361127,village
+الحانك,,18.1422636,43.42439,village
+روضة السريب,,18.1253235,43.4466045,village
+البحرة أم الطريق,,18.0471125,43.4683445,village
+آل نميس,,18.0338029,43.4809547,village
+المثناة,,18.0670359,43.4669878,village
+آل عياش,,18.0255563,43.5217416,village
+البحرة آل بير,,18.070048,43.4770454,village
+المعقل,,18.0577059,43.455411,village
+الفقوعة,,18.0805149,43.4728602,village
+السربة,,18.0816088,43.4893051,village
+العطف,,18.0115234,43.4762154,village
+السلاطين,,17.9787889,43.4760185,village
+الرهوة,,17.9758183,43.4758981,village
+الغمير,,18.0661917,43.4579013,village
+آل زايد,,17.9943015,43.4861772,village
+آل شبيب,,18.0276886,43.4762723,village
+خضيرة,,18.0518739,43.4439196,village
+البازم,,18.0209303,43.4819076,village
+آل شعيب,,18.0254801,43.5179256,village
+آل جرشان,,18.0225285,43.5201111,village
+آل الجهوات,,17.9865754,43.4838408,village
+آل مرتفع,,17.9907575,43.4830898,village
+مشوطة,,18.3270402,43.7962,village
+فضلان,,18.2841754,43.7495362,village
+الصنقة,,18.2595893,43.7766686,village
+الثميم,,18.3321601,43.7880484,village
+الغرزة,,18.2393413,43.7797379,village
+قافية الضرايب,,18.3138768,43.7807434,village
+حمران,,18.2856646,43.756983,village
+الجحر,,18.3094243,43.7774771,village
+المجمغة,,23.2413766,45.505421,village
+مجيراء,,25.4738325,37.9221709,village
+القرارة,,23.8719243,41.7448135,village
+سدحه,,23.601696,41.590849,village
+عشيرة,,22.1597339,44.8650465,village
+الغشمة,,22.1413001,44.8394586,village
+يافع,,22.1403503,44.863959,village
+مراغة,,21.9611757,44.9941149,village
+اليحامرية,,21.9052982,44.7789394,village
+أم السلم,,18.6509767,42.9946213,village
+طلاح الطويفح,,18.6166893,43.0089099,village
+العندلية,,18.6075363,42.9839687,village
+المقيض,,18.584015,42.9795407,village
+العوشز,,18.4874652,42.9862944,village
+كدمان,,18.5946477,42.9577268,village
+السريحة,,18.5818985,42.9612231,village
+بو مقاطير,,18.5338542,42.9924499,village
+مقطوف,,18.5083396,42.9813497,village
+الكنة,,18.5176861,43.0854295,village
+المرارة,,18.5501758,43.0715268,village
+العريضة,,18.5153365,43.1444389,village
+الجهراء,,18.5316105,43.1673317,village
+معلق أبو زيد,,18.3197668,43.2022759,village
+الحامض,,18.3305012,43.1781757,village
+ال مقبولة وال حجراف,,18.286646,43.2085875,village
+العنقاء,,18.8527971,41.9770219,village
+أمسود,,18.8735417,41.9941114,village
+الشعبين,,20.1249256,41.1133462,village
+النجيل,,20.1051848,41.1029275,village
+الخشعة,,19.8472653,41.5347655,village
+المحالية,,19.8308639,41.6396112,village
+الحوزة,,19.8254974,41.5577215,village
+السويسية,,19.8681429,41.9251084,village
+جهوم البلس,,19.8217529,41.8663028,village
+المربد,,19.8568573,41.9366635,village
+السند,,19.8821119,41.9290388,village
+الصرة,,19.8441974,41.9383793,village
+الحفية,,19.8720085,41.9274914,village
+النجفة,,19.8783556,41.9275185,village
+بشامة,,19.8162407,41.8617278,village
+الندبة,,19.8209552,41.8631492,village
+الوهاد,,19.8140497,41.8697293,village
+العميقة,,19.8298993,41.9393673,village
+الجحف,,19.8790048,41.9376328,village
+كرم أدمة الأعلى,,19.8224383,41.9398563,village
+الصعبة,,19.8359773,41.9373634,village
+القصباء,,19.8612147,41.9266538,village
+أنبغا,,19.896643,41.9301523,village
+الغوازي,,19.8528529,41.9393896,village
+قرى راشد,,19.8704988,41.9381305,village
+السلام,,19.8789621,41.9390021,village
+الظبية,,19.8718497,41.9415763,village
+الحميطة,,19.8788091,41.9318578,village
+ال عثواء,,19.8831137,41.9340983,village
+العبب,,19.9405547,41.9282218,village
+عفتان,,19.9408308,41.9238467,village
+زاعمة,,19.8846245,41.9291761,village
+الجاني,,19.9237842,41.9299337,village
+دفر الهندى,,19.9242053,41.9334427,village
+شعبة الرحاء,,19.9301555,41.9376212,village
+ريع وصيق وفقاسة نعمان,,21.3328335,40.0436372,village
+المغمس,,21.3783978,40.0199103,village
+عكنان,,19.4171409,42.0711084,village
+شبارق,,19.4168051,42.0642947,village
+الحواويط,,27.3589805,36.4952087,village
+الملحة,,17.4067303,42.8440302,village
+المعاجن,,17.3972346,42.8290075,village
+الحطباية,,17.4009526,42.8385932,village
+العواكة,,17.4011952,42.8276672,village
+شعبة قريشه,,18.7229986,42.2602398,village
+الشيق,,18.7284504,42.266426,village
+القواري,,18.7271628,42.2702547,village
+كلمة,,18.2775275,42.3296648,village
+جثلو,,18.2737038,42.3143566,village
+جزعة العوص,,18.2533937,42.2851349,village
+الحاجب,,18.2788372,42.3208955,village
+غنمة,,18.2588791,42.3058645,village
+فرع الردادي,,24.2487781,39.0877369,village
+ال عبيس,,17.9659986,43.1234947,village
+شيبه,,17.6730577,42.9749508,village
+الجحر,,17.5622235,42.8965648,village
+خشع,,17.570742,42.9034899,village
+النعيرية ديار العوازم,,27.5112773,48.3637638,village
+رحب,,17.5598354,42.9123164,village
+نيد القثب,,17.5710356,42.9078857,village
+الحرف,,17.5699546,42.9033913,village
+الحفول,,17.5916824,42.5698256,village
+وادي دحيم,,19.4789734,41.9718513,village
+الخالدية,,25.0458911,43.7803201,village
+العالية,,25.0430337,43.7906816,village
+المنسف,,25.0440809,43.7850899,village
+النهضة,,25.0473884,43.7679506,village
+أم الديبان,,25.0023562,43.7369384,village
+المشنوطية,,25.0011379,43.6710746,village
+الفايزية,,25.0490643,43.7843469,village
+إبن حمد,,25.0371346,43.7950662,village
+حجالة الأثرية,,19.0963556,42.0090709,village
+أم رضمة,,23.6869122,44.2287102,village
+مويطية,,20.5687821,42.631704,village
+الجليبات,,20.2889234,42.0762958,village
+الربواء,,23.5548369,44.4165439,village
+السالمية,,23.5680822,44.4289592,village
+الرفيعة,,26.1464383,39.4338884,village
+الشحاك,,17.6374512,43.5487251,village

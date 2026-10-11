@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>مسار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Changa:wght@500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=block">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css">
+<style>
+/* ===================== نظام التصميم ===================== */
+:root{
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;
+  --r1:10px;--r2:14px;--r3:20px;--rp:999px;
+  --fs-xs:11.5px;--fs-sm:13px;--fs-md:14.5px;--fs-lg:17px;--fs-xl:22px;--fs-num:34px;
+  --font:'IBM Plex Sans Arabic','Segoe UI',Tahoma,system-ui,sans-serif;
+  --font-display:'Changa','IBM Plex Sans Arabic',sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+body.light{
+  --glass:rgba(246,238,222,.94);--solid:#f6eedc;--ink:#1a1614;--muted:#6a5b4c;
+  --line:rgba(26,22,20,.14);--line2:rgba(26,22,20,.26);--brand:#9b2c22;--on-brand:#fff;
+  --brand-soft:#f0ddd3;--accent:#b87a3d;--gold:#e3b07a;--red:#9b2c22;--route:#9b2c22;--chip:#eadfc8;
+  --shadow:0 1px 2px rgba(26,22,20,.10),0 14px 34px -14px rgba(60,35,20,.42);
+  --map-filter:saturate(.55) sepia(.22) brightness(1.03);--ring:rgba(155,44,34,.10);--ringline:rgba(155,44,34,.55);
+  --logo-ink:#1a1614;--logo-mid:#9b2c22;--logo-top:#f1e6d2;--logo-pin:#9b2c22;
+}
+body.dark{
+  --glass:rgba(28,23,21,.92);--solid:#241e1b;--ink:#f1e6d2;--muted:#b9a88f;
+  --line:rgba(241,230,210,.13);--line2:rgba(241,230,210,.24);--brand:#e3b07a;--on-brand:#1a1614;
+  --brand-soft:#35281f;--accent:#e3b07a;--gold:#e3b07a;--red:#d1493c;--route:#e3b07a;--chip:#2e2622;
+  --shadow:0 1px 2px rgba(0,0,0,.45),0 16px 38px -14px rgba(0,0,0,.85);
+  --map-filter:invert(1) hue-rotate(180deg) brightness(.80) contrast(.92) saturate(.45) sepia(.3);--ring:rgba(227,176,122,.10);--ringline:rgba(227,176,122,.6);
+  --logo-ink:#f1e6d2;--logo-mid:#e3b07a;--logo-top:#1a1614;--logo-pin:#e3b07a;
+}
+.sadu{height:9px;background:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='10'%20viewBox='0%200%2016%2010'%3E%3Crect%20width='16'%20height='10'%20fill='%239B2C22'/%3E%3Cpath%20d='M0%2010%20L4%202%20L8%2010%20Z'%20fill='%23F1E6D2'/%3E%3Cpath%20d='M8%2010%20L12%202%20L16%2010%20Z'%20fill='%231A1614'/%3E%3C/svg%3E") repeat-x left center/auto 9px}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;font-family:var(--font);color:var(--ink);background:#e6dbc4;-webkit-font-smoothing:antialiased}
+body.dark{background:#171210}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.ms-svg{display:inline-grid;place-items:center;width:1em;height:1em;font-size:24px;vertical-align:middle}.ms-svg .kaaba{width:100%;height:100%;display:block}
+.pin .ms-svg{font-size:20px}.pin.big .ms-svg{font-size:30px}.cbtn .ms-svg{font-size:25px}.pill .ms-svg{font-size:20px}
+.ms{font-family:'Material Symbols Rounded';font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;direction:ltr;font-feature-settings:'liga';-webkit-font-smoothing:antialiased;font-size:22px;user-select:none}
+.fill{font-variation-settings:'FILL' 1}
+#map{position:absolute;inset:0;background:inherit;z-index:0;direction:ltr}
+.leaflet-tile-pane .osm{filter:var(--map-filter)}
+.leaflet-container{font-family:var(--font);background:inherit}
+.leaflet-control-attribution{display:none}
+.glass{background:var(--glass);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border:1px solid var(--line);box-shadow:var(--shadow)}
+.ui>*{position:absolute;z-index:500}
+.ic-btn{width:44px;height:44px;border-radius:var(--r2);display:grid;place-items:center;color:var(--muted);transition:background .15s,color .15s,transform .15s}
+.ic-btn:hover{background:var(--brand-soft);color:var(--brand)}
+.ic-btn:active{transform:scale(.94)}
+.ic-btn:focus-visible,.pill:focus-visible,.cbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---------- الهوية (أعلى اليمين) ---------- */
+.brand{overflow:hidden;top:20px;right:24px;display:flex;align-items:center;gap:12px;padding:8px 14px 8px 16px;border-radius:var(--r3)}
+.brand svg{width:46px;height:48px;flex:none}
+.brand .nm{font-family:var(--font-display);font-weight:700;font-size:32px;line-height:1;color:var(--brand)}
+body.dark .brand .nm{color:var(--gold)}
+.brand .tg{font-size:var(--fs-xs);color:var(--muted);margin-top:3px}
+
+/* ---------- البحث ---------- */
+.searchbar{top:18px;left:50%;transform:translateX(-50%);width:min(780px,calc(100% - 720px));min-width:420px;height:72px;border-radius:var(--r3);display:flex;align-items:center;gap:var(--s2);padding:0 var(--s2)}
+.searchbar .spark{color:var(--brand);width:54px;height:54px;display:grid;place-items:center;flex:none;background:var(--brand-soft);border-radius:var(--r2)}
+.searchbar input{flex:1;min-width:0;height:100%;background:none;border:0;outline:0;font:600 19px/1.2 var(--font);color:var(--ink);padding:0 var(--s2)}
+.searchbar input::placeholder{color:var(--ink);opacity:.62;font-weight:500}
+.locchip{display:flex;align-items:center;gap:6px;height:40px;padding:0 12px;border-radius:var(--rp);background:var(--chip);color:var(--muted);font-size:var(--fs-xs);white-space:nowrap;border:1px solid var(--line)}
+.locchip .ms{font-size:17px;color:var(--brand)}
+.locchip.off .ms{color:#dc2626}
+.go{width:56px;height:56px;border-radius:var(--r2);background:var(--brand);color:#fff;display:grid;place-items:center;flex:none;transition:transform .15s,filter .15s}
+.go:hover{filter:brightness(1.08)}.go:active{transform:scale(.94)}
+body.dark .go{background:var(--gold);color:#1e1a16}
+.go.busy .ms{animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- أعلى اليسار: الطقس والصلاة والمظهر ---------- */
+.infochips{top:78px;left:24px;display:flex;gap:var(--s2)}
+.topleft{top:20px;left:24px;display:flex;align-items:center;gap:var(--s2)}
+.chipinfo{display:flex;align-items:center;gap:8px;height:44px;padding:0 14px;border-radius:var(--r2);font-size:var(--fs-sm);font-weight:600;white-space:nowrap}
+.chipinfo .ms{font-size:20px;color:var(--accent)}
+.chipinfo small{display:block;color:var(--muted);font-weight:400;font-size:10.5px;line-height:1.1}
+.chipinfo b{display:block;line-height:1.1}
+.themesw{width:76px;height:44px;border-radius:var(--rp);position:relative;overflow:hidden;border:1px solid var(--line2);box-shadow:var(--shadow);transition:background .5s}
+body.light .themesw{background:linear-gradient(180deg,#4aa8ee,#b9e3ff)}
+body.dark .themesw{background:linear-gradient(180deg,#09112b,#223466)}
+.themesw::before{content:'';position:absolute;top:5px;width:32px;height:32px;border-radius:50%;z-index:2;transition:left .45s cubic-bezier(.5,1.5,.5,1)}
+body.light .themesw::before{left:5px;background:radial-gradient(circle at 35% 35%,#ffe58a,#f4b02a);box-shadow:0 0 0 4px rgba(255,214,102,.35),0 0 16px #ffd36b}
+body.dark .themesw::before{left:39px;background:radial-gradient(circle at 32% 38%,#aeb7cf 0 3px,transparent 4px),radial-gradient(circle at 66% 66%,#aeb7cf 0 2.5px,transparent 3.5px),radial-gradient(circle at 35% 35%,#f6f8fc,#c7cfe2);box-shadow:0 0 0 4px rgba(200,210,255,.18),0 0 14px rgba(190,205,255,.55)}
+.themesw::after{content:'';position:absolute;inset:0;z-index:1}
+body.light .themesw::after{background:radial-gradient(ellipse 12px 5px at 62% 70%,rgba(255,255,255,.95),transparent 70%),radial-gradient(ellipse 16px 6px at 80% 50%,rgba(255,255,255,.85),transparent 70%)}
+body.dark .themesw::after{background:radial-gradient(circle at 22% 30%,#fff 0 1px,transparent 1.6px),radial-gradient(circle at 38% 68%,#fff 0 1.2px,transparent 1.8px),radial-gradient(circle at 52% 24%,#dfe6ff 0 1px,transparent 1.6px)}
+.helpbtn{height:44px;padding:0 16px;border-radius:var(--rp);display:flex;align-items:center;gap:6px;font-weight:600;font-size:var(--fs-sm);color:var(--ink)}
+.helpbtn .ms{color:var(--accent);font-size:20px}
+.helpbtn.pulse{animation:ring 1.6s ease-out infinite,nudge 3.2s ease-in-out infinite;position:relative}
+.helpbtn.pulse::after{content:'';position:absolute;top:-3px;right:-3px;width:12px;height:12px;border-radius:50%;background:var(--red);border:2px solid var(--solid);animation:blink 1.1s ease-in-out infinite}
+@keyframes nudge{0%,80%,100%{transform:none}86%{transform:scale(1.07)}92%{transform:scale(.98)}}
+@keyframes blink{50%{opacity:.25;transform:scale(.8)}}
+body.light .helpbtn.pulse{animation-name:ring2,nudge}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(227,176,122,.7)}100%{box-shadow:0 0 0 16px rgba(227,176,122,0)}}
+
+/* ---------- طوارئ / مقارنة / صوت / مشاركة ---------- */
+.sosbtn{left:24px;bottom:24px;height:56px;padding:0 20px 0 8px;border-radius:var(--rp);display:flex;align-items:center;gap:10px;background:#7a2019;color:#fff;font:700 15px var(--font);border:1.5px solid rgba(255,255,255,.35);box-shadow:0 10px 24px -8px rgba(142,42,34,.8);transition:transform .15s}
+.sosbtn:hover{transform:translateY(-2px)}
+.sosbtn .ic{width:40px;height:40px;border-radius:50%;background:#fff;color:#8e2a22;display:grid;place-items:center}
+.sosbtn.on{box-shadow:0 0 0 5px rgba(142,42,34,.25),0 10px 24px -8px rgba(142,42,34,.8)}
+.sosnums{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:2px 0 12px}
+.sosnums a{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:var(--r2);background:rgba(142,42,34,.1);color:var(--red,#8e2a22);text-decoration:none;font-weight:700;border:1px solid rgba(142,42,34,.25)}
+.sosnums a b{font-size:20px;font-variant-numeric:tabular-nums}.sosnums a small{display:block;font-weight:500;font-size:11px;color:var(--muted)}
+.sosrow{display:flex;align-items:center;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.sosrow .ci{width:40px;height:40px;border-radius:12px;background:#8e2a22;color:#fff;display:grid;place-items:center;flex:none}
+.sosrow .t{flex:1;min-width:0}.sosrow .t small{color:var(--muted);font-size:var(--fs-xs)}
+.sosrow .t b{display:block;font-size:var(--fs-sm);line-height:1.4}
+.sosrow .m{font-weight:700;font-size:15px;white-space:nowrap}
+.snum{background:#8e2a22;color:#fff;border-radius:12px;width:34px;height:34px;display:grid;place-items:center;border:2.5px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.45)}
+.mic{width:48px;height:48px;border-radius:var(--r2);display:grid;place-items:center;flex:none;color:var(--brand);background:var(--brand-soft);transition:all .15s}
+body.dark .mic{color:var(--gold)}
+.mic.on{background:#8e2a22;color:#fff;animation:ring2 1.2s ease-out infinite}
+@keyframes ring2{0%{box-shadow:0 0 0 0 rgba(142,42,34,.6)}100%{box-shadow:0 0 0 14px rgba(142,42,34,0)}}
+.cmpm{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:700 16px var(--font);color:#fff;border:3px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.45)}
+.cmpm.a{background:#1a1614}.cmpm.b{background:#8e2a22}
+body.picking .leaflet-container{cursor:crosshair}
+.cmpsteps{display:flex;gap:8px;margin:2px 0 12px}
+.cmpsteps div{flex:1;padding:10px;border-radius:var(--r2);border:1.5px dashed var(--line);text-align:center;font-size:var(--fs-sm);color:var(--muted)}
+.cmpsteps div.ok{border-style:solid;border-color:var(--brand);color:var(--ink);background:var(--brand-soft)}
+.cmpsteps b{display:block;font-size:18px}
+.cmpscores{display:flex;gap:10px;margin:6px 0 10px}
+.cs{flex:1;border-radius:var(--r2);padding:12px;text-align:center;background:var(--chip);border:1.5px solid var(--line)}
+.cs i{font-style:normal;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;color:#fff;font-weight:700;font-size:13px}
+.cs.a i{background:#1a1614}.cs.b i{background:#8e2a22}
+.cs b{display:block;font-size:34px;line-height:1.1;margin-top:4px}.cs small{color:var(--muted)}
+.cs.win{border-color:var(--brand);background:var(--brand-soft)}
+.cverd{font-weight:700;font-size:var(--fs-sm);margin:4px 0 10px;line-height:1.7}
+.crow{display:grid;grid-template-columns:1fr 70px 70px;gap:6px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:var(--fs-sm)}
+.crow .cv{text-align:center;color:var(--muted);font-variant-numeric:tabular-nums}.crow .cv.w{color:var(--brand);font-weight:700}
+body.dark .crow .cv.w{color:var(--gold)}
+.chead{display:grid;grid-template-columns:1fr 70px 70px;gap:6px;font-size:11px;color:var(--muted);text-align:center}
+.acts{position:relative}
+.expmenu{position:absolute;bottom:52px;inset-inline-start:0;min-width:230px;border-radius:var(--r2);padding:6px;z-index:50;display:flex;flex-direction:column;gap:2px}
+.expmenu button{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:var(--r1);text-align:start;color:var(--ink)}
+.expmenu button:hover{background:var(--brand-soft)}
+.expmenu .ms{color:var(--brand);font-size:22px}body.dark .expmenu .ms{color:var(--gold)}
+.expmenu span{display:flex;flex-direction:column}.expmenu b{font-size:var(--fs-sm)}.expmenu small{font-size:11px;color:var(--muted)}
+.shrow{display:flex;gap:8px;margin-top:10px}
+.shrow button{flex:1;height:42px;border-radius:var(--r2);display:flex;align-items:center;justify-content:center;gap:6px;font:600 var(--fs-sm) var(--font);background:var(--chip);border:1px solid var(--line);color:var(--ink)}
+.shrow button.wa{background:#25d366;border-color:#25d366;color:#07351b}
+.acts{flex-wrap:wrap}
+@media (max-width:760px){.sosbtn{left:10px;bottom:96px;height:48px}.sosbtn .ic{width:34px;height:34px}}
+
+/* ---------- لوحة تخطيط المشوار ---------- */
+.tinput{width:100%;min-height:86px;resize:none;border-radius:var(--r2);border:1px solid var(--line);background:var(--chip);color:var(--ink);font:500 15px/1.7 var(--font);padding:12px 14px;outline:0}
+.tinput:focus{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)}
+.tgo{width:100%;margin-top:10px;height:48px;border-radius:var(--r2);background:var(--brand);color:#fff;font:700 15px var(--font);display:flex;align-items:center;justify-content:center;gap:8px}
+body.dark .tgo{background:var(--gold);color:#1e1a16}
+.tgo:hover{filter:brightness(1.08)}
+.tex{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tex button{font:500 12px var(--font);padding:5px 11px;border-radius:999px;background:var(--chip);border:1px solid var(--line);color:var(--muted)}
+.tex button:hover{color:var(--ink);border-color:var(--brand)}
+.ttot{margin:14px 0 6px;padding:12px 14px;border-radius:var(--r2);background:var(--brand);color:#fff;display:flex;justify-content:space-between;align-items:baseline}
+body.dark .ttot{background:var(--gold);color:#1e1a16}
+.ttot b{font-size:26px;font-weight:700}.ttot span{font-size:13px;opacity:.9}
+.tsteps{position:relative;margin:8px 0}
+.tstep{display:flex;gap:12px;align-items:center;padding:9px 0;position:relative}
+.tstep:not(:last-child)::after{content:'';position:absolute;right:15px;top:42px;bottom:-8px;border-right:2px dotted var(--line2,var(--line))}
+.tstep .n{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;font-size:14px;flex:none;border:2px solid var(--solid,#fff);box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.tstep .n.s{background:var(--red,#8e2a22)}
+.tstep b{display:block;font-size:var(--fs-sm)}.tstep small{color:var(--muted);font-size:var(--fs-xs)}
+.tnote{font-size:12px;color:var(--muted);margin:4px 0 10px}
+.terr{padding:12px 14px;border-radius:var(--r2);background:rgba(142,42,34,.1);color:var(--red,#8e2a22);font-size:var(--fs-sm);margin-top:12px;line-height:1.8}
+.tnum{background:var(--brand);color:#fff;border-radius:50%;width:30px;height:30px;display:grid;place-items:center;font:700 14px var(--font);border:2.5px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+body.dark .tnum{background:var(--gold);color:#1e1a16;border-color:#1e1a16}
+
+/* ---------- زر تخطيط المشوار ---------- */
+.tripbtn{top:100px;left:50%;transform:translateX(-50%);height:50px;padding:0 20px 0 8px;border-radius:var(--rp);display:flex;align-items:center;gap:12px;color:#fff;font:700 var(--fs-md,15px)/1 var(--font);background:linear-gradient(135deg,#9b2c22,#b23a2a);border:1.5px solid var(--gold);box-shadow:0 10px 24px -10px rgba(155,44,34,.7),0 0 0 4px rgba(227,176,122,.25);transition:transform .18s var(--ease),box-shadow .18s}
+.tripbtn:hover{transform:translateX(-50%) translateY(-2px);box-shadow:0 14px 28px -10px rgba(155,44,34,.8),0 0 0 6px rgba(227,176,122,.32)}
+.tripbtn .ic{width:36px;height:36px;border-radius:50%;background:var(--gold);color:#1e1a16;display:grid;place-items:center}
+.tripbtn .ic .ms{font-size:21px}
+.tripbtn small{display:block;font-weight:500;font-size:11px;opacity:.85;margin-top:3px}
+body.dark .tripbtn{background:linear-gradient(135deg,#e3b07a,#efc596);color:#1a1614;border-color:#fff3}
+body.dark .tripbtn .ic{background:#1e1a16;color:var(--gold)}
+@media (max-width:760px){.tripbtn{top:74px;left:auto;right:10px;transform:none;height:44px}.tripbtn:hover{transform:none}.tripbtn small{display:none}}
+
+
+
+/* ---------- حركة التفكير ---------- */
+.think{display:flex;flex-direction:column;gap:2px;margin-top:8px}
+.think .ts{display:flex;align-items:center;gap:10px;padding:8px 2px;font-size:var(--fs-sm);color:var(--muted);opacity:0;transform:translateY(6px);animation:tin .4s var(--ease) forwards}
+.think .ts.done{opacity:1;transform:none;animation:none}
+.think .ts.act{color:var(--ink);font-weight:600}
+.think .d{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;flex:none;background:var(--chip)}
+.think .done .d{background:var(--brand);color:var(--on-brand)}body.dark .think .done .d{color:#1e1a16}
+.think .d .ms{font-size:15px}
+.think .act .d::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--brand);animation:pulse2 1s ease-in-out infinite}
+@keyframes tin{to{opacity:1;transform:none}}
+@keyframes pulse2{50%{transform:scale(1.7);opacity:.35}}
+.spin{animation:spin 1s linear infinite}
+/* ---------- أسئلة مقترحة ---------- */
+.sugg{position:absolute;top:calc(100% + 8px);left:0;right:0;border-radius:var(--r2);padding:6px;display:flex;flex-direction:column;gap:1px;z-index:30;animation:drop2 .2s var(--ease)}
+.sugg.hidden{display:none}
+.ui>.searchbar:focus-within{z-index:700}
+.sugg .h{font-size:11px;color:var(--muted);padding:4px 10px 2px}
+.sugg button{display:flex;align-items:center;gap:10px;height:38px;padding:0 10px;border-radius:var(--r1);font:500 14px var(--font);color:var(--ink);text-align:start}
+.sugg button:hover,.sugg button:focus-visible{background:var(--brand-soft);outline:none}
+.sugg .ms{font-size:18px;color:var(--brand)}body.dark .sugg .ms{color:var(--gold)}
+/* ---------- السؤال السابق/التالي ---------- */
+.hnav{display:flex;align-items:center;gap:0}
+.hnav button{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;color:var(--muted)}
+.hnav button:hover:not(:disabled){background:var(--chip);color:var(--ink)}
+.hnav button:disabled{opacity:.3;cursor:default}
+.hnav .ms{font-size:20px}
+.hnav small{font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:26px;text-align:center}
+/* ---------- تبويبات المشوار / رحلة بر ---------- */
+.tabs{display:flex;gap:3px;background:var(--chip);padding:3px;border-radius:999px}
+.tab{padding:6px 14px;border-radius:999px;font:600 13px var(--font);color:var(--muted)}
+.tab.on{background:var(--brand);color:var(--on-brand)}body.dark .tab.on{color:#1e1a16}
+.rng{display:flex;align-items:center;gap:6px;margin-top:10px;flex-wrap:wrap}
+.rng span{font-size:12px;color:var(--muted);margin-inline-end:4px}
+.rng button{font:600 12px var(--font);padding:5px 11px;border-radius:999px;background:var(--chip);border:1px solid var(--line);color:var(--muted)}
+.rng button.on{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}body.dark .rng button.on{color:#1e1a16}
+.rverdict{display:flex;align-items:center;gap:10px;margin-top:14px;padding:12px 14px;border-radius:var(--r2);font-weight:700;font-size:var(--fs-sm);line-height:1.5}
+.rverdict .ms{font-size:24px}
+.rverdict.ok{background:rgba(21,128,61,.12);color:#15803d}
+.rverdict.warn{background:rgba(180,83,9,.13);color:#b45309}
+.rverdict.danger{background:rgba(185,28,28,.12);color:#b91c1c}
+body.dark .rverdict.ok{color:#6fd49a}body.dark .rverdict.warn{color:#f0b35a}body.dark .rverdict.danger{color:#f08a80}
+.rroute{margin:12px 0 4px;font-size:var(--fs-sm);color:var(--muted)}.rroute b{color:var(--ink)}
+.rstats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
+.rstats div{padding:10px 8px;border-radius:var(--r2);background:var(--chip);text-align:center;min-width:0}
+.rstats b{display:block;font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
+.rstats small{font-size:11px;color:var(--muted)}
+.rsec{font-size:12px;font-weight:700;color:var(--brand);margin:14px 0 2px}body.dark .rsec{color:var(--gold)}
+.rnum{background:#475569;color:#fff;border-radius:50%;width:30px;height:30px;display:grid;place-items:center;font:700 14px var(--font);border:2.5px solid #fff;box-shadow:0 3px 10px rgba(0,0,0,.4)}
+.fdot{width:10px;height:10px;border-radius:50%;background:#475569;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+.hdot{width:12px;height:12px;border-radius:50%;background:#dc2626;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.35)}
+.rend{white-space:nowrap;background:var(--solid);color:var(--ink);font:700 12px var(--font);padding:3px 10px;border-radius:9px;border:1px solid var(--line);box-shadow:var(--shadow);transform:translate(-50%,-130%)}
+
+/* ---------- شريط التصنيفات (يسار) ---------- */
+.rail{left:24px;top:calc(50% + 24px);transform:translateY(-50%);width:68px;border-radius:var(--r3);padding:var(--s2);display:flex;flex-direction:column;gap:2px;max-height:calc(100% - 350px);overflow-y:auto;scrollbar-width:none;transition:width .25s var(--ease)}
+.rail::-webkit-scrollbar{display:none}
+.rail.expanded{width:236px}
+.cbtn{position:relative;display:flex;align-items:center;gap:12px;height:44px;min-height:44px;padding:0 11px;border-radius:var(--r2);color:var(--muted);transition:background .15s,color .15s,transform .15s;white-space:nowrap;overflow:hidden}
+.cbtn:hover{background:var(--brand-soft);color:var(--ink)}
+.cbtn .lb{display:none;font-size:var(--fs-sm);font-weight:500}
+.rail.expanded .cbtn .lb{display:block}
+.cbtn.on{background:var(--brand);color:var(--on-brand)}
+body.dark .cbtn.on{background:var(--gold);color:#1e1a16}
+.cbtn.on .ms{font-variation-settings:'FILL' 1}
+.cbtn.pop{animation:pop .28s var(--ease)}
+.cbtn .xm{display:none}
+.cbtn.on .xm{display:grid;place-items:center;position:absolute;top:2px;left:2px;width:17px;height:17px;border-radius:50%;background:rgba(0,0,0,.35);color:#fff;transition:background .15s}
+.cbtn.on .xm .ms{font-size:12px;font-weight:700}
+.cbtn.on:hover .xm{background:#8e2a22}
+body.dark .cbtn.on .xm{background:rgba(30,26,22,.55)}
+.rail.expanded .cbtn.on .xm{position:static;margin-inline-start:auto;width:22px;height:22px;flex:none}
+@keyframes pop{0%{transform:scale(.88)}60%{transform:scale(1.06)}100%{transform:scale(1)}}
+.cbtn[data-tip]:hover::after{content:attr(data-tip);position:fixed;margin-inline-start:0;left:104px;padding:5px 10px;border-radius:var(--r1);background:var(--ink);color:var(--solid);font-size:var(--fs-xs);font-weight:600;pointer-events:none;z-index:900;transform:translateY(-4px)}
+.rail.expanded .cbtn[data-tip]:hover::after{display:none}
+.rail .sep{height:1px;background:var(--line);margin:var(--s2) var(--s2)}
+.rail .gt{display:none;font-size:12px;font-weight:700;color:var(--brand);padding:6px 11px 2px;letter-spacing:.2px}
+body.dark .rail .gt{color:var(--gold)}
+.railhd{font-weight:700;color:var(--ink)}.railhd .ms{color:var(--brand)}body.dark .railhd .ms{color:var(--gold)}.railhd .chev{margin-inline-start:auto;color:var(--muted)}.railhd .chev .ms{color:var(--muted);font-size:20px}
+.rail.expanded .gt{display:block}
+.badge{position:absolute;top:-6px;left:6px;min-width:20px;height:18px;padding:0 5px;border-radius:9px;background:var(--accent);color:#fff;font-size:10.5px;font-weight:700;display:grid;place-items:center}
+.railtop{position:relative}
+.railtop .badge{top:-8px}
+
+/* ---------- لوحة الإجابة (يمين) ---------- */
+.answer{top:100px;right:24px;width:min(384px,calc(100% - 48px));max-height:calc(100% - 250px);overflow:auto;border-radius:var(--r3);padding:var(--s4) var(--s4) var(--s4);scrollbar-width:thin;animation:panelin .35s var(--ease)}
+@keyframes panelin{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+.answer.hide{display:none}
+.ah{display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--s3)}
+.ah h3{font-size:var(--fs-lg);font-weight:700}
+.ah span{font-size:var(--fs-xs);color:var(--muted)}
+.ah .x{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;color:var(--muted)}
+.ah .x:hover{background:var(--chip)}
+.steps{position:relative;margin:0 0 var(--s3);padding:0}
+.step{position:relative;padding:0 26px var(--s3) 0;font-size:var(--fs-sm);line-height:1.6}
+.step::before{content:'';position:absolute;right:5px;top:6px;width:11px;height:11px;border-radius:50%;border:2px solid var(--brand);background:var(--solid)}
+.step.first::before{background:var(--brand)}
+.step::after{content:'';position:absolute;right:10px;top:20px;bottom:-2px;border-right:2px dashed var(--line2)}
+.step:last-child::after{display:none}
+.step small{display:block;color:var(--muted);font-size:var(--fs-xs)}
+.tech{display:none;margin-top:4px;font:500 10.5px/1.5 ui-monospace,Consolas,monospace;direction:ltr;text-align:left;background:var(--brand-soft);color:var(--brand);padding:3px 8px;border-radius:8px;word-break:break-all}
+body.tech .tech{display:block}
+.sum{font-size:var(--fs-sm);line-height:1.8;color:var(--ink);background:var(--chip);border-radius:var(--r2);padding:var(--s3);margin-bottom:var(--s3)}
+.dest{background:var(--brand);color:#fff;border-radius:var(--r2);padding:var(--s4)}
+body.dark .dest{background:#35281f;color:var(--ink);border:1px solid var(--line2)}
+.dest .k{font-size:var(--fs-xs);opacity:.8}
+.dest .n{font-size:var(--fs-xl);font-weight:700;line-height:1.35;margin:2px 0 var(--s2)}
+.nums{display:flex;gap:var(--s5);align-items:baseline;margin-bottom:var(--s3)}
+.nums b{font-size:var(--fs-num);font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+.nums span{font-size:var(--fs-sm);opacity:.8;margin-inline-start:4px}
+.nums i{display:block;font-style:normal;font-size:var(--fs-xs);opacity:.75;margin-top:2px}
+.acts{display:flex;gap:var(--s2)}
+.pill{height:42px;padding:0 16px;border-radius:var(--r2);display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:var(--fs-sm);transition:transform .15s,filter .15s}
+.pill:active{transform:scale(.96)}
+.pill.solid{background:#1a1614;color:#f1e6d2}
+body.dark .pill.solid{background:var(--gold);color:#1a1614}
+.pill.ghost{background:rgba(255,255,255,.16);color:inherit}
+body.light .pill.ghost{background:rgba(255,255,255,.2)}
+.pill .ms{font-size:18px}
+.skel{height:14px;border-radius:7px;background:linear-gradient(90deg,var(--chip),var(--line),var(--chip));background-size:200% 100%;animation:sk 1.2s linear infinite;margin:10px 0}
+@keyframes sk{to{background-position:-200% 0}}
+
+/* ---------- الشريط السفلي ---------- */
+.strip{bottom:24px;left:50%;transform:translateX(-50%);width:min(980px,calc(100% - 520px));border-radius:var(--r3);display:flex;align-items:stretch;overflow:hidden;animation:up .35s var(--ease)}
+@keyframes up{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
+.sitem{flex:1 1 0;min-width:170px;display:flex;align-items:center;gap:var(--s3);padding:var(--s3) var(--s4);border-inline-end:1px solid var(--line);min-width:0}
+.sitem:last-child{border-inline-end:0}
+.sitem .t{flex:1;min-width:0}
+.sitem .t b{display:-webkit-box;word-break:normal;overflow-wrap:anywhere;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:var(--fs-sm);font-weight:600;line-height:1.4}
+.sitem .t small{color:var(--muted);font-size:var(--fs-xs)}
+.sitem .m{font-size:26px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.sitem .m small{font-size:var(--fs-xs);color:var(--muted);font-weight:400;margin-inline-start:2px}
+.plus{width:38px;height:38px;border-radius:12px;background:var(--chip);color:var(--ink);display:grid;place-items:center;flex:none;border:1px solid var(--line);transition:all .15s}
+.plus:hover,.sitem.first .plus{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.sitem .plus .ms{font-size:20px}
+.scale{width:130px;padding:var(--s3) var(--s4);flex:none;border-inline-end:1px solid var(--line)}
+.scale small{font-size:var(--fs-xs);color:var(--muted)}
+.bars{display:flex;gap:4px;margin:6px 0 3px}
+.bars i{flex:1;height:6px;border-radius:3px;background:var(--line2)}
+.bars i.on{background:var(--brand)}
+.lbls{display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}
+
+/* ---------- نوع الخريطة والتكبير ---------- */
+.maptype{bottom:88px;right:24px;border-radius:var(--r2);padding:4px;display:flex;gap:2px}
+.maptype button{height:34px;padding:0 12px;border-radius:10px;font-size:var(--fs-xs);font-weight:600;color:var(--muted);white-space:nowrap}
+.maptype button.on{background:var(--brand);color:#fff}
+body.dark .maptype button.on{background:var(--gold);color:#1e1a16}
+.zoom{bottom:24px;right:24px;border-radius:var(--r2);display:flex;overflow:hidden}
+.zoom button{width:46px;height:46px;display:grid;place-items:center;color:var(--ink)}
+.zoom button:hover{background:var(--brand-soft)}
+.zoom button+button{border-inline-start:1px solid var(--line)}
+.devchip{bottom:92px;left:24px;border-radius:var(--r2);padding:8px 14px;display:flex;align-items:center;gap:10px;font-size:var(--fs-sm);font-weight:600}
+.devchip small{display:block;color:var(--muted);font:400 10.5px ui-monospace,Consolas,monospace}
+.devchip .ico{width:34px;height:34px;border-radius:10px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
+.attr{bottom:5px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--muted);z-index:400;text-shadow:0 0 4px var(--solid)}
+.lstkey{bottom:140px;right:24px;border-radius:var(--r1);padding:6px 10px;font-size:10.5px;display:none;flex-direction:column;gap:4px;min-width:170px}
+.lstkey i{display:block;height:8px;border-radius:4px;background:linear-gradient(90deg,#2b50aa,#4cc9f0,#90ee7e,#ffd23f,#f46d43,#a50026)}
+.lstkey div{display:flex;justify-content:space-between;color:var(--muted)}
+
+/* ---------- الترحيب والدليل ---------- */
+.greet{overflow:hidden;top:164px;left:50%;transform:translateX(-50%);width:min(560px,calc(100% - 40px));border-radius:var(--r3);padding:var(--s4) var(--s5);animation:drop .5s var(--ease)}
+@keyframes drop{from{opacity:0;transform:translate(-50%,-14px)}to{opacity:1;transform:translate(-50%,0)}}
+.greet .gt{font-size:var(--fs-lg);font-weight:700;color:var(--brand)}
+body.dark .greet .gt{color:var(--gold)}
+.greet .gx{font-size:var(--fs-sm);color:var(--muted);line-height:1.8;margin-top:2px}
+.greet .x{position:absolute;top:8px;left:8px;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;color:var(--muted)}
+.guide{top:72px;left:24px;width:min(420px,calc(100% - 40px));border-radius:var(--r3);padding:var(--s4);animation:drop .3s var(--ease);transform:none}
+@keyframes drop2{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.guide{animation:drop2 .3s var(--ease)}
+.mi:hover{background:var(--brand-soft)}
+.guide h4{font-size:var(--fs-lg);margin-bottom:var(--s3)}
+.mi .sw{margin-inline-start:auto;align-self:center;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--chip);color:var(--muted);border:1px solid var(--line)}.mi.on .sw{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.gs{display:flex;gap:12px;padding:8px 4px;align-items:flex-start}
+.gs .gi{width:38px;height:38px;border-radius:12px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;flex:none}
+.gs b{display:block;font-size:var(--fs-sm)}.gs span{font-size:var(--fs-xs);color:var(--muted);line-height:1.7}
+.hidden{display:none!important}
+
+/* ---------- العلامات على الخريطة ---------- */
+.pinw{position:relative}
+.pin{width:32px;height:32px;border-radius:11px;background:var(--solid);color:var(--c);border:1.5px solid var(--line2);display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.28);transition:transform .15s var(--ease)}
+.pin .ms{font-size:19px;font-variation-settings:'FILL' 1}
+.pinw:hover .pin{transform:scale(1.14)}
+.pin.sel{background:var(--c);color:#fff;border-color:#fff;transform:scale(1.25)}
+.pin.sel::after{content:'';position:absolute;inset:-7px;border-radius:15px;border:2px solid var(--c);animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+.pin.big{width:44px;height:44px;border-radius:15px;background:var(--accent);color:#fff;border:2px solid #fff}
+.pin.big .ms{font-size:26px}
+.lbl{position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:5px;white-space:nowrap;font:600 11px var(--font);background:var(--solid);color:var(--ink);padding:2px 8px;border-radius:7px;box-shadow:0 2px 8px rgba(0,0,0,.22);display:none;pointer-events:none}
+body.names .map-z .lbl,.pin.sel+.lbl,.pinw.always .lbl{display:block}
+.me{position:relative;width:22px;height:22px}
+.me i{position:absolute;inset:0;border-radius:50%;background:#1a73e8;border:3px solid #fff;box-shadow:0 0 8px rgba(0,0,0,.5)}
+.me::before{content:'';position:absolute;inset:0;border-radius:50%;background:var(--red);animation:pulse 1.8s ease-out infinite}
+.me b{position:absolute;top:30px;left:50%;transform:translateX(-50%);white-space:nowrap;font:700 12px var(--font);background:#1a1614;color:#f1e6d2;padding:3px 10px;border-radius:9px;box-shadow:var(--shadow)}
+.cl{width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;border:3px solid var(--solid);display:grid;place-items:center;font:700 13px var(--font);box-shadow:0 2px 10px rgba(0,0,0,.35)}
+.rlabel{background:var(--solid);color:var(--ink);font:600 11px var(--font);padding:2px 8px;border-radius:7px;border:1px solid var(--line2);white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.ringlbl{font:700 11px var(--font);color:var(--brand);white-space:nowrap;text-shadow:0 0 4px var(--solid),0 0 4px var(--solid)}
+body.dark .cl{background:var(--gold);color:#1e1a16}
+.leaflet-tooltip{background:var(--solid);color:var(--ink);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:10px;font:600 12px var(--font);padding:4px 9px}
+.leaflet-tooltip:before{display:none}
+
+/* ---------- الشاشات الصغيرة ---------- */
+@media (max-width:1560px){
+  .locchip #loctxt{display:none}.locchip{padding:0 10px}
+  #helpbtn .t{display:none}#helpbtn{padding:0 12px}
+}
+@media (max-width:1180px){
+  .searchbar{width:calc(100% - 640px);min-width:300px;left:calc(50% + 30px)}
+  .infochips{display:none}
+  .strip{width:calc(100% - 200px);left:50%}
+}
+@media (max-width:760px){
+  .brand{top:10px;right:10px;padding:6px}.brand .tx{display:none}
+  .searchbar{top:10px;left:10px;right:68px;width:auto;transform:none;height:54px;min-width:0}
+  .locchip{display:none}
+  .topleft{top:74px;left:10px;right:auto}
+  .infochips{display:none}
+  .helpbtn span.t{display:none}.helpbtn{padding:0 12px}
+  .rail{left:10px;right:10px;top:132px;transform:none;width:auto!important;flex-direction:row;max-height:none;overflow-x:auto;overflow-y:hidden;padding:6px}
+  .rail .sep,.rail .gt,.rail .lb{display:none!important}
+  .cbtn{min-width:44px;flex:none}
+  .cbtn[data-tip]:hover::after{display:none}
+  .railtop{display:none}
+  .answer{top:auto;right:0;left:0;bottom:0;width:auto;max-height:46vh;border-radius:var(--r3) var(--r3) 0 0;animation:sheet .35s var(--ease)}
+  @keyframes sheet{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+  .strip{left:10px;right:10px;bottom:10px;width:auto;transform:none;animation:none}
+  .scale{display:none}.sitem{padding:var(--s2) var(--s3)}.sitem .m{font-size:20px}
+  .sitem:nth-child(n+3){display:none}
+  .maptype{bottom:auto;top:196px;right:10px}
+  .zoom,.devchip,.attr,.lstkey{display:none}
+  body.hasanswer .strip{display:none}
+  .greet{top:190px}
+  .guide{left:10px;right:10px;width:auto;top:130px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body class="light">
+<div id="map"></div>
+<div class="ui" id="ui">
+  <div class="brand glass"><div class="sadu" style="position:absolute;left:14px;right:14px;bottom:0;height:5px;border-radius:3px 3px 0 0"></div>
+    <svg class="logo" viewBox="22 14 156 166" aria-hidden="true"><path d="M30 140 L100 105 L170 140 L100 175 Z" style="fill:var(--logo-ink)"/><path d="M30 115 L100 80 L170 115 L100 150 Z" style="fill:var(--logo-mid);stroke:var(--logo-ink)" stroke-width="3" stroke-linejoin="round"/><path d="M30 90 L100 55 L170 90 L100 125 Z" style="fill:var(--logo-top);stroke:var(--logo-ink)" stroke-width="4" stroke-linejoin="round"/><path d="M128 84 C128 84 116 70 116 62 A12 12 0 1 1 140 62 C140 70 128 84 128 84 Z" style="fill:var(--logo-pin)"/><circle cx="128" cy="62" r="4" style="fill:var(--logo-top)"/><path d="M158 20 L162 32 L174 36 L162 40 L158 52 L154 40 L142 36 L154 32 Z" style="fill:var(--logo-pin)"/></svg>
+    <div class="tx"><div class="nm">مسار</div><div class="tg">من سؤالك إلى وجهتك</div></div>
+  </div>
+
+  <form class="searchbar glass" id="askform" autocomplete="off">
+    <span class="spark"><span class="ms fill">auto_awesome</span></span>
+    <input id="q" type="text" placeholder="اسأل مسار: وين أقرب مستشفى؟" aria-label="اسأل مسار">
+    <span class="locchip" id="locchip"><span class="ms">my_location</span><span id="loctxt">موقعك</span></span>
+    <button class="mic" id="mic" type="button" aria-label="بحث بالصوت" title="بحث بالصوت"><span class="ms">mic</span></button>
+    <button class="go" id="go" type="submit" aria-label="ابحث"><span class="ms">arrow_back</span></button>
+    <div class="sugg glass hidden" id="sugg" role="listbox" aria-label="أسئلة مقترحة"></div>
+  </form>
+
+  <button class="tripbtn" id="tripbtn" type="button" aria-label="تخطيط مشوار"><span class="ic"><span class="ms">route</span></span><span>تخطيط مشوار<small>رتّب محطاتك بجملة واحدة</small></span></button>
+
+  <div class="topleft" id="topleft">
+    <button class="helpbtn glass" id="menubtn"><span class="ms">apps</span><span class="t">التحليلات</span></button>
+    <button class="helpbtn glass pulse" id="helpbtn"><span class="ms">help</span><span class="t">دليل الاستخدام</span></button>
+    <button class="themesw" id="themesw" aria-label="تبديل المظهر" title="الوضع الفاتح / الداكن"></button>
+  </div>
+
+  <div class="infochips" id="infochips"><div class="chipinfo glass hidden" id="wxchip"></div><div class="chipinfo glass hidden" id="prchip"></div></div>
+  <button class="sosbtn" id="sosbtn" type="button" aria-label="طوارئ"><span class="ic"><span class="ms">emergency</span></span><span>طوارئ</span></button>
+  <nav class="rail glass" id="rail" aria-label="الأماكن"></nav>
+
+  <aside class="answer glass hide" id="answer"></aside>
+  <section class="strip glass hidden" id="strip"></section>
+
+  <div class="maptype glass" id="maptype">
+    <button data-t="streets" class="on">خريطة</button><button data-t="sat">قمر صناعي</button><button data-t="lst">حرارة السطح</button>
+  </div>
+  <div class="lstkey glass" id="lstkey"><span>حرارة سطح الأرض نهاراً (MODIS)</span><i></i><div><span>أبرد</span><span>أحر</span></div></div>
+  <div class="zoom glass"><button id="zin" aria-label="تكبير"><span class="ms">add</span></button><button id="zout" aria-label="تصغير"><span class="ms">remove</span></button></div>
+  <button class="devchip glass hidden" id="devchip"><span class="ico"><span class="ms">code</span></span><span>التفاصيل التقنية<small id="devsub"></small></span></button>
+  <div class="attr" dir="ltr">© OpenStreetMap contributors</div>
+
+  <div class="greet glass hidden" id="greet"><div class="sadu" style="position:absolute;left:0;right:0;top:0;border-radius:20px 20px 0 0"></div><button class="x" id="greetx" aria-label="إغلاق"><span class="ms" style="font-size:18px">close</span></button><div class="gt" id="gt"></div><div class="gx" id="gx"></div></div>
+  <div class="guide glass hidden" id="guide"></div>
+  <div class="guide glass hidden" id="menu" style="width:min(300px,calc(100% - 40px))"></div>
+</div>
+
+<script>
+/* ===================== بروتوكول Streamlit ===================== */
+function send(type, data){ window.parent.postMessage(Object.assign({isStreamlitMessage:true, type:type}, data||{}), '*'); }
+function setValue(v){ send('streamlit:setComponentValue', {value:v, dataType:'json'}); }
+function setHeight(h){ send('streamlit:setFrameHeight', {height:h}); }
+var nonce = Date.now();
+function emit(o){ o.nonce = (++nonce); setValue(o); }
+
+/* ===================== الحالة ===================== */
+var THINK_ASK=['أفهم سؤالك','أبحث في الطبقات حول موقعك','أحسب المسافات والمسار','أجهّز الجواب'];
+var THINK_ROAD=['أحدد المدينتين على الخريطة','أرسم مسار الطريق','أفحص محطات الوقود على امتداد الطريق','أرتّب توقفات التعبئة'];
+var SUGG=[['local_hospital','وين أقرب 3 مستشفيات لي؟'],['mosque','كم مسجد ضمن 1 كم من موقعي؟'],['local_gas_station','أقرب محطة وقود وارسم لي المسار']];
+var RVERDICT={ok:['verified','الطريق مغطّى بمحطات الوقود'],warn:['warning','فيه مقطع طويل بدون وقود، خطّط توقفك'],danger:['report','فيه مقطع أطول من مدى سيارتك']};
+var S = {data:null, dark:false, active:new Set(), map:null, group:null, base:{}, mtype:'streets',
+         sel:null, selLayer:null, user:null, ringLayer:null, routeLayer:null, expanded:(load('railx')!=='0'),
+         names:true, rings:false, panel:'none', answerId:null, busy:false, guideOpen:false, ready:false, lastFit:0, dismissed:null, cmp:{mode:false,a:null,b:null,busy:false,showRes:false}, sosShown:false};
+function CA(){ var a=S.data&&S.data.answer; return (a && String(a.id)!==String(S.dismissed))?a:null; }
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+var KAABA='<svg class="kaaba" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8 12 4.5 20.5 8v11.5a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z" fill="#1a1614" stroke="#f1e6d2" stroke-width="1.1" stroke-linejoin="round"/><path d="M3.5 10.6h17v2.3h-17z" fill="#e0b13c"/><path d="M14.2 20.5v-4.6a1.2 1.2 0 0 1 1.2-1.2h.2a1.2 1.2 0 0 1 1.2 1.2v4.6z" fill="#e0b13c"/></svg>';
+function ms(n, cls){ if(n==='kaaba') return '<span class="ms-svg'+(cls?' '+cls:'')+'">'+KAABA+'</span>'; return '<span class="ms'+(cls?' '+cls:'')+'">'+n+'</span>'; }
+function fmt1(x){ return Number(x).toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1}); }
+function store(k,v){ try{ sessionStorage.setItem('masar_'+k, v); }catch(e){} }
+function load(k){ try{ return sessionStorage.getItem('masar_'+k); }catch(e){ return null; } }
+function estMin(km){ var road=km*1.3, sp = road<=6?30:(road<=40?50:90); return Math.max(1, Math.round(road/sp*60)); }
+function fmtMin(m){ if(m<60) return {v:m,u:'د'}; var h=Math.floor(m/60), r=m%60; return {v:h+(r?':'+('0'+r).slice(-2):''),u:'س'}; }
+function hav(a,b,c,d){ var R=6371,p=Math.PI/180,x=(c-a)*p,y=(d-b)*p,q=Math.sin(x/2)*Math.sin(x/2)+Math.cos(a*p)*Math.cos(c*p)*Math.sin(y/2)*Math.sin(y/2); return 2*R*Math.asin(Math.sqrt(q)); }
+
+/* ===================== تحميل Leaflet ===================== */
+function loadScript(urls, cb){
+  var i=0; (function next(){ if(i>=urls.length){ cb(false); return; }
+    var s=document.createElement('script'); s.src=urls[i++]; s.onload=function(){cb(true);}; s.onerror=next; document.head.appendChild(s); })();
+}
+var LEAF = ['https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js','https://unpkg.com/leaflet@1.9.4/dist/leaflet.js','https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js'];
+var CLUS = ['https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js','https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js'];
+var pendingRender = null;
+// أرسل الجاهزية فورًا حتى لا يبقى المكوّن معلّقًا، وأظهر أي خطأ على الشاشة
+send('streamlit:componentReady', {apiVersion:1});
+setHeight(Math.max(window.innerHeight, 680));
+window.addEventListener('error', function(ev){
+  try{ var d=document.getElementById('errbox'); if(!d){ d=document.createElement('div'); d.id='errbox';
+    d.style.cssText='position:fixed;bottom:8px;left:8px;right:8px;z-index:99999;background:#8e2a22;color:#fff;font:12px monospace;padding:8px 12px;border-radius:10px;direction:ltr;max-height:30vh;overflow:auto';
+    document.body.appendChild(d);} d.textContent += (ev.message||'error')+' @'+(ev.lineno||'')+'\n'; }catch(e){}
+});
+if (window.L) { boot(); } else loadScript(LEAF, function(ok){ if(!ok){ $('ui').insertAdjacentHTML('beforeend','<div class="greet glass" style="top:100px">تعذّر تحميل مكتبة الخريطة. تحقق من الاتصال بالإنترنت.</div>'); }
+  else loadScript(CLUS, function(){ boot(); }); });
+
+function boot(){
+  try{ initMap(); bindUI(); }catch(e){ window.dispatchEvent(new ErrorEvent('error',{message:'boot: '+e.message})); }
+  S.ready=true;
+  window.addEventListener('message', function(e){ if(e.data && e.data.type==='streamlit:render') onRender(e.data.args); });
+  window.addEventListener('resize', function(){ if(S.map) S.map.invalidateSize(); });
+  if (pendingRender) onRender(pendingRender);
+}
+// الرسائل قد تصل قبل اكتمال التحميل
+window.addEventListener('message', function(e){ if(!S.ready && e.data && e.data.type==='streamlit:render') pendingRender = e.data.args; });
+if (!window.L) { /* سيرسل componentReady بعد boot */ } 
+
+/* ===================== الخريطة ===================== */
+function initMap(){
+  S.map = L.map('map', {zoomControl:false, attributionControl:false, zoomSnap:.5, minZoom:4, maxZoom:19, worldCopyJump:false});
+  S.map.setView([24.5,45.0], 6);
+  S.base.streets = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, className:'osm'});
+  S.base.sat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:19});
+  S.base.streets.addTo(S.map);
+  S.group = L.layerGroup().addTo(S.map);
+  S.routeLayer = L.layerGroup().addTo(S.map);
+  S.tripLayer = L.layerGroup().addTo(S.map); S.roadLayer = L.layerGroup().addTo(S.map);
+  S.sosLayer = L.layerGroup().addTo(S.map);
+  S.cmpLayer = L.layerGroup().addTo(S.map);
+  S.map.on('click', function(e){
+    if(!S.cmp.mode || S.cmp.busy || S.panel!=='cmp') return;
+    if(!S.cmp.a) S.cmp.a=[+e.latlng.lat.toFixed(5), +e.latlng.lng.toFixed(5)];
+    else if(!S.cmp.b) S.cmp.b=[+e.latlng.lat.toFixed(5), +e.latlng.lng.toFixed(5)]; else return;
+    S.cmp.showRes=false; drawCmp(); renderPanel();
+  });
+  S.ringLayer = L.layerGroup().addTo(S.map);
+  S.selLayer = L.layerGroup().addTo(S.map);
+  S.userLayer = L.layerGroup().addTo(S.map);
+  S.map.on('zoomend', zoomCls); zoomCls();
+}
+function zoomCls(){ var c=S.map.getContainer(); c.classList.toggle('map-z', S.map.getZoom()>=14); }
+function setMapType(t){
+  S.mtype=t; var m=S.map;
+  [S.base.sat, S.lst].forEach(function(l){ if(l && m.hasLayer(l)) m.removeLayer(l); });
+  if(t==='sat'){ if(m.hasLayer(S.base.streets)) m.removeLayer(S.base.streets); S.base.sat.addTo(m); }
+  else { if(!m.hasLayer(S.base.streets)) S.base.streets.addTo(m);
+    if(t==='lst'){ var d=(S.data&&S.data.lstDate)||''; S.lst=L.tileLayer('https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_Land_Surface_Temp_Day/default/'+d+'/GoogleMapsCompatible_Level7/{z}/{y}/{x}.png',{maxNativeZoom:7,maxZoom:19,opacity:.62}); S.lst.addTo(m); } }
+  document.querySelectorAll('#maptype button').forEach(function(b){ b.classList.toggle('on', b.dataset.t===t); });
+  $('lstkey').style.display = (t==='lst')?'flex':'none';
+}
+function pinIcon(m, p, sel){
+  var cls='pin'+(m.big?' big':'')+(sel?' sel':'');
+  var html='<div class="pinw"><div class="'+cls+'" style="--c:'+m.color+'">'+ms(m.icon)+'</div><div class="lbl">'+esc(p[2])+'</div></div>';
+  var sz=m.big?44:32; return L.divIcon({className:'', html:html, iconSize:[sz,sz], iconAnchor:[sz/2,sz/2]});
+}
+function clusterIcon(c){ return L.divIcon({className:'', html:'<div class="cl">'+c.getChildCount()+'</div>', iconSize:[40,40]}); }
+
+function drawUser(){
+  S.userLayer.clearLayers(); var d=S.data; if(!d||!d.loc) return;
+  L.marker(d.loc,{icon:L.divIcon({className:'',html:'<div class="me"><i></i><b>أنت هنا</b></div>',iconSize:[22,22],iconAnchor:[11,11]}),zIndexOffset:1000,interactive:false}).addTo(S.userLayer);
+  if(d.acc && d.acc>60) L.circle(d.loc,{radius:Math.min(d.acc,3000),color:'#1a73e8',weight:1,fillOpacity:.07,interactive:false}).addTo(S.userLayer);
+}
+function drawRings(){
+  S.ringLayer.clearLayers(); var d=S.data; if(!d||!d.loc) return;
+  if(!(S.rings || (CA() && CA().rings))) return;
+  [[15,7500],[10,5000],[5,2500]].forEach(function(r){
+    L.circle(d.loc,{radius:r[1],color:getComputedStyle(document.body).getPropertyValue('--ringline'),weight:1.2,fillColor:getComputedStyle(document.body).getPropertyValue('--ring'),fillOpacity:1,interactive:false}).addTo(S.ringLayer);
+    var ll=L.latLng(d.loc[0], d.loc[1]); var north=L.latLng(ll.lat + (r[1]/111320)*.72, ll.lng + (r[1]/(111320*Math.cos(ll.lat*Math.PI/180)))*.69);
+    L.marker(north,{icon:L.divIcon({className:'',html:'<div class="ringlbl">'+r[0]+' د</div>',iconSize:[0,0]}),interactive:false}).addTo(S.ringLayer);
+  });
+}
+function drawMarkers(){
+  S.group.clearLayers();
+  var total=0;
+  S.data.cats.forEach(function(c){
+    if(!S.active.has(c.key)) return;
+    var cg = (L.markerClusterGroup) ? L.markerClusterGroup({maxClusterRadius:42, disableClusteringAtZoom:15, showCoverageOnHover:false, spiderfyOnMaxZoom:false, iconCreateFunction:clusterIcon}) : L.layerGroup();
+    c.members.forEach(function(m){
+      (m.lines||[]).forEach(function(ln){ L.polyline(ln,{color:m.color,weight:3,dashArray:'8 6',opacity:.85,interactive:false}).addTo(S.group); });
+      m.pts.forEach(function(p){
+        total++;
+        var mk=L.marker([p[0],p[1]],{icon:pinIcon(m,p,false), zIndexOffset:m.big?900:0, title:p[2]});
+        mk.on('click', function(){ selectPlace({key:m.key,cat:c.key,name:p[2],lat:p[0],lon:p[1],km:p[3],icon:m.icon,color:m.color,label:m.label}); });
+        cg.addLayer(mk);
+      });
+    });
+    cg.addTo(S.group);
+  });
+  $('railbadge').textContent = total; $('railbadge').style.display = total?'grid':'none';
+  renderStrip();
+}
+function userBounds(extra){
+  var pts=(S.data.loc?[S.data.loc]:[]).concat(extra||[]); return pts;
+}
+function fitTo(pts, answerOpen){
+  if(!pts.length) return; var small = window.innerWidth<=760;
+  var opts = small ? {padding:[40,40],maxZoom:15} : {paddingTopLeft:[130,110],paddingBottomRight:[answerOpen?430:100,170],maxZoom:15};
+  S.map.fitBounds(L.latLngBounds(pts), opts);
+}
+
+/* ===================== التحديد ===================== */
+function selectPlace(p, keepPanel){
+  S.sel=p; S.selLayer.clearLayers();
+  var icon = L.divIcon({className:'',html:'<div class="pinw always"><div class="pin sel" style="--c:'+p.color+'">'+ms(p.icon)+'</div><div class="lbl">'+esc(p.name)+'</div></div>',iconSize:[32,32],iconAnchor:[16,16]});
+  L.marker([p.lat,p.lon],{icon:icon,zIndexOffset:1500,interactive:false}).addTo(S.selLayer);
+  if(S.data.loc){
+    L.polyline([S.data.loc,[p.lat,p.lon]],{color:getComputedStyle(document.body).getPropertyValue('--accent'),weight:3,dashArray:'8 8',opacity:.95,interactive:false}).addTo(S.selLayer);
+    var mid=[(S.data.loc[0]+p.lat)/2,(S.data.loc[1]+p.lon)/2];
+    L.marker(mid,{icon:L.divIcon({className:'',html:'<div class="rlabel">'+fmt1(p.km)+' كم</div>',iconSize:[0,0]}),interactive:false}).addTo(S.selLayer);
+    fitTo([S.data.loc,[p.lat,p.lon]], true);
+  } else S.map.flyTo([p.lat,p.lon],15);
+  if(!keepPanel){ S.panel='place'; renderPanel(); }
+}
+function clearSel(){ S.sel=null; S.selLayer.clearLayers(); S.panel = (CA()?'answer':'none'); renderPanel(); }
+
+/* ===================== اللوحات ===================== */
+function renderRail(){
+  var h='<div class="railtop"><button class="cbtn railhd" id="expbtn" data-tip="الأماكن" aria-label="الأماكن: طيّ أو توسيع القائمة"><span class="ms">place</span><span class="lb">الأماكن</span><span class="chev lb">'+ms('chevron_left')+'</span></button><span class="badge" id="railbadge" style="display:none">0</span></div>';
+  var lastG=null;
+  S.data.cats.forEach(function(c){
+    if(c.group!==lastG){ h+='<div class="sep"></div><div class="gt">'+esc(c.group)+'</div>'; lastG=c.group; }
+    h+='<button class="cbtn'+(S.active.has(c.key)?' on':'')+'" data-k="'+c.key+'" data-tip="'+esc(c.label)+'" aria-pressed="'+S.active.has(c.key)+'">'+ms(c.icon)+'<span class="lb">'+esc(c.label)+'</span><span class="xm" title="إلغاء التحديد">'+ms('close')+'</span></button>';
+  });
+  h+='<div class="sep"></div>';
+  h+='<button class="cbtn" id="clearbtn" data-tip="إخفاء الكل">'+ms('layers_clear')+'<span class="lb">إخفاء الكل</span></button>';
+  var r=$('rail'); r.innerHTML=h; r.classList.toggle('expanded',S.expanded);
+  r.querySelectorAll('.cbtn[data-k]').forEach(function(b){ b.onclick=function(){ toggleCat(b.dataset.k, b); }; });
+  $('expbtn').onclick=function(){ S.expanded=!S.expanded; store('railx',S.expanded?'1':'0'); renderRail(); };
+  $('clearbtn').onclick=function(){ S.active.clear(); persistCats(); renderRail(); drawMarkers(); };
+}
+function persistCats(){ store('cats', Array.from(S.active).join(',')); }
+function toggleCat(k, btn){
+  if(S.active.has(k)) S.active.delete(k); else S.active.add(k);
+  persistCats(); btn.classList.toggle('on', S.active.has(k)); btn.setAttribute('aria-pressed', S.active.has(k));
+  btn.classList.remove('pop'); void btn.offsetWidth; btn.classList.add('pop');
+  drawMarkers();
+  if(S.active.has(k)){
+    var c=S.data.cats.filter(function(x){return x.key===k;})[0], pts=[];
+    c.members.forEach(function(m){ m.pts.slice(0,8).forEach(function(p){ pts.push([p[0],p[1]]); }); });
+    fitTo(userBounds(pts), S.panel!=='none');
+  }
+}
+function stripItems(){
+  var a=CA();
+  if(a && a.results && a.results.length) return a.results.slice(0,3);
+  var all=[]; S.data.cats.forEach(function(c){ if(!S.active.has(c.key)) return;
+    c.members.forEach(function(m){ m.pts.slice(0,3).forEach(function(p){ all.push({key:m.key,name:p[2],lat:p[0],lon:p[1],km:p[3],icon:m.icon,color:m.color,label:m.label,min:estMin(p[3]),approx:true}); }); }); });
+  all.sort(function(x,y){return x.km-y.km;}); return all.slice(0,3);
+}
+function renderStrip(){
+  var it=stripItems(), el=$('strip');
+  if(!it.length){ el.classList.add('hidden'); return; } el.classList.remove('hidden');
+  var first=it[0], m0=first.min!=null?first.min:estMin(first.km);
+  var h='<div class="scale"><small>زمن الوصول من موقعك</small><div class="bars"><i class="'+(m0<=5?'on':'')+'"></i><i class="'+(m0<=10?'on':'')+'"></i><i class="'+(m0<=15?'on':'')+'"></i></div><div class="lbls"><span>5</span><span>10</span><span>15</span></div></div>';
+  it.forEach(function(p,i){
+    var mn=p.min!=null?p.min:estMin(p.km), f=fmtMin(mn);
+    h+='<div class="sitem'+(i===0?' first':'')+'"><button class="plus" data-i="'+i+'" aria-label="اعرضه على الخريطة">'+ms('add')+'</button><div class="t"><b>'+esc(p.name)+'</b><small>'+(i===0?'الأقرب · ':'')+fmt1(p.km)+' كم</small></div><div class="m">'+(p.approx?'<small>≈</small>':'')+f.v+'<small>'+f.u+'</small></div></div>';
+  });
+  el.innerHTML=h; S._strip=it;
+  el.querySelectorAll('.plus').forEach(function(b){ b.onclick=function(){ var p=S._strip[+b.dataset.i]; selectPlace(Object.assign({color:'#c58f2d',icon:'location_on'},p,{label:p.label||''})); }; });
+}
+function tripUrl(t){ var st=t.stops, last=st[st.length-1], u='https://www.google.com/maps/dir/?api=1&destination='+last.lat+','+last.lon;
+  if(t.origin) u+='&origin='+t.origin[0]+','+t.origin[1];
+  if(st.length>1) u+='&waypoints='+st.slice(0,-1).map(function(x){return x.lat+','+x.lon;}).join('|'); return u+'&travelmode=driving'; }
+function tabsHead(mode){
+  return '<div class="ah"><div class="tabs" role="tablist"><button class="tab'+(mode==='city'?' on':'')+'" data-m="city" role="tab">مشوار</button><button class="tab'+(mode==='road'?' on':'')+'" data-m="road" role="tab">رحلة بر</button></div><button class="x" id="tx" aria-label="إغلاق">'+ms('close')+'</button></div>';
+}
+function bindTabs(el){
+  el.querySelectorAll('.tab').forEach(function(b){ b.onclick=function(){ if(S.tripMode===b.dataset.m) return; S.tripMode=b.dataset.m; store('tmode',S.tripMode); drawTrip(); drawRoad(); renderPanel(); }; });
+}
+function renderTripPanel(el){
+  if(S.tripMode==='road'){ renderRoadPanel(el); return; }
+  var t=S.data.trip, h=tabsHead('city');
+  h+='<textarea class="tinput" id="tin" placeholder="اكتب مشوارك بجملة واحدة، مثل: أبغى أعبي بنزين وبعدها أروح المول وأصلي">'+esc(S.tripText||'')+'</textarea>';
+  h+='<button class="tgo" id="tgo">'+ms(S.tripBusy?'progress_activity':'route')+(S.tripBusy?'جاري ترتيب المشوار...':'خطّط مشواري')+'</button>';
+  if(!t || !S.tripShown){
+    h+='<div class="tex"><button data-x="أبغى أعبي بنزين وبعدها أروح المول وأصلي">بنزين ثم مول ثم صلاة</button><button data-x="أبغى أروح الصيدلية وبعدها السوبرماركت">صيدلية ثم سوبرماركت</button><button data-x="أبغى أصرف من البنك وبعدها أتغدى">بنك ثم مطعم</button></div>';
+  } else if(t.error){ h+='<div class="terr">'+esc(t.error)+'</div>'; }
+  else {
+    var f=t.minutes!=null?fmtMin(t.minutes):null;
+    h+='<div class="ttot"><b>'+(f?('≈ '+f.v+' '+f.u):(fmt1(t.km)+' كم'))+'</b><span>'+(f?(fmt1(t.km)+' كم بالسيارة'):'خط مباشر')+'</span></div>';
+    if(t.reordered) h+='<div class="tnote">رتّب مسار المحطات لتقليل المسافة.</div>';
+    h+='<div class="tsteps"><div class="tstep"><span class="n s">'+ms('my_location')+'</span><div><b>موقعك</b><small>نقطة البداية</small></div></div>';
+    t.stops.forEach(function(s,i){ h+='<div class="tstep"><span class="n" style="background:'+esc(s.color)+'">'+(i+1)+'</span><div><b>'+esc(s.name)+'</b><small>'+esc(s.label)+'</small></div></div>'; });
+    h+='</div><div class="acts"><button class="pill solid" id="tnav">'+ms('navigation')+'ابدأ الملاحة</button></div><div class="shrow"><button class="wa" id="twa">'+ms('share')+'مشاركة واتساب</button><button id="tcp">'+ms('content_copy')+'نسخ الرابط</button></div>';
+  }
+  el.className='answer glass'; el.innerHTML=h; bindTabs(el);
+  var ta=$('tin'); ta.oninput=function(){ S.tripText=ta.value; };
+  el.querySelectorAll('.tex button').forEach(function(b){ b.onclick=function(){ ta.value=b.dataset.x; S.tripText=b.dataset.x; ta.focus(); }; });
+  $('tx').onclick=function(){ S.tripShown=false; drawTrip(); S.panel=CA()?'answer':'none'; renderPanel(); };
+  $('tgo').onclick=function(){ var v=ta.value.trim(); if(!v||S.tripBusy) return; S.tripText=v; S.tripBusy=true; renderPanel(); emit({type:'trip',text:v}); };
+  if($('tnav')) $('tnav').onclick=function(){ window.open(tripUrl(t),'_blank'); };
+  if($('twa')) $('twa').onclick=function(){ shareWa(tripMsg(t)); };
+  if($('tcp')) $('tcp').onclick=function(){ copyText(tripUrl(t)); };
+}
+function drawTrip(){
+  S.tripLayer.clearLayers(); var t=S.data&&S.data.trip; if(!t||t.error||!S.tripShown||!t.stops||S.tripMode==='road') return;
+  var col=getComputedStyle(document.body).getPropertyValue('--route')||'#9b2c22';
+  L.polyline(t.line,{color:'#fff',weight:9,opacity:.9,interactive:false}).addTo(S.tripLayer);
+  L.polyline(t.line,{color:col,weight:5,opacity:1,dashArray:t.straight?'8 8':null,interactive:false}).addTo(S.tripLayer);
+  t.stops.forEach(function(s,i){ L.marker([s.lat,s.lon],{icon:L.divIcon({className:'',html:'<div class="tnum">'+(i+1)+'</div>',iconSize:[30,30],iconAnchor:[15,15]}),zIndexOffset:900}).bindTooltip(esc(s.name),{direction:'top',offset:[0,-14]}).addTo(S.tripLayer); });
+}
+
+/* ===================== رحلة البر الآمنة ===================== */
+function roadUrl(r){
+  var u='https://www.google.com/maps/dir/?api=1&origin='+r.origin.pt[0]+','+r.origin.pt[1]+'&destination='+r.dest.pt[0]+','+r.dest.pt[1];
+  var w=(r.plan||[]).slice(0,8).map(function(p){return p.lat+','+p.lon;}); if(w.length) u+='&waypoints='+w.join('|');
+  return u+'&travelmode=driving';
+}
+function roadMsg(r){
+  var f=r.minutes!=null?fmtMin(r.minutes):null;
+  var t='رحلتي عبر مسار: من '+r.origin.name+' إلى '+r.dest.name+' ('+Math.round(r.km)+' كم'+(f?('، ≈ '+f.v+' '+f.u):'')+')';
+  if(r.plan&&r.plan.length){ t+='\nتوقفات الوقود:'; r.plan.forEach(function(p){ t+='\n'+p.n+') '+p.name+' بعد '+Math.round(p.km)+' كم'; }); } else t+='\nمدى السيارة يكفي الرحلة بدون توقف.';
+  return t+'\n'+roadUrl(r);
+}
+function renderRoadPanel(el){
+  var r=S.data.road, h=tabsHead('road');
+  h+='<textarea class="tinput" id="rin" placeholder="اكتب رحلتك، مثل: من الرياض لأبها وسيارتي تقطع 450 كم">'+esc(S.roadText||'')+'</textarea>';
+  h+='<div class="rng"><span>مدى سيارتك بخزان كامل</span>'+[300,450,600].map(function(v){ return '<button data-r="'+v+'" class="'+(S.roadRange===v?'on':'')+'">'+v+' كم</button>'; }).join('')+'</div>';
+  h+='<button class="tgo" id="rgo">'+ms(S.roadBusy?'progress_activity':'alt_route',S.roadBusy?'spin':'')+(S.roadBusy?'جاري فحص الطريق...':'افحص رحلتي')+'</button>';
+  if(S.roadBusy){ S._thinkKind='road'; h+=thinkHtml(); }
+  else if(!r || !S.roadShown){
+    h+='<div class="tex"><button data-x="من الرياض إلى أبها وسيارتي تقطع 450 كم">الرياض ← أبها</button><button data-x="من جدة إلى المدينة المنورة">جدة ← المدينة</button><button data-x="إلى حائل وسيارتي تقطع 400 كم">موقعي ← حائل</button></div>';
+    h+='<div class="tnote" style="margin-top:12px">يفحص طريقك ويعلّم محطات الوقود والمستشفيات عليه، وينبّهك لأي مقطع طويل بدون وقود.</div>';
+  } else if(r.error){ h+='<div class="terr">'+esc(r.error)+'</div>'; }
+  else {
+    var v=RVERDICT[r.verdict]||RVERDICT.ok, f=r.minutes!=null?fmtMin(r.minutes):null, w=r.worst||{};
+    h+='<div class="rverdict '+esc(r.verdict)+'">'+ms(v[0])+'<span>'+v[1]+'</span></div>';
+    h+='<div class="rroute"><b>'+esc(r.origin.name)+'</b> ← <b>'+esc(r.dest.name)+'</b></div>';
+    h+='<div class="rstats"><div><b>'+Math.round(r.km)+'</b><small>كم</small></div><div><b>'+(f?f.v:'-')+'</b><small>'+(f?f.u:'')+'</small></div><div><b>'+Math.round(w.km||0)+'</b><small>أطول مقطع بدون وقود</small></div></div>';
+    if(w.from_name&&w.to_name) h+='<div class="tnote">أطول مقطع بدون وقود: من '+esc(w.from_name)+' إلى '+esc(w.to_name)+'.</div>';
+    h+='<div class="rsec">'+(r.plan&&r.plan.length?'توقفات التعبئة المقترحة':'التعبئة')+'</div>';
+    if(r.plan&&r.plan.length){
+      h+='<div class="tsteps"><div class="tstep"><span class="n s">'+ms('my_location')+'</span><div><b>'+esc(r.origin.name)+'</b><small>ابدأ بخزان ممتلئ</small></div></div>';
+      r.plan.forEach(function(p){ var e=p.eta_min!=null?fmtMin(p.eta_min):null;
+        h+='<div class="tstep"><span class="n" style="background:#475569">'+p.n+'</span><div><b>'+esc(p.name)+'</b><small>بعد '+Math.round(p.km)+' كم'+(e?(' · ≈ '+e.v+' '+e.u):'')+' · '+Math.round(p.since_km)+' كم من آخر توقف</small></div></div>'; });
+      h+='</div><div class="tnote">المتبقي بعد آخر توقف '+Math.round(r.end_left_km)+' كم.</div>';
+    } else h+='<div class="tnote">مدى سيارتك يكفي الرحلة كلها بدون توقف، ومع ذلك المحطات ظاهرة على الخريطة.</div>';
+    h+='<div class="tnote">نحسب '+r.safe_km+' كم فقط من مدى سيارتك ('+Math.round(r.range_km)+' كم) كاحتياط 20%.</div>';
+    h+='<div class="tnote">محطات الوقود على الطريق: '+r.fuel_count+' · أطول مقطع بدون مستشفى قريب: '+Math.round(r.hosp_gap_km)+' كم.</div>';
+    h+='<div class="acts"><button class="pill solid" id="rnav">'+ms('navigation')+'ابدأ الملاحة</button></div><div class="shrow"><button class="wa" id="rwa">'+ms('share')+'مشاركة واتساب</button><button id="rcp">'+ms('content_copy')+'نسخ الرابط</button></div>';
+    h+='<div class="tnote" style="margin-top:12px">بيانات المحطات من OpenStreetMap وقد تنقص بعضها. تأكد قبل السفر، خصوصاً في الطرق الطويلة.</div>';
+  }
+  el.className='answer glass'; el.innerHTML=h; bindTabs(el);
+  var rv=el.querySelector('.rverdict,.terr'); if(rv && S._roadScroll!==String(r&&r.id)){ S._roadScroll=String(r&&r.id); el.scrollTop=Math.max(0,rv.offsetTop-70); }
+  var ta=$('rin'); ta.oninput=function(){ S.roadText=ta.value; };
+  el.querySelectorAll('.tex button').forEach(function(b){ b.onclick=function(){ ta.value=b.dataset.x; S.roadText=b.dataset.x; ta.focus(); }; });
+  el.querySelectorAll('.rng button').forEach(function(b){ b.onclick=function(){ S.roadRange=+b.dataset.r; store('rrange',S.roadRange); el.querySelectorAll('.rng button').forEach(function(x){ x.classList.toggle('on', x===b); }); }; });
+  $('tx').onclick=function(){ S.roadShown=false; drawRoad(); thinkStop(); S.roadBusy=false; S.panel=CA()?'answer':'none'; renderPanel(); };
+  $('rgo').onclick=function(){ var v=ta.value.trim(); if(!v||S.roadBusy) return; S.roadText=v; S.roadBusy=true; thinkStart('road'); renderPanel(); emit({type:'road',text:v,range:S.roadRange}); };
+  if($('rnav')) $('rnav').onclick=function(){ window.open(roadUrl(r),'_blank'); };
+  if($('rwa')) $('rwa').onclick=function(){ shareWa(roadMsg(r)); };
+  if($('rcp')) $('rcp').onclick=function(){ copyText(roadUrl(r)); };
+}
+function drawRoad(){
+  S.roadLayer.clearLayers(); var r=S.data&&S.data.road; if(!r||r.error||!S.roadShown||S.tripMode!=='road'||!r.line) return;
+  var col=getComputedStyle(document.body).getPropertyValue('--route')||'#9b2c22';
+  L.polyline(r.line,{color:'#fff',weight:9,opacity:.9,interactive:false}).addTo(S.roadLayer);
+  L.polyline(r.line,{color:col,weight:5,opacity:1,interactive:false}).addTo(S.roadLayer);
+  (r.segments||[]).forEach(function(sg){ if(!sg.line||sg.line.length<2) return;
+    L.polyline(sg.line,{color:sg.level==='danger'?'#dc2626':'#f59e0b',weight:8,opacity:.95,lineCap:'butt',interactive:false}).bindTooltip('مقطع بدون وقود: '+Math.round(sg.km)+' كم',{sticky:true}).addTo(S.roadLayer); });
+  (r.hosp||[]).forEach(function(p){ L.marker([p.lat,p.lon],{icon:L.divIcon({className:'',html:'<div class="hdot"></div>',iconSize:[12,12],iconAnchor:[6,6]}),zIndexOffset:300}).bindTooltip(esc(p.name),{direction:'top',offset:[0,-8]}).addTo(S.roadLayer); });
+  (r.fuel||[]).forEach(function(p){ L.marker([p.lat,p.lon],{icon:L.divIcon({className:'',html:'<div class="fdot"></div>',iconSize:[10,10],iconAnchor:[5,5]}),zIndexOffset:400}).bindTooltip(esc(p.name)+' · '+Math.round(p.km)+' كم',{direction:'top',offset:[0,-8]}).addTo(S.roadLayer); });
+  (r.plan||[]).forEach(function(p){ L.marker([p.lat,p.lon],{icon:L.divIcon({className:'',html:'<div class="rnum">'+p.n+'</div>',iconSize:[30,30],iconAnchor:[15,15]}),zIndexOffset:900}).bindTooltip(esc(p.name),{direction:'top',offset:[0,-14]}).addTo(S.roadLayer); });
+  [[r.origin,'o'],[r.dest,'d']].forEach(function(e){ L.marker(e[0].pt,{icon:L.divIcon({className:'',html:'<div class="rend">'+esc(e[0].name)+'</div>',iconSize:[0,0]}),zIndexOffset:1000,interactive:false}).addTo(S.roadLayer); });
+}
+
+/* ===================== الطوارئ ===================== */
+var SOS_NUMS=[['997','الإسعاف','local_hospital'],['998','الدفاع المدني','local_fire_department'],['999','الشرطة','local_police'],['911','الرقم الموحد','call']];
+function sosList(){
+  var spec=[['hospitals','مستشفى','local_hospital'],['civil_defense','دفاع مدني','local_fire_department'],['police','مركز شرطة','local_police']], out=[];
+  spec.forEach(function(sp){ var best=null;
+    (S.data.cats||[]).forEach(function(c){ c.members.forEach(function(m){ if(m.key!==sp[0]) return;
+      m.pts.forEach(function(p){ if(!best||p[3]<best.km) best={key:sp[0],name:p[2],lat:p[0],lon:p[1],km:p[3],icon:sp[2],label:sp[1]}; }); }); });
+    if(best) out.push(best); });
+  return out;
+}
+function navUrl(lat,lon){ return 'https://www.google.com/maps/dir/?api=1&destination='+lat+','+lon+'&travelmode=driving'; }
+function renderSosPanel(el){
+  var h='<div class="ah"><h3>الطوارئ</h3><button class="x" id="sx" aria-label="إغلاق">'+ms('close')+'</button></div><div class="sosnums">';
+  SOS_NUMS.forEach(function(n){ h+='<a href="tel:'+n[0]+'" target="_blank">'+ms(n[2])+'<div><b>'+n[0]+'</b><small>'+n[1]+'</small></div></a>'; });
+  h+='</div>';
+  var list=S.data.loc?sosList():[];
+  if(!S.data.loc) h+='<div class="tnote">حدد موقعك ليظهر لك أقرب مستشفى ومركز دفاع مدني وشرطة.</div>';
+  list.forEach(function(p,i){ var f=fmtMin(estMin(p.km));
+    h+='<div class="sosrow"><div class="ci">'+ms(p.icon)+'</div><div class="t"><small>أقرب '+p.label+'</small><b>'+esc(p.name)+'</b></div><div class="m">'+fmt1(p.km)+' كم<br><small style="color:var(--muted);font-weight:500">≈ '+f.v+' '+f.u+'</small></div><button class="plus" data-i="'+i+'" aria-label="ملاحة">'+ms('navigation')+'</button></div>'; });
+  h+='<div class="tnote" style="margin-top:12px">في الحالات الخطرة اتصل بالأرقام أعلاه أولاً. الأوقات تقريبية بدون حالة المرور.</div>';
+  el.className='answer glass'; el.innerHTML=h; S._sos=list;
+  $('sx').onclick=closeSos;
+  el.querySelectorAll('.plus').forEach(function(b){ b.onclick=function(){ var p=S._sos[+b.dataset.i]; window.open(navUrl(p.lat,p.lon),'_blank'); }; });
+}
+function drawSos(){
+  S.sosLayer.clearLayers(); if(!S.sosShown||!S.data.loc) return;
+  var pts=[S.data.loc]; sosList().forEach(function(p){
+    L.polyline([S.data.loc,[p.lat,p.lon]],{color:'#8e2a22',weight:3,dashArray:'6 8',opacity:.9,interactive:false}).addTo(S.sosLayer);
+    L.marker([p.lat,p.lon],{icon:L.divIcon({className:'',html:'<div class="snum">'+ms(p.icon)+'</div>',iconSize:[34,34],iconAnchor:[17,17]}),zIndexOffset:950}).bindTooltip(esc(p.name),{direction:'top',offset:[0,-16]}).addTo(S.sosLayer);
+    pts.push([p.lat,p.lon]); });
+  if(pts.length>1) fitTo(pts,true);
+}
+function closeSos(){ S.sosShown=false; drawSos(); $('sosbtn').classList.remove('on'); S.panel=CA()?'answer':'none'; renderPanel(); }
+function leaveSpecial(except){
+  if(except!=='sos' && S.sosShown){ S.sosShown=false; drawSos(); $('sosbtn').classList.remove('on'); }
+  if(except!=='cmp' && S.cmp.mode){ S.cmp.mode=false; document.body.classList.remove('picking'); }
+}
+
+/* ===================== مقارنة موقعين ===================== */
+function drawCmp(){
+  S.cmpLayer.clearLayers(); var c=S.cmp, pts=[];
+  [['a','أ'],['b','ب']].forEach(function(k){ var p=c[k[0]]; if(!p) return; pts.push(p);
+    L.marker(p,{icon:L.divIcon({className:'',html:'<div class="cmpm '+k[0]+'">'+k[1]+'</div>',iconSize:[34,34],iconAnchor:[17,17]}),zIndexOffset:960,interactive:false}).addTo(S.cmpLayer); });
+  if(pts.length===2){ L.polyline(pts,{color:'#8e2a22',weight:2,dashArray:'6 8',opacity:.8,interactive:false}).addTo(S.cmpLayer); fitTo(pts,true); }
+}
+function openCmp(){ closePops(); leaveSpecial('cmp'); S.cmp.mode=true; document.body.classList.add('picking'); S.panel='cmp'; renderPanel(); }
+function closeCmp(){ S.cmp={mode:false,a:null,b:null,busy:false,showRes:false}; document.body.classList.remove('picking'); S.cmpLayer.clearLayers(); S.panel=CA()?'answer':'none'; renderPanel(); }
+function renderCmpPanel(el){
+  var c=S.data.compare, cm=S.cmp, res=(c && S.cmp.showRes && String(c.id)===String(S._cmpId)) ? c : null;
+  var h='<div class="ah"><h3>مقارنة موقعين</h3><button class="x" id="cx" aria-label="إغلاق">'+ms('close')+'</button></div>';
+  if(res && res.error){ h+='<div class="terr">'+esc(res.error)+'</div><div class="shrow"><button id="crs">'+ms('refresh')+'إعادة</button></div>'; }
+  else if(res){
+    var wa=res.a.score, wb=res.b.score;
+    h+='<div class="cmpscores"><div class="cs a'+(wa>=wb?' win':'')+'"><i>أ</i><b>'+wa+'</b><small>'+esc(res.a.label)+'</small></div><div class="cs b'+(wb>=wa?' win':'')+'"><i>ب</i><b>'+wb+'</b><small>'+esc(res.b.label)+'</small></div></div>';
+    h+='<div class="cverd">'+(wa===wb?'الموقعان متقاربان في الوصول إلى الخدمات.':('الموقع '+(wa>wb?'أ':'ب')+' أنسب في الوصول إلى الخدمات بفارق '+Math.abs(wa-wb)+' نقطة.'))+'</div>';
+    h+='<div class="chead"><span style="text-align:right">أقرب خدمة (كم)</span><span>أ</span><span>ب</span></div>';
+    res.rows.forEach(function(r){ var aw=r.a_km<r.b_km, bw=r.b_km<r.a_km;
+      h+='<div class="crow"><span>'+esc(r.label)+'</span><span class="cv'+(aw?' w':'')+'">'+fmt1(r.a_km)+'</span><span class="cv'+(bw?' w':'')+'">'+fmt1(r.b_km)+'</span></div>'; });
+    h+='<div class="tnote" style="margin-top:10px">الدرجة من 100 حسب قرب المستشفيات والمدارس والمساجد وغيرها من الموقع.</div><div class="shrow"><button id="crs">'+ms('refresh')+'مقارنة جديدة</button></div>';
+  } else {
+    h+='<div class="tnote">اضغط على الخريطة لتحديد الموقعين اللذين تريد المقارنة بينهما.</div>';
+    h+='<div class="cmpsteps"><div class="'+(cm.a?'ok':'')+'"><b>أ</b>'+(cm.a?'تم التحديد':'اضغط على الخريطة')+'</div><div class="'+(cm.b?'ok':'')+'"><b>ب</b>'+(cm.b?'تم التحديد':(cm.a?'اضغط على الخريطة':'بعد الموقع أ'))+'</div></div>';
+    if(S.data.loc && !cm.a) h+='<div class="shrow"><button id="cme">'+ms('my_location')+'استخدم موقعي كـ (أ)</button></div>';
+    h+='<button class="tgo" id="cgo"'+((cm.a&&cm.b&&!cm.busy)?'':' style="opacity:.45;pointer-events:none"')+'>'+ms(cm.busy?'progress_activity':'compare_arrows')+(cm.busy?'جاري المقارنة...':'قارن')+'</button>';
+    if(cm.a||cm.b) h+='<div class="shrow"><button id="crs">'+ms('refresh')+'مسح النقاط</button></div>';
+  }
+  el.className='answer glass'; el.innerHTML=h;
+  $('cx').onclick=closeCmp;
+  if($('crs')) $('crs').onclick=function(){ S.cmp.a=null; S.cmp.b=null; S.cmp.showRes=false; S.cmp.busy=false; drawCmp(); renderPanel(); };
+  if($('cme')) $('cme').onclick=function(){ S.cmp.a=[S.data.loc[0],S.data.loc[1]]; drawCmp(); renderPanel(); };
+  if($('cgo')) $('cgo').onclick=function(){ if(!(S.cmp.a&&S.cmp.b)||S.cmp.busy) return; S.cmp.busy=true; renderPanel(); emit({type:'compare',a:S.cmp.a,b:S.cmp.b}); };
+}
+
+/* ===================== مشاركة ونسخ ===================== */
+function showGreeting(){
+  if(!S.data||!S.data.greeting) return;
+  var t0=+load('greet_t0')||0; if(!t0){ t0=Date.now(); store('greet_t0',t0); }
+  var left=10000-(Date.now()-t0);
+  if(left>400){ $('gt').textContent=S.data.greeting[0]; $('gx').textContent=S.data.greeting[1]; $('greet').classList.remove('hidden'); clearTimeout(S._gt); S._gt=setTimeout(function(){ $('greet').classList.add('hidden'); },left); }
+}
+function toast(t){ $('gt').textContent='تنبيه'; $('gx').textContent=t; $('greet').classList.remove('hidden'); setTimeout(function(){ $('greet').classList.add('hidden'); },5000); }
+function shareWa(text){ window.open('https://wa.me/?text='+encodeURIComponent(text),'_blank'); }
+function copyText(t){
+  function fb(){ try{ var a=document.createElement('textarea'); a.value=t; a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select(); document.execCommand('copy'); a.remove(); toast('تم نسخ الرابط'); }catch(e){ toast('تعذّر النسخ'); } }
+  try{ navigator.clipboard.writeText(t).then(function(){ toast('تم نسخ الرابط'); },fb); }catch(e){ fb(); }
+}
+function tripMsg(t){ var parts=['موقعي'].concat(t.stops.map(function(s){return s.name;})); var f=t.minutes!=null?('≈ '+t.minutes+' دقيقة · '):''; return 'مشواري عبر مسار: '+parts.join(' ← ')+'\n'+f+fmt1(t.km)+' كم\n'+tripUrl(t); }
+
+/* ===================== البحث بالصوت ===================== */
+function bindVoice(){
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition, mic=$('mic');
+  if(!SR){ mic.style.display='none'; return; }
+  var rec=null;
+  mic.onclick=function(){
+    if(S.listening && rec){ rec.stop(); return; }
+    try{ rec=new SR(); }catch(e){ mic.style.display='none'; return; }
+    rec.lang='ar-SA'; rec.interimResults=true; rec.maxAlternatives=1; rec.continuous=false;
+    var finalText='';
+    rec.onstart=function(){ S.listening=true; mic.classList.add('on'); $('q').placeholder='جاري الاستماع... تكلّم الآن'; };
+    rec.onresult=function(e){ var t=''; for(var i=0;i<e.results.length;i++){ t+=e.results[i][0].transcript; if(e.results[i].isFinal) finalText=t; } $('q').value=t; };
+    rec.onerror=function(e){ var m = e.error==='not-allowed'||e.error==='service-not-allowed' ? 'اسمح للمتصفح باستخدام الميكروفون ثم حاول مرة أخرى.' : (e.error==='no-speech' ? 'ما سمعت صوتاً، حاول مرة أخرى.' : 'تعذّر البحث بالصوت الآن.'); toast(m); };
+    rec.onend=function(){ S.listening=false; mic.classList.remove('on'); $('q').placeholder='اسأل مسار: وين أقرب مستشفى؟';
+      var t=(finalText||$('q').value||'').trim(); if(t){ $('q').value=t; $('askform').dispatchEvent(new Event('submit',{cancelable:true})); } };
+    try{ rec.start(); }catch(e){ toast('تعذّر تشغيل الميكروفون.'); }
+  };
+}
+
+/* ===================== حركة التفكير ===================== */
+function thinkList(){ return S._thinkKind==='road' ? THINK_ROAD : THINK_ASK; }
+function thinkHtml(){ var list=thinkList(), i=S._thinkI||0;
+  return '<div class="think" id="thinkbox">'+list.map(function(t,j){ if(j>i) return ''; var done=j<i;
+    return '<div class="ts '+(done?'done':'act')+'"><span class="d">'+(done?ms('check'):'')+'</span><span>'+esc(t)+'</span></div>'; }).join('')+'</div>'; }
+function thinkStart(kind){ S._thinkKind=kind; S._thinkI=0; clearInterval(S._thinkT);
+  S._thinkT=setInterval(function(){ var n=thinkList().length; S._thinkI=Math.min((S._thinkI||0)+1,n-1);
+    var b=$('thinkbox'); if(b) b.outerHTML=thinkHtml(); },1700); }
+function thinkStop(){ clearInterval(S._thinkT); S._thinkT=null; }
+
+/* ===================== أسئلة مقترحة (3) ===================== */
+function bindSugg(){
+  var q=$('q'), box=$('sugg');
+  box.innerHTML='<div class="h">جرّب أن تسأل</div>'+SUGG.map(function(x,i){ return '<button type="button" role="option" data-i="'+i+'">'+ms(x[0])+'<span>'+esc(x[1])+'</span></button>'; }).join('');
+  function show(){ if(!q.value.trim() && !S.busy) box.classList.remove('hidden'); else box.classList.add('hidden'); }
+  function hide(){ box.classList.add('hidden'); }
+  q.addEventListener('focus', show); q.addEventListener('input', show);
+  q.addEventListener('keydown', function(ev){ if(ev.key==='Escape') hide(); });
+  document.addEventListener('mousedown', function(ev){ if(!box.contains(ev.target) && ev.target!==q) hide(); });
+  box.querySelectorAll('button').forEach(function(b){
+    b.onmousedown=function(ev){ ev.preventDefault(); };
+    b.onclick=function(){ q.value=SUGG[+b.dataset.i][1]; hide(); $('askform').dispatchEvent(new Event('submit',{cancelable:true,bubbles:true})); };
+  });
+}
+function hnavHtml(a){
+  var h=S.data.hist; if(!h||!h.ids||h.ids.length<2) return '';
+  var pos=h.ids.indexOf(a.id); if(pos<0) return '';
+  return '<div class="hnav"><button id="hprev" aria-label="السؤال السابق" title="السؤال السابق"'+(pos>=h.ids.length-1?' disabled':'')+'>'+ms('chevron_right')+'</button><small>'+(h.ids.length-pos)+'/'+h.ids.length+'</small><button id="hnext" aria-label="السؤال التالي" title="السؤال التالي"'+(pos<=0?' disabled':'')+'>'+ms('chevron_left')+'</button></div>';
+}
+function bindHnav(a){
+  var h=S.data.hist; if(!h||!h.ids||!$('hprev')) return; var pos=h.ids.indexOf(a.id);
+  $('hprev').onclick=function(){ if(pos<h.ids.length-1) emit({type:'hist',id:h.ids[pos+1]}); };
+  $('hnext').onclick=function(){ if(pos>0) emit({type:'hist',id:h.ids[pos-1]}); };
+}
+
+function renderPanel(){
+  var el=$('answer'), d=S.data, a=CA(), h='';
+  document.body.classList.toggle('hasanswer', !!a);
+  if(S.panel==='trip' && !S.busy){ renderTripPanel(el); return; }
+  if(S.panel==='sos' && !S.busy){ renderSosPanel(el); return; }
+  if(S.panel==='cmp' && !S.busy){ renderCmpPanel(el); return; }
+  if(S.busy){
+    el.className='answer glass'; el.innerHTML='<div class="ah"><h3>مسار الإجابة</h3><span>جاري التحليل...</span></div>'+thinkHtml(); return;
+  }
+  if(S.panel==='place' && S.sel){
+    var p=S.sel, mn=estMin(p.km), f=fmtMin(mn);
+    h='<div class="ah"><h3>تفاصيل المكان</h3><button class="x" id="px" aria-label="إغلاق">'+ms('close')+'</button></div>'+
+      '<div class="dest"><div class="k">'+esc(p.label||'')+'</div><div class="n">'+esc(p.name)+'</div><div class="nums"><div><b>'+fmt1(p.km)+'</b><span>كم</span><i>المسافة (خط مباشر)</i></div><div><b>≈ '+f.v+'</b><span>'+f.u+'</span><i>بالسيارة تقريباً</i></div></div>'+
+      '<div class="acts"><button class="pill solid" id="nav">'+ms('navigation')+'ابدأ الملاحة</button><button class="pill ghost" id="bk">'+ms('arrow_forward')+'رجوع</button><button class="pill ghost" id="shr">'+ms('share')+'مشاركة</button></div></div>';
+    el.className='answer glass'; el.innerHTML=h;
+    $('px').onclick=clearSel; $('bk').onclick=clearSel; $('shr').onclick=function(){ shareWa('وجهتي عبر مسار: '+p.name+' ('+fmt1(p.km)+' كم)\n'+navUrl(p.lat,p.lon)); }; $('nav').onclick=function(){ window.open('https://www.google.com/maps/dir/?api=1&destination='+p.lat+','+p.lon,'_blank'); };
+    return;
+  }
+  if(a){
+    h='<div class="ah"><h3>مسار الإجابة</h3><div style="display:flex;align-items:center;gap:8px">'+hnavHtml(a)+'<span>'+(a.secs?('اكتمل في '+a.secs+' ث'):'')+'</span><button class="x" id="ax" aria-label="إغلاق النتيجة">'+ms('close')+'</button></div></div>';
+    h+='<div class="steps">';
+    h+='<div class="step first"><b>'+esc(a.req)+'</b><small>سؤالك</small></div>';
+    (a.steps||[]).forEach(function(s){ h+='<div class="step">'+esc(s.t)+(s.tool?'<div class="tech">'+esc(s.tool)+'('+esc(s.args||'')+')</div>':'')+'</div>'; });
+    h+='</div>';
+    if(a.text) h+='<div class="sum">'+esc(a.text)+'</div>';
+    var r=a.results&&a.results[0];
+    if(r){ var f2=r.min!=null?fmtMin(r.min):null;
+      h+='<div class="dest"><div class="k">وجهتك</div><div class="n">'+esc(r.name)+'</div><div class="nums"><div><b>'+fmt1(r.km)+'</b><span>كم</span><i>المسافة</i></div>'+(f2?'<div><b>'+f2.v+'</b><span>'+f2.u+'</span><i>بالسيارة</i></div>':'')+'</div>'+
+        '<div class="acts"><button class="pill solid" id="nav">'+ms('navigation')+'ابدأ الملاحة</button><button class="pill ghost" id="exp">'+ms('ios_share')+'تصدير</button><button class="pill ghost" id="shr">'+ms('share')+'مشاركة</button></div></div>'; }
+    el.className='answer glass'; el.innerHTML=h; bindHnav(a);
+    $('ax').onclick=function(){ S.dismissed=String(a.id); store('dis',S.dismissed); S.panel='none'; S.sel=null; S.selLayer.clearLayers(); renderPanel(); drawAnswer(); drawRings(); renderStrip(); $('devchip').classList.add('hidden'); };
+    if(r){ $('nav').onclick=function(){ window.open('https://www.google.com/maps/dir/?api=1&destination='+r.lat+','+r.lon,'_blank'); };
+      $('exp').onclick=function(ev){ ev.stopPropagation(); openExpMenu(a,$('exp')); }; $('shr').onclick=function(){ shareWa('وجهتي عبر مسار: '+r.name+' ('+fmt1(r.km)+' كم)\n'+navUrl(r.lat,r.lon)); }; }
+    return;
+  }
+  el.className='answer glass hide'; el.innerHTML='';
+}
+function geoFeatures(a){
+  var f=[], loc=S.data&&S.data.loc;
+  (a.results||[]).forEach(function(r,i){ f.push({type:'Feature',properties:{kind:'نتيجة',rank:i+1,name:r.name,category:r.label||'',km:r.km,minutes:(r.min!=null?r.min:null)},geometry:{type:'Point',coordinates:[r.lon,r.lat]}}); });
+  (a.routes||[]).forEach(function(rt,i){ if(rt.pts&&rt.pts.length>1) f.push({type:'Feature',properties:{kind:'مسار',rank:i+1,straight:!!rt.straight},geometry:{type:'LineString',coordinates:rt.pts.map(function(q){return [q[1],q[0]];})}}); });
+  if(loc) f.push({type:'Feature',properties:{kind:'موقعك',name:'موقعك'},geometry:{type:'Point',coordinates:[loc[1],loc[0]]}});
+  if(a.geojson&&a.geojson.features) a.geojson.features.forEach(function(x){ f.push(x); });
+  return f;
+}
+function xmlEsc(t){ return String(t==null?'':t).replace(/[<>&"']/g,function(c){return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&apos;'}[c];}); }
+function toKml(feats){
+  var pm=feats.map(function(f){ var p=f.properties||{}, g=f.geometry, nm=p.name||p['name:ar']||p.kind||'', d=[];
+    Object.keys(p).forEach(function(k){ if(p[k]!=null&&p[k]!=='') d.push(k+': '+p[k]); });
+    var geo='';
+    function ring(c){ return c.map(function(q){return q[0]+','+q[1]+',0';}).join(' '); }
+    if(g.type==='Point') geo='<Point><coordinates>'+g.coordinates[0]+','+g.coordinates[1]+',0</coordinates></Point>';
+    else if(g.type==='LineString') geo='<LineString><tessellate>1</tessellate><coordinates>'+ring(g.coordinates)+'</coordinates></LineString>';
+    else if(g.type==='Polygon') geo='<Polygon><outerBoundaryIs><LinearRing><coordinates>'+ring(g.coordinates[0])+'</coordinates></LinearRing></outerBoundaryIs></Polygon>';
+    else if(g.type==='MultiPolygon') geo='<MultiGeometry>'+g.coordinates.map(function(pl){return '<Polygon><outerBoundaryIs><LinearRing><coordinates>'+ring(pl[0])+'</coordinates></LinearRing></outerBoundaryIs></Polygon>';}).join('')+'</MultiGeometry>';
+    else if(g.type==='MultiLineString') geo='<MultiGeometry>'+g.coordinates.map(function(l){return '<LineString><coordinates>'+ring(l)+'</coordinates></LineString>';}).join('')+'</MultiGeometry>';
+    else return '';
+    return '<Placemark><name>'+xmlEsc(nm)+'</name><description>'+xmlEsc(d.join('\n'))+'</description>'+geo+'</Placemark>'; }).join('');
+  return '<?xml version="1.0" encoding="UTF-8"?>\n<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>مسار</name>'+pm+'</Document></kml>';
+}
+function saveFile(name, text, type){
+  try{ var b=new Blob([text],{type:type}), u=URL.createObjectURL(b), l=document.createElement('a'); l.href=u; l.download=name; document.body.appendChild(l); l.click(); l.remove(); setTimeout(function(){ URL.revokeObjectURL(u); },4000); toast('تم تنزيل الملف: '+name); }
+  catch(e){ toast('تعذّر تنزيل الملف في هذا المتصفح'); }
+}
+function exportGeo(a, fmt){
+  var feats=geoFeatures(a); if(!feats.length){ toast('ما فيه بيانات للتصدير'); return; }
+  var stamp=new Date().toISOString().slice(0,10);
+  if(fmt==='kml') saveFile('masar_'+stamp+'.kml', toKml(feats), 'application/vnd.google-earth.kml+xml');
+  else saveFile('masar_'+stamp+'.geojson', JSON.stringify({type:'FeatureCollection',features:feats},null,1), 'application/geo+json');
+}
+function openExpMenu(a, anchor){
+  var old=document.getElementById('expmenu'); if(old){ old.remove(); return; }
+  var m=document.createElement('div'); m.id='expmenu'; m.className='expmenu glass';
+  m.innerHTML='<button data-f="geojson">'+ms('map')+'<span><b>GeoJSON</b><small>يفتح في QGIS و ArcGIS</small></span></button><button data-f="kml">'+ms('public')+'<span><b>KML</b><small>يفتح في Google Earth</small></span></button>';
+  anchor.parentNode.appendChild(m);
+  m.querySelectorAll('button').forEach(function(b){ b.onclick=function(ev){ ev.stopPropagation(); exportGeo(a,b.dataset.f); m.remove(); }; });
+  setTimeout(function(){ document.addEventListener('click', function h(){ var x=document.getElementById('expmenu'); if(x) x.remove(); document.removeEventListener('click',h); }); },0);
+}
+function drawAnswer(){
+  S.routeLayer.clearLayers(); var a=CA(); if(!a) return;
+  if(a.geojson){ var gl=L.geoJSON(a.geojson,{style:function(){return {color:getComputedStyle(document.body).getPropertyValue('--brand'),weight:2,fillOpacity:.3};},
+      pointToLayer:function(f,ll){ return L.circleMarker(ll,{radius:6,color:'#fff',weight:2,fillColor:getComputedStyle(document.body).getPropertyValue('--brand'),fillOpacity:1}); },
+      onEachFeature:function(f,l){ var p=f.properties||{}; var n=p['name:ar']||p.name||p['name:en']; if(n) l.bindTooltip(String(n)); }}).addTo(S.routeLayer);
+    S._geoBounds = gl.getBounds(); } else S._geoBounds=null;
+  (a.routes||[]).forEach(function(rt,i){
+    var col=getComputedStyle(document.body).getPropertyValue('--route');
+    if(rt.straight){ L.polyline(rt.pts,{color:col,weight:i?2:3,dashArray:'6 8',opacity:.9,interactive:false}).addTo(S.routeLayer); }
+    else { L.polyline(rt.pts,{color:col,weight:i?5:9,opacity:i?.45:.35,lineCap:'round',interactive:false}).addTo(S.routeLayer);
+           L.polyline(rt.pts,{color:'#fff',weight:i?2:3,dashArray:'1 7',lineCap:'round',opacity:.95,interactive:false}).addTo(S.routeLayer); }
+  });
+  (a.results||[]).forEach(function(r,i){
+    var ic=L.divIcon({className:'',html:'<div class="pinw always"><div class="pin '+(i===0?'sel':'')+'" style="--c:'+(r.color||'#9b2c22')+'">'+ms(r.icon||'location_on')+'</div><div class="lbl">'+esc(r.name)+'</div></div>',iconSize:[32,32],iconAnchor:[16,16]});
+    var mk=L.marker([r.lat,r.lon],{icon:ic,zIndexOffset:1200}).addTo(S.routeLayer);
+    mk.on('click',function(){ selectPlace({key:r.key,name:r.name,lat:r.lat,lon:r.lon,km:r.km,icon:r.icon||'location_on',color:r.color||'#9b2c22',label:r.label||''}); });
+  });
+}
+
+/* ===================== الواجهة العلوية ===================== */
+function renderTop(){
+  var d=S.data, i=d.info||{};
+  var wx=$('wxchip'), pr=$('prchip');
+  if(i.weather){ wx.classList.remove('hidden'); wx.innerHTML=ms(i.weather.icon)+'<div><b>'+Math.round(i.weather.temp)+'°</b><small>'+esc(i.weather.desc)+'</small></div>'; } else wx.classList.add('hidden');
+  if(i.prayer){ pr.classList.remove('hidden'); pr.innerHTML=ms('mosque')+'<div><b>'+esc(i.prayer.name)+' '+esc(i.prayer.time)+'</b><small>'+esc(i.prayer.left)+'</small></div>'; } else pr.classList.add('hidden');
+  var lc=$('locchip'); lc.classList.toggle('off',!d.loc); $('loctxt').textContent = d.loc?'موقعك محدد':'الموقع غير محدد';
+  lc.querySelector('.ms').textContent = d.loc?'my_location':'location_off';
+  $('devchip').classList.toggle('hidden', !(d.dev && CA()));
+  if(d.dev && CA()) $('devsub').textContent=(CA().steps||[]).length+' خطوات';
+}
+function renderGuide(){
+  var h='<h4>جولة سريعة في مسار</h4>'; (S.data.guide||[]).forEach(function(g){ h+='<div class="gs"><div class="gi">'+ms(g[0])+'</div><div><b>'+esc(g[1])+'</b><span>'+esc(g[2])+'</span></div></div>'; });
+  $('guide').innerHTML=h;
+}
+function renderMenu(){
+  var items=[['target','درجة الوصول','قرب الخدمات من موقعك','score'],['insights','فجوات الخدمات','أين تقل الخدمة في المملكة','gap'],['compare_arrows','مقارنة موقعين','أي موقع أنسب في الوصول للخدمات؟','cmp'],['radar','حلقات الزمن','دوائر 5 / 10 / 15 دقيقة حول موقعك','rings']];
+  var h='<h4>التحليلات</h4>'; items.forEach(function(i){
+    var on = i[3]==='rings' && S.rings;
+    h+='<button class="gs mi'+(on?' on':'')+'" data-v="'+i[3]+'" style="width:100%;text-align:right;border-radius:14px"><div class="gi">'+ms(i[0])+'</div><div><b>'+i[1]+'</b><span>'+i[2]+'</span></div>'+(i[3]==='rings'?'<span class="sw">'+(on?'مفعّلة':'إيقاف')+'</span>':'')+'</button>'; });
+  $('menu').innerHTML=h; $('menu').querySelectorAll('.mi').forEach(function(b){ b.onclick=function(){
+    if(b.dataset.v==='rings'){ S.rings=!S.rings; store('rings',S.rings?1:0); drawRings(); renderMenu(); return; }
+    if(b.dataset.v==='cmp'){ openCmp(); return; }
+    emit({type:'nav',view:b.dataset.v}); }; });
+}
+function bindUI(){
+  renderMenu();
+  $('sosbtn').onclick=function(){ if(S.panel==='sos'){ closeSos(); return; } closePops(); leaveSpecial('sos'); S.sosShown=true; $('sosbtn').classList.add('on'); S.panel='sos'; drawSos(); renderPanel(); };
+  bindVoice(); bindSugg();
+  $('tripbtn').onclick=function(){ closePops(); leaveSpecial('trip'); if(S.panel==='trip'){ S.panel=CA()?'answer':'none'; } else { S.panel='trip'; } renderPanel(); };
+  $('menubtn').onclick=function(ev){ ev.stopPropagation(); var o=$('menu').classList.contains('hidden'); closePops(); $('menu').classList.toggle('hidden',!o); };
+  $('askform').addEventListener('submit', function(ev){ ev.preventDefault(); var t=$('q').value.trim(); if(!t||S.busy) return;
+    S.busy=true; thinkStart('ask'); $('sugg').classList.add('hidden'); $('go').classList.add('busy'); $('go').querySelector('.ms').textContent='progress_activity'; S.panel='answer'; renderPanel(); emit({type:'ask', text:t}); });
+  $('themesw').onclick=function(){ S.dark=!S.dark; applyTheme(); emit({type:'theme', dark:S.dark}); };
+  if(load('helped')) $('helpbtn').classList.remove('pulse');
+  $('helpbtn').onclick=function(ev){ ev.stopPropagation(); var o=$('guide').classList.contains('hidden'); closePops(); $('guide').classList.toggle('hidden',!o); S.guideOpen=o; $('helpbtn').classList.remove('pulse'); store('helped','1'); };
+  document.addEventListener('click', function(ev){ if(!$('guide').contains(ev.target) && !$('menu').contains(ev.target)) closePops(); });
+  $('greetx').onclick=function(){ $('greet').classList.add('hidden'); };
+  document.querySelectorAll('#maptype button').forEach(function(b){ b.onclick=function(){ setMapType(b.dataset.t); }; });
+  $('zin').onclick=function(){ S.map.zoomIn(); }; $('zout').onclick=function(){ S.map.zoomOut(); };
+  $('devchip').onclick=function(){ document.body.classList.toggle('tech'); };
+}
+function closePops(){ S.guideOpen=false; $('guide').classList.add('hidden'); $('menu').classList.add('hidden'); }
+function applyTheme(){ document.body.classList.toggle('dark',S.dark); document.body.classList.toggle('light',!S.dark); store('dark',S.dark?1:0); setTimeout(function(){ drawRings(); },0); }
+
+/* ===================== استقبال البيانات ===================== */
+function onRender(args){
+  if(!args || !args.data) return; var first=!S.data; S.data=args.data;
+  if(S.dark!==S.data.dark || first){ S.dark=S.data.dark; applyTheme(); }
+  if(first){
+    var saved=load('cats'); if(saved){ saved.split(',').forEach(function(k){ if(S.data.cats.some(function(c){return c.key===k;})) S.active.add(k); }); }
+    S.names = false; S.rings = load('rings')==='1'; S.dismissed = load('dis'); S._tripId = load('tripid'); S._cmpId = load('cmpid'); S._roadId = load('roadid'); S.tripMode = load('tmode')||'city'; S.roadRange = +load('rrange')||450;
+    renderGuide();
+    setTimeout(showGreeting, Math.max(0, S.data.splash_ms||0));
+  }
+  if(S.data.nonce_ack){ /* لا شيء */ }
+  var newAns = S.data.answer ? S.data.answer.id : null;
+  var answerChanged = newAns !== S.answerId;
+  var nid = S.data.notice ? S.data.notice.id : null; var noticeNew = nid && nid!==S._nid; if(noticeNew) S._nid=nid;
+  if(S.busy && (answerChanged || noticeNew)){ S.busy=false; thinkStop(); $('go').classList.remove('busy'); $('go').querySelector('.ms').textContent='arrow_back'; }
+  S.answerId=newAns;
+  if(noticeNew && S.data.notice.text){ $('gt').textContent='تنبيه'; $('gx').textContent=S.data.notice.text; $('greet').classList.remove('hidden'); setTimeout(function(){ $('greet').classList.add('hidden'); },9000); }
+  var hadLoc = !!S.user;
+  var tr=S.data.trip, tid=tr?String(tr.id):null;
+  if(tid && tid!==S._tripId){ S._tripId=tid; store('tripid',tid); S.tripBusy=false; S.tripShown=true; S.tripMode='city'; store('tmode','city'); S.panel='trip'; S._tripFit=true; }
+  var cm=S.data.compare, cid=cm?String(cm.id):null;
+  if(cid && cid!==S._cmpId){ S._cmpId=cid; store('cmpid',cid); S.cmp.busy=false; S.cmp.showRes=true; S.cmp.mode=true; S.panel='cmp'; document.body.classList.add('picking'); if(cm.a&&cm.a.pt){ S.cmp.a=cm.a.pt; S.cmp.b=cm.b.pt; } drawCmp(); }
+  var rd=S.data.road, rid=rd?String(rd.id):null;
+  if(rid && rid!==S._roadId){ S._roadId=rid; store('roadid',rid); S.roadBusy=false; thinkStop(); S.roadShown=true; S.tripMode='road'; store('tmode','road'); S.panel='trip'; S._roadFit=true; }
+  if(S.roadBusy && noticeNew){ S.roadBusy=false; thinkStop(); }
+  if(S.tripBusy && noticeNew){ S.tripBusy=false; }
+  renderTop(); renderRail(); drawUser(); drawRings(); drawMarkers(); drawAnswer(); drawTrip(); drawRoad();
+  if(S._roadFit && rd && !rd.error && rd.line){ S._roadFit=false; fitTo(userBounds(rd.line), true); }
+  if(S._tripFit && tr && !tr.error && tr.line){ S._tripFit=false; fitTo(userBounds(tr.line), true); }
+  if(answerChanged && CA()){
+    S.panel='answer'; S.sel=null; S.selLayer.clearLayers();
+    var pts=[]; (S.data.answer.routes||[]).forEach(function(r){ r.pts.forEach(function(p){pts.push(p);}); }); (S.data.answer.results||[]).forEach(function(r){ pts.push([r.lat,r.lon]); });
+    if(S._geoBounds && S._geoBounds.isValid()){ S.map.fitBounds(S._geoBounds,{padding:[60,60]}); } else fitTo(userBounds(pts), true); $('q').value='';
+  } else if(S.panel==='none' && !CA()){ S.panel='none'; }
+  var lk = S.data.loc ? S.data.loc.join(',') : '';
+  if(lk && lk!==S._lk && !(answerChanged && CA())){ S.map.setView(S.data.loc, 13); }
+  S._lk = lk;
+  if(first && !lk){ S.map.setView([24.5,45.0],6); }
+  if(S.data.focus && S.data.focusId!==S._focusId){ S._focusId=S.data.focusId; var f=S.data.focus; selectPlace(f); }
+  renderPanel(); renderStrip();
+}
+</script>
+</body>
+</html>

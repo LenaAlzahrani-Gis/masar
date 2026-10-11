@@ -1,0 +1,31 @@
+"""ينزّل كل مدن وبلدات وقرى السعودية من OpenStreetMap إلى data/places.csv (مرة وحدة)."""
+import csv
+import os
+import requests
+
+URLS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter']
+Q = """[out:json][timeout:300];
+area["ISO3166-1"="SA"]->.a;
+(node["place"~"^(city|town|village|hamlet|suburb)$"]["name"](area.a););
+out body;"""
+
+for u in URLS:
+    try:
+        print('جاري التنزيل من', u, '... (قد يأخذ دقائق)')
+        r = requests.post(u, data={'data': Q}, headers={'User-Agent': 'masar-gis/1.0'}, timeout=400)
+        r.raise_for_status()
+        els = r.json()['elements']
+        break
+    except Exception as e:
+        print('فشل:', e)
+else:
+    raise SystemExit('ما قدرت أنزل، جرّبي بعد شوي.')
+
+os.makedirs('data', exist_ok=True)
+with open('data/places.csv', 'w', newline='', encoding='utf-8-sig') as f:
+    w = csv.writer(f)
+    w.writerow(['name', 'name_en', 'lat', 'lon', 'place'])
+    for e in els:
+        t = e.get('tags', {})
+        w.writerow([t.get('name:ar') or t.get('name', ''), t.get('name:en', ''), e['lat'], e['lon'], t['place']])
+print('تم:', len(els), 'موقع في data/places.csv')

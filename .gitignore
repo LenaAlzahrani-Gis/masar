@@ -1,0 +1,16 @@
+﻿.env
+.env.*
+.streamlit/secrets.toml
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.log
+out/
+splash_preview.html
+patch_ui.py
+cache/
+test_*.py
+try_agent.py
+add_banks.py
+check_data.py
