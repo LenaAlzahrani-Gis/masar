@@ -343,6 +343,9 @@ body.dark .maptype button.on{background:var(--gold);color:#1e1a16}
 .zoom button{width:46px;height:46px;display:grid;place-items:center;color:var(--ink)}
 .zoom button:hover{background:var(--brand-soft)}
 .zoom button+button{border-inline-start:1px solid var(--line)}
+.myloc{bottom:24px;right:126px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:var(--brand);transition:background .15s,color .15s,transform .15s}
+.myloc .ms{font-size:24px}.myloc:hover{background:var(--brand-soft)}.myloc:active{transform:scale(.92)}
+body.dark .myloc{color:#B9A3DC}.myloc.off{color:var(--muted)}
 .devchip{bottom:92px;left:24px;border-radius:var(--r2);padding:8px 14px;display:flex;align-items:center;gap:10px;font-size:var(--fs-sm);font-weight:600}
 .devchip small{display:block;color:var(--muted);font:400 10.5px ui-monospace,Consolas,monospace}
 .devchip .ico{width:34px;height:34px;border-radius:10px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
@@ -444,8 +447,9 @@ body.dark .cl{background:#7D5BB5;color:#fff}
   .scale{display:none}.sitem{padding:var(--s2) var(--s3)}.sitem .m{font-size:20px}
   .sitem:nth-child(n+3){display:none}
   .zoom,.devchip,.attr{display:none}
-  .lstkey{bottom:140px;right:62px;min-width:150px}
-  body.hasanswer .strip,body.hasanswer .sosbtn,body.hasanswer .maptype,body.hasanswer .mtbtn,body.hasanswer .lstkey{display:none!important}
+  .myloc{display:grid;bottom:140px;right:62px;width:44px;height:44px}
+  .lstkey{bottom:192px;right:10px;min-width:150px}
+  body.hasanswer .strip,body.hasanswer .sosbtn,body.hasanswer .maptype,body.hasanswer .mtbtn,body.hasanswer .myloc,body.hasanswer .lstkey{display:none!important}
   .greet{top:64px;left:62px;right:10px;width:auto;transform:none;display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:start;padding:14px 12px 12px 12px;border-radius:20px;animation:dropm .45s var(--ease)}
   .greet.hidden{display:none}
   @keyframes dropm{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:none}}
@@ -498,6 +502,7 @@ body.dark .cl{background:#7D5BB5;color:#fff}
     <button data-t="streets" class="on" role="menuitem"><span class="ms">map</span>خريطة</button><button data-t="topo" role="menuitem"><span class="ms">terrain</span>تضاريس</button><button data-t="sat" role="menuitem"><span class="ms">satellite_alt</span>قمر صناعي</button><button data-t="lst" role="menuitem"><span class="ms">thermostat</span>حرارة السطح</button>
   </div>
   <div class="lstkey glass" id="lstkey"><span>حرارة سطح الأرض نهاراً (MODIS)</span><i></i><div><span>أبرد</span><span>أحر</span></div></div>
+  <button class="myloc glass" id="myloc" type="button" aria-label="العودة إلى موقعي" title="موقعي"><span class="ms">my_location</span></button>
   <div class="zoom glass"><button id="zin" aria-label="تكبير"><span class="ms">add</span></button><button id="zout" aria-label="تصغير"><span class="ms">remove</span></button></div>
   <button class="devchip glass hidden" id="devchip"><span class="ico"><span class="ms">code</span></span><span>التفاصيل التقنية<small id="devsub"></small></span></button>
   <div class="attr" dir="ltr">© OpenStreetMap contributors</div>
@@ -1069,7 +1074,7 @@ function renderTop(){
       wx.appendChild(d2); setTimeout(function(){ document.addEventListener('click',function f(e){ if(!wx.contains(e.target)){ d2.remove(); document.removeEventListener('click',f); } }); },0); };
   } else wx.classList.add('hidden');
   if(i.prayer){ pr.classList.remove('hidden'); pr.innerHTML=ms('mosque')+'<div><b>'+esc(i.prayer.name)+' '+esc(i.prayer.time)+'</b><small>'+esc(i.prayer.left)+'</small></div>'; } else pr.classList.add('hidden');
-  var lc=$('locchip'); lc.classList.toggle('off',!d.loc); $('loctxt').textContent = d.loc?'موقعك محدد':'الموقع غير محدد';
+  var lc=$('locchip'); lc.classList.toggle('off',!d.loc); $('myloc').classList.toggle('off',!d.loc); $('loctxt').textContent = d.loc?'موقعك محدد':'الموقع غير محدد';
   lc.querySelector('.ms').textContent = d.loc?'my_location':'location_off';
   $('devchip').classList.toggle('hidden', !(d.dev && CA()));
   if(d.dev && CA()) $('devsub').textContent=(CA().steps||[]).length+' خطوات';
@@ -1105,6 +1110,7 @@ function bindUI(){
   $('mtbtn').onclick=function(e){ e.stopPropagation(); var o=$('maptype').classList.toggle('open'); $('mtbtn').classList.toggle('open',o); $('mtbtn').setAttribute('aria-expanded',o?'true':'false'); };
   document.querySelectorAll('#maptype button').forEach(function(b){ b.onclick=function(){ setMapType(b.dataset.t); closeMT(); }; });
   document.addEventListener('click',function(e){ if(!e.target.closest('#maptype')) closeMT(); });
+  $('myloc').onclick=function(){ var l=S.data&&S.data.loc; if(!l){ toast('الموقع غير محدد'); return; } S.map.flyTo(l, Math.max(S.map.getZoom(),15), {duration:.8}); };
   $('zin').onclick=function(){ S.map.zoomIn(); }; $('zout').onclick=function(){ S.map.zoomOut(); };
   $('devchip').onclick=function(){ document.body.classList.toggle('tech'); };
 }
