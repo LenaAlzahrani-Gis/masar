@@ -495,7 +495,7 @@ body.dark .cl{background:#7D5BB5;color:#fff}
 
   <button class="mtbtn glass" id="mtbtn" type="button" aria-label="نوع الخريطة" aria-expanded="false" title="نوع الخريطة"><span class="ms">layers</span></button>
   <div class="maptype glass" id="maptype" role="menu" aria-label="نوع الخريطة">
-    <button data-t="streets" class="on" role="menuitem"><span class="ms">map</span>خريطة</button><button data-t="light" role="menuitem"><span class="ms">contrast</span>فاتحة</button><button data-t="topo" role="menuitem"><span class="ms">terrain</span>تضاريس</button><button data-t="sat" role="menuitem"><span class="ms">satellite_alt</span>قمر صناعي</button><button data-t="lst" role="menuitem"><span class="ms">thermostat</span>حرارة السطح</button>
+    <button data-t="streets" class="on" role="menuitem"><span class="ms">map</span>خريطة</button><button data-t="topo" role="menuitem"><span class="ms">terrain</span>تضاريس</button><button data-t="sat" role="menuitem"><span class="ms">satellite_alt</span>قمر صناعي</button><button data-t="lst" role="menuitem"><span class="ms">thermostat</span>حرارة السطح</button>
   </div>
   <div class="lstkey glass" id="lstkey"><span>حرارة سطح الأرض نهاراً (MODIS)</span><i></i><div><span>أبرد</span><span>أحر</span></div></div>
   <div class="zoom glass"><button id="zin" aria-label="تكبير"><span class="ms">add</span></button><button id="zout" aria-label="تصغير"><span class="ms">remove</span></button></div>
@@ -571,7 +571,6 @@ function initMap(){
   S.map.setView([24.5,45.0], 6);
   S.base.streets = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, className:'osm'});
   S.base.sat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:19});
-  S.base.light = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {maxZoom:19, subdomains:'abcd', className:'osm'});
   S.base.topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {maxZoom:17, subdomains:'abc', className:'osm'});
   S.base.streets.addTo(S.map);
   S.group = L.layerGroup().addTo(S.map);
@@ -593,12 +592,12 @@ function initMap(){
 function zoomCls(){ var c=S.map.getContainer(); c.classList.toggle('map-z', S.map.getZoom()>=14); }
 function setMapType(t){
   S.mtype=t; var m=S.map;
-  ['streets','light','topo','sat'].forEach(function(k){ var l=S.base[k]; if(l && m.hasLayer(l)) m.removeLayer(l); });
+  ['streets','topo','sat'].forEach(function(k){ var l=S.base[k]; if(l && m.hasLayer(l)) m.removeLayer(l); });
   if(S.lst && m.hasLayer(S.lst)) m.removeLayer(S.lst);
   var bk=S.base[t]?t:'streets'; S.base[bk].addTo(m);
   if(bk==='topo' && m.getZoom()>17) m.setZoom(17);
   if(t==='lst'){ var d=(S.data&&S.data.lstDate)||''; S.lst=L.tileLayer('https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_Land_Surface_Temp_Day/default/'+d+'/GoogleMapsCompatible_Level7/{z}/{y}/{x}.png',{maxNativeZoom:7,maxZoom:19,opacity:.62}); S.lst.addTo(m); }
-  var at=document.querySelector('.attr'); if(at) at.textContent = t==='sat' ? 'Imagery © Esri' : t==='light' ? '© OpenStreetMap contributors © CARTO' : t==='topo' ? '© OpenStreetMap contributors, SRTM | © OpenTopoMap (CC-BY-SA)' : '© OpenStreetMap contributors';
+  var at=document.querySelector('.attr'); if(at) at.textContent = t==='sat' ? 'Imagery © Esri' : t==='topo' ? '© OpenStreetMap contributors, SRTM | © OpenTopoMap (CC-BY-SA)' : '© OpenStreetMap contributors';
   document.querySelectorAll('#maptype button').forEach(function(b){ b.classList.toggle('on', b.dataset.t===t); });
   $('lstkey').style.display = (t==='lst')?'flex':'none';
 }
