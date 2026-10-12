@@ -2,6 +2,7 @@ import csv
 import html
 import io
 import math
+import urllib.parse
 
 import extras
 
@@ -91,19 +92,19 @@ SUGGESTIONS = [
 
 # هوية مسار: زمرد عميق + ذهب رملي (فاتح) / ليل زمردي + نعناعي + ذهبي (داكن)
 LIGHT = {
-    '--brand': '#9b2c22', '--brand-soft': '#f0ddd3', '--brand-line': '#dcc2b6',
-    '--on-brand': '#ffffff', '--ink': '#1a1614', '--muted': '#6a5b4c', '--line': '#e2d3b8',
-    '--bg': '#f1e6d2', '--card': '#f8f1e2', '--input': '#fdf9f0',
-    '--accent2': '#b87a3d', '--accent2-soft': '#f3e2c8',
-    '--hero-a': '#1a1614', '--hero-b': '#1a1614',
-    '--shadow': '0 1px 2px rgba(26,22,20,.08), 0 10px 26px -14px rgba(26,22,20,.30)',
+    '--brand': '#5B3F8F', '--brand-soft': '#ECE4F5', '--brand-line': '#cfc3e3',
+    '--on-brand': '#ffffff', '--ink': '#2B1E3F', '--muted': '#6a5d82', '--line': '#ddd3ea',
+    '--bg': '#F5EEE2', '--card': '#FBF7EE', '--input': '#FFFDF8',
+    '--accent2': '#C8922F', '--accent2-soft': '#F4E8C8',
+    '--hero-a': '#2B1E3F', '--hero-b': '#2B1E3F',
+    '--shadow': '0 1px 2px rgba(43,30,63,.08), 0 10px 26px -14px rgba(43,30,63,.30)',
 }
 DARK = {
-    '--brand': '#e3b07a', '--brand-soft': '#33271f', '--brand-line': '#5a4333',
-    '--on-brand': '#1a1614', '--ink': '#f1e6d2', '--muted': '#b9a88f', '--line': '#3b312a',
-    '--bg': '#171210', '--card': '#231d1a', '--input': '#1d1815',
-    '--accent2': '#e3b07a', '--accent2-soft': '#3a2c1e',
-    '--hero-a': '#2a211d', '--hero-b': '#2a211d',
+    '--brand': '#B9A3DC', '--brand-soft': '#3a2c5a', '--brand-line': '#5a4a86',
+    '--on-brand': '#2B1E3F', '--ink': '#F5EEE2', '--muted': '#b5a8cf', '--line': '#4A3B6E',
+    '--bg': '#1E1630', '--card': '#2A2040', '--input': '#241a38',
+    '--accent2': '#D9A848', '--accent2-soft': '#3a2c4e',
+    '--hero-a': '#2A2040', '--hero-b': '#2A2040',
     '--shadow': '0 1px 2px rgba(0,0,0,.4), 0 12px 30px -16px rgba(0,0,0,.75)',
 }
 
@@ -250,16 +251,54 @@ def history_label(i, entry, width=30):
 
 
 # ---------------------------------------------------------------- الهوية والرأس
-LOGO_SVG = (
-    '<svg class="logo" viewBox="22 14 156 166" width="72" height="72" aria-hidden="true">'
-    '<path d="M30 140 L100 105 L170 140 L100 175 Z" style="fill:var(--logo-ink,#f1e6d2)"/>'
-    '<path d="M30 115 L100 80 L170 115 L100 150 Z" style="fill:var(--logo-mid,#9b2c22);stroke:var(--logo-ink,#f1e6d2)" '
-    'stroke-width="3" stroke-linejoin="round"/>'
-    '<path d="M30 90 L100 55 L170 90 L100 125 Z" style="fill:var(--logo-top,#1a1614);stroke:var(--logo-ink,#f1e6d2)" '
-    'stroke-width="4" stroke-linejoin="round"/>'
-    '<path d="M128 84 C128 84 116 70 116 62 A12 12 0 1 1 140 62 C140 70 128 84 128 84 Z" style="fill:var(--logo-pin,#e3b07a)"/>'
-    '<circle cx="128" cy="62" r="4" style="fill:var(--logo-top,#1a1614)"/>'
-    '<path d="M158 20 L162 32 L174 36 L162 40 L158 52 L154 40 L142 36 L154 32 Z" style="fill:var(--logo-pin,#e3b07a)"/></svg>')
+# ---------------------------------------------------------------- الشعار (وردة الاتجاهات والخزامى)
+
+def b_sprig(color, rot=0, scale=1.0, w=1.0):
+    t = f'rotate({rot} 100 100) translate(100 100) scale({scale}) translate(-100 -100)'
+    el = ''.join(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" transform="rotate({r} {cx} {cy})"/>' for cx,cy,rx,ry,r in
+        [(96.5,70,3.4,5,-25),(103.5,64,3.4,5,25),(96.8,57,3.1,4.6,-25),(103.2,51,3,4.4,25),(97.2,45,2.7,4,-22),(100,38,2.4,3.8,0)])
+    return (f'<g transform="{t}" fill="{color}" stroke="none">{el}'
+            f'<path d="M100 96 L100 40" stroke="{color}" stroke-width="2.6" stroke-linecap="round" fill="none"/></g>')
+
+def b_ring_svg(color='#B9A3DC'):
+    tri = ''.join(f'<path d="M96.8 19 L103.2 19 L100 12.5 Z" transform="rotate({a} 100 100)"/>' for a in range(0,360,15))
+    return ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">'
+            f'<circle cx="100" cy="100" r="92" fill="none" stroke="{color}" stroke-width="1.6"/>'
+            f'<circle cx="100" cy="100" r="80" fill="none" stroke="{color}" stroke-width="1.6"/>'
+            f'<g fill="{color}">{tri}</g></svg>')
+
+def b_rose_svg(dark=True):
+    soft = '#B9A3DC'; main = '#E2D6F2' if dark else '#5B3F8F'; gold = '#D9A848'; core = '#2B1E3F' if dark else '#F5EEE2'
+    gl = (f'<g fill="none" stroke="{soft}" stroke-width="1" opacity=".55"><circle cx="100" cy="100" r="70"/>'
+          '<ellipse cx="100" cy="100" rx="35" ry="70"/><path d="M100 30 L100 170 M30 100 L170 100 M39.4 65 L160.6 65 M39.4 135 L160.6 135"/></g>')
+    sq = (f'<g fill="none" stroke="{gold}" stroke-width="1.4"><rect x="55" y="55" width="90" height="90"/>'
+          '<rect x="55" y="55" width="90" height="90" transform="rotate(45 100 100)"/></g>')
+    sp = ''.join(b_sprig(soft, a, .68) for a in (45,135,225,315)) + ''.join(b_sprig(main, a) for a in (90,180,270)) + b_sprig(gold)
+    ctr = (f'<circle cx="100" cy="100" r="10" fill="{core}" stroke="{main}" stroke-width="3"/>'
+           f'<circle cx="100" cy="100" r="3.6" fill="{gold}"/>')
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">{gl}{sq}{sp}{ctr}</svg>'
+
+def b_mark_svg(size=None, cls=''):
+    a = f' width="{size}" height="{size}"' if size else ''
+    c = f' class="{cls}"' if cls else ''
+    return (f'<svg{c}{a} viewBox="22 22 156 156" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'
+            '<rect x="50" y="50" width="100" height="100" fill="none" stroke="#B9A3DC" stroke-width="6"/>'
+            '<rect x="50" y="50" width="100" height="100" fill="none" stroke="#B9A3DC" stroke-width="6" transform="rotate(45 100 100)"/>'
+            '<path d="M100 100 L100 30" stroke="#D9A848" stroke-width="13" stroke-linecap="round"/>'
+            '<path d="M100 100 L100 170 M100 100 L30 100 M100 100 L170 100" stroke="#F5EEE2" stroke-width="13" stroke-linecap="round"/>'
+            '<circle cx="100" cy="100" r="15" fill="#5B3F8F" stroke="#F5EEE2" stroke-width="7"/></svg>')
+
+def b_sadu_svg():
+    return ('<svg xmlns="http://www.w3.org/2000/svg" width="40" height="34" viewBox="0 0 40 34">'
+            '<rect width="40" height="34" fill="#5B3F8F"/><rect width="40" height="4" fill="#2B1E3F"/><rect y="30" width="40" height="4" fill="#2B1E3F"/>'
+            '<path d="M0 17 L10 7 L20 17 L10 27 Z" fill="#F5EEE2"/><path d="M5 17 L10 12 L15 17 L10 22 Z" fill="#5B3F8F"/>'
+            '<path d="M20 30 L30 10 L40 30 Z" fill="#2B1E3F"/><path d="M26 30 L30 22 L34 30 Z" fill="#D9A848"/></svg>')
+
+def b_uri(svg):
+    return 'data:image/svg+xml,' + urllib.parse.quote(svg, safe="/:=,()")
+
+
+LOGO_SVG = b_mark_svg(72, 'logo')
 
 SADU = ('<div class="sadu"></div>')
 
@@ -436,7 +475,7 @@ def trip_html(res):
     steps = '<div class="trip-step"><span class="tdot start"></span><div><b>موقعك</b></div></div>'
     for i, s in enumerate(res['stops'], 1):
         meta = CAT.get(s['key'], {})
-        steps += (f'<div class="trip-step"><span class="tdot" style="background:{meta.get("color", "#9b2c22")}">'
+        steps += (f'<div class="trip-step"><span class="tdot" style="background:{meta.get("color", "#5B3F8F")}">'
                   f'{i}</span><div><b>{esc(display_name(s["name"], s["key"]))}</b>'
                   f'<div class="res-meta">{esc(meta.get("label", ""))}</div></div></div>')
     if res.get('minutes') is not None:
@@ -506,7 +545,7 @@ def report_html(entry, map_html):
     return ('<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width, initial-scale=1">'
             '<title>تقرير مسار</title><style>body{font-family:Tahoma,Segoe UI,sans-serif;max-width:900px;'
-            'margin:24px auto;padding:0 16px;color:#14202b}h1{color:#9b2c22}table{width:100%;'
+            'margin:24px auto;padding:0 16px;color:#14202b}h1{color:#5B3F8F}table{width:100%;'
             'border-collapse:collapse}td,th{border:1px solid #e4dccd;padding:8px;text-align:right}'
             'th{background:#e3f3ef}iframe{width:100%;height:480px;border:1px solid #e4dccd;'
             'border-radius:10px}.m{color:#5f6f7e;font-size:13px}</style></head><body>'
@@ -543,7 +582,7 @@ def panel_row_html(it, selected=False):
     t = fmt_minutes(mins) if mins is not None else ''
     sub = f'{"≈ " if approx else ""}{t}' if t else ''
     return (f'<div class="pn-row{" sel" if selected else ""}">'
-            f'<span class="pn-ic" style="--c:{meta.get("color", "#9b2c22")}">{ms(meta.get("icon", "location_on"))}</span>'
+            f'<span class="pn-ic" style="--c:{meta.get("color", "#5B3F8F")}">{ms(meta.get("icon", "location_on"))}</span>'
             f'<div class="pn-b"><div class="pn-t">{esc(display_name(it["name"], it["key"]))}</div>'
             f'<div class="pn-m">{esc(SINGULAR.get(it["key"], meta.get("label", "")))}</div></div>'
             f'<div class="pn-d"><b>{it["km"]:,.1f}</b> كم<span>{esc(sub)}</span></div></div>')
@@ -564,45 +603,36 @@ def answer_html(entry, newest=True):
 def splash_html():
     """الافتتاحية: تُرسم في صفحة Streamlit نفسها (وليس داخل مكوّن الخريطة) فلا تتأثر بإعادة تحميله.
     الحركة كلها CSS ومدتها ثابتة: 5 ثوانٍ ثم تنزاح في 0.9 ثانية. بدون مسافات بادئة حتى لا يحوّلها markdown إلى كود."""
+    ring, rose, sadu = b_uri(b_ring_svg('#B9A3DC')), b_uri(b_rose_svg(True)), b_uri(b_sadu_svg())
     css = (
-        '.mspl{position:fixed;inset:0;z-index:2147483000;background:#1a1614;display:grid;place-items:center;'
+        '@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=IBM+Plex+Sans+Arabic:wght@500&display=swap");'
+        '.mspl{position:fixed;inset:0;z-index:2147483000;background:#2B1E3F;display:grid;place-items:center;'
         'direction:rtl;pointer-events:all;animation:msOut .9s cubic-bezier(.7,0,.2,1) 5s forwards}'
         '@keyframes msOut{to{transform:translateY(-101%);visibility:hidden;pointer-events:none}}'
         '.mspl .in{display:flex;flex-direction:column;align-items:center;gap:10px}'
-        '.mspl .lg{position:relative;width:156px;height:166px;transform:scale(1.35);margin-bottom:22px}'
-        '.mspl .r{position:absolute;left:8px;width:140px;height:70px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);opacity:0;transform:translateY(-30px)}'
-        '.mspl .r::after{content:"";position:absolute;inset:4px 8px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}'
-        '.mspl .r1{top:91px;background:#f1e6d2;animation:msL .55s cubic-bezier(.2,.9,.3,1.1) .15s forwards}'
-        '.mspl .r2{top:66px;background:#f1e6d2;animation:msL .55s cubic-bezier(.2,.9,.3,1.1) .4s forwards}'
-        '.mspl .r2::after{background:#9b2c22}'
-        '.mspl .r3{top:41px;background:#f1e6d2;animation:msL .55s cubic-bezier(.2,.9,.3,1.1) .65s forwards}'
-        '.mspl .r3::after{background:#1a1614}'
-        '.mspl .r1::after{display:none}'
-        '.mspl .pn{position:absolute;left:94px;top:22px;width:24px;height:24px;background:#e3b07a;border-radius:50% 50% 50% 0;'
-        'transform:translateY(-90px) rotate(-45deg);opacity:0;animation:msP .7s cubic-bezier(.3,1.5,.5,1) 1s forwards}'
-        '.mspl .pn::after{content:"";position:absolute;inset:8px;border-radius:50%;background:#1a1614}'
-        '.mspl .st{position:absolute;left:120px;top:6px;width:32px;height:32px;background:#e3b07a;'
-        'clip-path:polygon(50% 0,62% 37%,100% 50%,62% 63%,50% 100%,38% 63%,0 50%,38% 37%);opacity:0;transform:scale(.2);animation:msS .8s cubic-bezier(.2,1.3,.4,1) 1.55s forwards}'
-        '.mspl .wd{font:700 clamp(46px,9vmin,104px)/1 Changa,"IBM Plex Sans Arabic",sans-serif;color:#e3b07a;opacity:0;transform:translateY(14px);animation:msR .6s ease 1.4s forwards}'
-        '.mspl .tg{font:500 clamp(14px,2.3vmin,24px) "IBM Plex Sans Arabic",sans-serif;color:#f1e6d2;opacity:0;transform:translateY(14px);animation:msR2 .6s ease 1.8s forwards}'
-        '.mspl .wv{position:absolute;left:0;right:0;bottom:0;height:clamp(8px,1.6vmin,16px)}'
-        '.mspl .wv i{display:block;height:100%;width:0;margin-inline-end:auto;'
-        'background:url("data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'16\'%20height=\'10\'%20viewBox=\'0%200%2016%2010\'%3E%3Crect%20width=\'16\'%20height=\'10\'%20fill=\'%239B2C22\'/%3E%3Cpath%20d=\'M0%2010%20L4%202%20L8%2010%20Z\'%20fill=\'%23F1E6D2\'/%3E%3Cpath%20d=\'M8%2010%20L12%202%20L16%2010%20Z\'%20fill=\'%231A1614\'/%3E%3C/svg%3E") repeat-x left center/auto 100%;'
+        '.mspl .lg{position:relative;width:min(230px,46vmin);height:min(230px,46vmin);margin-bottom:18px}'
+        '.mspl .lg i{position:absolute;inset:0;background-size:contain;background-repeat:no-repeat;background-position:center}'
+        f'.mspl .rg{{background-image:url("{ring}");opacity:0;animation:msF .9s ease .1s forwards,msSpin 70s linear .1s infinite}}'
+        f'.mspl .rs{{background-image:url("{rose}");opacity:0;transform:scale(.55) rotate(-60deg);animation:msRose 1.1s cubic-bezier(.2,1.15,.4,1) .35s forwards}}'
+        '.mspl .wd{font:700 clamp(54px,11vmin,120px)/1.05 "El Messiri","IBM Plex Sans Arabic",sans-serif;color:#F5EEE2;opacity:0;transform:translateY(14px);animation:msR .6s ease 1.3s forwards}'
+        '.mspl .tg{font:500 clamp(14px,2.3vmin,24px) "IBM Plex Sans Arabic",sans-serif;color:#CFC2E3;opacity:0;transform:translateY(14px);animation:msR2 .6s ease 1.7s forwards}'
+        '.mspl .wv{position:absolute;left:0;right:0;bottom:0;height:clamp(10px,2vmin,18px)}'
+        f'.mspl .wv i{{display:block;height:100%;width:0;margin-inline-end:auto;background:url("{sadu}") repeat-x left center/auto 100%;'
         'animation:msW 1.6s cubic-bezier(.6,0,.3,1) .3s forwards}'
-        '@keyframes msL{to{opacity:1;transform:none}}'
-        '@keyframes msP{0%{opacity:0}30%{opacity:1}100%{opacity:1;transform:rotate(-45deg)}}'
-        '@keyframes msS{60%{opacity:1;transform:scale(1.25) rotate(20deg)}100%{opacity:1;transform:none}}'
+        '@keyframes msF{to{opacity:1}}'
+        '@keyframes msSpin{to{transform:rotate(360deg)}}'
+        '@keyframes msRose{to{opacity:1;transform:none}}'
         '@keyframes msR{to{opacity:1;transform:none}}'
-        '@keyframes msR2{to{opacity:.85;transform:none}}'
+        '@keyframes msR2{to{opacity:.9;transform:none}}'
         '@keyframes msW{to{width:100%}}'
-        '.mspl .ld{display:flex;align-items:center;gap:8px;margin-top:14px;opacity:0;font:500 clamp(12px,1.9vmin,18px) "IBM Plex Sans Arabic",sans-serif;color:#f1e6d2;animation:msR2 .6s ease 2.6s forwards}'
-        '.mspl .ld b{display:inline-block;width:7px;height:7px;border-radius:50%;background:#e3b07a;animation:msD 1.1s ease-in-out infinite}'
+        '.mspl .ld{display:flex;align-items:center;gap:8px;margin-top:14px;opacity:0;font:500 clamp(12px,1.9vmin,18px) "IBM Plex Sans Arabic",sans-serif;color:#F5EEE2;animation:msR2 .6s ease 2.6s forwards}'
+        '.mspl .ld b{display:inline-block;width:7px;height:7px;border-radius:50%;background:#D9A848;animation:msD 1.1s ease-in-out infinite}'
         '.mspl .ld b:nth-of-type(2){animation-delay:.18s}.mspl .ld b:nth-of-type(3){animation-delay:.36s}'
         '@keyframes msD{0%,80%,100%{transform:scale(.5);opacity:.4}40%{transform:scale(1.15);opacity:1}}'
         'body:not(:has(iframe[title*="masar_ui"])):not(:has([data-testid="stException"])) .mspl{transform:none!important;visibility:visible!important;pointer-events:all!important}'
         'div[data-stale="true"]:has(.mspl){opacity:1!important}'
-        '@media (prefers-reduced-motion:reduce){.mspl{display:none}}')
-    html = ('<div class="mspl" aria-hidden="true"><div class="in"><div class="lg">'
-            '<div class="r r1"></div><div class="r r2"></div><div class="r r3"></div><div class="pn"></div><div class="st"></div>'
-            '</div><div class="wd">مسار</div><div class="tg">من سؤالك إلى وجهتك</div><div class="ld"><b></b><b></b><b></b><span>جارٍ تجهيز الخريطة</span></div></div><div class="wv"><i></i></div></div>')
+        '@media (prefers-reduced-motion:reduce){.mspl .rg{animation:msF .9s ease .1s forwards}}')
+    html = ('<div class="mspl" aria-hidden="true"><div class="in"><div class="lg"><i class="rg"></i><i class="rs"></i></div>'
+            '<div class="wd">مسار</div><div class="tg">من سؤالك إلى وجهتك</div>'
+            '<div class="ld"><b></b><b></b><b></b><span>جارٍ تجهيز الخريطة</span></div></div><div class="wv"><i></i></div></div>')
     return f'<style>{css}</style>{html}'

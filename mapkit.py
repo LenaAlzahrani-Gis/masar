@@ -359,12 +359,12 @@ def trip_map(res, dark=False):
     origin = res['origin']
     m = base_map(origin, 11, dark)
     line = res['line']
-    folium.PolyLine(line, color='#9b2c22' if not dark else '#e3b07a', weight=6, opacity=0.85,
+    folium.PolyLine(line, color='#5B3F8F' if not dark else '#D9A848', weight=6, opacity=0.85,
                     dash_array=None if not res.get('straight_only') else '8 6').add_to(m)
     lats, lons = [p[0] for p in line], [p[1] for p in line]
     for i, st_ in enumerate(res['stops'], 1):
         meta = ui.CAT.get(st_['key'], {})
-        col = meta.get('color', '#9b2c22')
+        col = meta.get('color', '#5B3F8F')
         name = ui.display_name(st_['name'], st_['key'])
         folium.Marker(
             [st_['lat'], st_['lon']], tooltip=f"{i}. {name}",

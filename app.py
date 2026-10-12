@@ -1,11 +1,12 @@
 import os
 import time
+from pathlib import Path
 
 import streamlit as st
 
 import ui
 
-st.set_page_config(page_title='مسار', page_icon=':material/explore:', layout='wide',
+st.set_page_config(page_title='مسار', page_icon=(str(Path(__file__).parent / 'icon.png') if (Path(__file__).parent / 'icon.png').exists() else ':material/explore:'), layout='wide',
                    initial_sidebar_state='collapsed')
 
 # ---------- الافتتاحية: تُرسم أول شي (قبل تحميل المكتبات الثقيلة) وتبقى 5 ثوانٍ ----------
@@ -349,7 +350,7 @@ else:
       iframe[data-testid="stCustomComponentV1"]:not([title*="streamlit_js_eval"]),iframe[title*="masar_ui"],[data-testid="stElementContainer"]:has(iframe[title*="masar_ui"]){
         position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;
         width:100vw!important;height:100vh!important;border:0!important;margin:0!important;z-index:5}
-    </style>""".replace('__BG__', '#171210' if DARK else '#e6dbc4'), unsafe_allow_html=True)
+    </style>""".replace('__BG__', '#1E1630' if DARK else '#e9e2ee'), unsafe_allow_html=True)
 
 
 @st.cache_data(show_spinner=False)
@@ -369,12 +370,14 @@ if view == 'map':
     if weather:
         info['weather'] = {'temp': weather['temp'], 'desc': weather['desc'],
                            'icon': ui.WX_ICON.get(weather['icon'], 'partly_cloudy_day')}
+    if weather and adv:
+        info['advice'] = {'text': adv['text'], 'keys': [k for k in adv['keys'] if k in tools.LAYERS][:3]}
     if prayer:
         info['prayer'] = {'name': prayer[0], 'time': ui.t12(prayer[1]), 'left': extras.remaining_text(prayer[2])}
     focus = st.session_state.get('focus')
     if focus:
         meta = ui.CAT.get(focus['key'], {})
-        focus = dict(focus, icon=meta.get('icon', 'location_on'), color=meta.get('color', '#9b2c22'),
+        focus = dict(focus, icon=meta.get('icon', 'location_on'), color=meta.get('color', '#5B3F8F'),
                      label=ui.SINGULAR.get(focus['key'], meta.get('label', '')))
     treq = st.session_state.pop('trip_req', None)
     if treq:
