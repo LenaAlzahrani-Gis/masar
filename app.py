@@ -290,6 +290,10 @@ if pending:
             raise RuntimeError('quota')
         text, log = agent.run_agent(pending + note, location=st.session_state.get('loc'))
     except Exception as ex:
+        if not deny:
+            import sys
+            print('MASAR_ERROR:', type(ex).__name__, str(ex)[:300], file=sys.stderr, flush=True)
+            st.session_state['last_err'] = f'{type(ex).__name__}: {str(ex)[:300]}'
         st.session_state['notice'] = {'id': datetime.now().timestamp(),
                                       'text': deny or 'تعذّر تنفيذ الطلب. تحقق من الاتصال ومن رصيد المفتاح ثم حاول مرة أخرى.'}
         if DEV and not deny:
@@ -557,3 +561,6 @@ if DEV and entry:
             st.write(step['result'])
 
 st.markdown(ui.statusbar_html(loc, len(hist)), unsafe_allow_html=True)
+
+if DEV and st.session_state.get('last_err'):
+    st.error('آخر خطأ: ' + st.session_state['last_err'])
